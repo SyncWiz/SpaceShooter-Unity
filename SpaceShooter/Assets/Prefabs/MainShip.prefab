@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 8436499662489539845}
   - component: {fileID: 8436499662489539846}
   - component: {fileID: 8436499662489539847}
+  - component: {fileID: 2105090243}
   m_Layer: 0
   m_Name: MainShip
-  m_TagString: Untagged
+  m_TagString: MainShip
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27,9 +28,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8436499662489539850}
-  m_LocalRotation: {x: -0, y: -0, z: -0.70647013, w: 0.7077429}
+  m_LocalRotation: {x: 0, y: 0, z: -0.70647097, w: 0.7077421}
   m_LocalPosition: {x: -9.9, y: -0.01, z: 0}
-  m_LocalScale: {x: 2.7918026, y: 2.7918026, z: 2.7918026}
+  m_LocalScale: {x: 1.602746, y: 1.602746, z: 1.602746}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -116,7 +117,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b366881ce8061440b0ab7f7d8390879, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  m_Speed: 5
+  m_PrimaryBulletOffset: 0.5
+  m_TimeBetweenPrimaryShoots: 0.15
+  m_BasicBullet: {fileID: 5562645288781215116, guid: 905b03ce8b75c97499bf06d6cd209c1a,
+    type: 3}
+  m_DoubleBullet: {fileID: 7909374660982873646, guid: 7134208981fd1dd489981b7458061b5b,
+    type: 3}
+  m_Health: 3
+  m_InvulneravilityTime: 10
+  m_InvulneravilityColor: {r: 0.8679245, g: 0.22687942, b: 0.19241722, a: 1}
 --- !u!61 &8436499662489539847
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -143,3 +153,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.32, y: 0.32}
   m_EdgeRadius: 0
+--- !u!114 &2105090243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8436499662489539850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a11307488567aa747827669a04cba99a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_DoubleFireTime: 5

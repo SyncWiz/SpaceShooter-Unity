@@ -5,27 +5,28 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {   
     //Public
-    public Vector2 m_Direction;
+    public Vector3 m_Direction;
     public float m_Speed;
 
     //Private
-    private Rigidbody2D m_Rigidbody2d;
     private Renderer m_Renderer;
     private Camera m_MainCamera;
 
     void Start()
     {
-        m_Rigidbody2d = GetComponent<Rigidbody2D>();
         m_Renderer = GetComponent<Renderer>();
         m_MainCamera = Camera.main;
-
-        m_Rigidbody2d.gravityScale = 0.0f;
-        m_Rigidbody2d.velocity = m_Direction * m_Speed;
     }
 
     void Update()
     {
+        Move();
         CheckForDestroy();
+    }
+
+    void Move()
+    {
+        transform.position += m_Direction * m_Speed * Time.deltaTime;
     }
 
     void CheckForDestroy()
@@ -35,6 +36,5 @@ public class Bullet : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        Debug.Log(viewPosition);
     }
 }
