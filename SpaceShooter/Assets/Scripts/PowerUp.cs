@@ -7,16 +7,6 @@ public class PowerUp : MonoBehaviour
     public ItemType m_ItemType;
     public float m_MovementSpeed;
 
-    void Start()
-    {
-        
-    }
-
-    void Update()
-    {
-        
-    }
-
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "MainShip")
@@ -28,7 +18,6 @@ public class PowerUp : MonoBehaviour
                 break;
                 case ItemType.Missile:
                 case ItemType.Invulnerability:
-                    Debug.Log("Item type adquired: "+m_ItemType);
                     collision.gameObject.GetComponent<Inventory>().SetSecondarySlot(m_ItemType);
                 break;
             }

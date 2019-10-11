@@ -9,12 +9,10 @@ public class Bullet : MonoBehaviour
     public float m_Speed;
 
     //Private
-    private Renderer m_Renderer;
     private Camera m_MainCamera;
 
     void Start()
     {
-        m_Renderer = GetComponent<Renderer>();
         m_MainCamera = Camera.main;
     }
 
