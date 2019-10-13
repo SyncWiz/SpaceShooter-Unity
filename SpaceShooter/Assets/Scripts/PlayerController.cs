@@ -22,6 +22,7 @@ public class PlayerController : MonoBehaviour
         float moveVertical = Input.GetAxis("Vertical");
         m_MainSpaceshipBehaviour.Move(moveHorizontal, moveVertical);
         
+
         if (Input.GetButton("Fire1"))
         {
             m_MainSpaceshipBehaviour.UsePrimaryInventorySlot();

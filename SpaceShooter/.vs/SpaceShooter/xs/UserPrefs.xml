@@ -1,8 +1,10 @@
 ﻿<Properties StartupConfiguration="{31EA003C-1CF9-D946-A919-8AC5ED6BE76A}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/BulletBehaviour.cs">
     <Files>
       <File FileName="Assets/Scripts/InventoryManager.cs" Line="28" Column="10" />
-      <File FileName="Assets/Scripts/PlayerController.cs" Line="24" Column="9" />
+      <File FileName="Assets/Scripts/PlayerController.cs" Line="22" Column="56" />
+      <File FileName="Assets/Scripts/PowerUpBehaviour.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/BulletBehaviour.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -10,7 +12,7 @@
           <Node name="SpaceShooter" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="PlayerController.cs" selected="True" />
+                <Node name="BulletBehaviour.cs" selected="True" />
               </Node>
             </Node>
           </Node>

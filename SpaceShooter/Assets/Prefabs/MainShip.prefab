@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 8436499662489539850}
   m_LocalRotation: {x: 0, y: 0, z: -0.70647097, w: 0.7077421}
   m_LocalPosition: {x: -9.9, y: -0.01, z: 0}
-  m_LocalScale: {x: 1.602746, y: 1.602746, z: 1.602746}
+  m_LocalScale: {x: 1.1568998, y: 1.1568998, z: 1.1568998}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -170,7 +170,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Speed: 5
-  m_BulletOffsetX: 0.5
+  m_BulletOffsetX: 0.3
   m_TimeBetweenPrimaryShoots: 0.15
   m_InvulneravilityTime: 2
   m_Health: 3
