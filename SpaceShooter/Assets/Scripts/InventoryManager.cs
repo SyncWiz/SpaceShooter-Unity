@@ -13,7 +13,6 @@ public enum ItemType
 
 public class InventoryManager : MonoBehaviour
 {
-    public float m_DoubleFireTime;
     private struct InventorySlot
     {
         private ItemType m_CurrentItemType;
@@ -28,7 +27,12 @@ public class InventoryManager : MonoBehaviour
         }
     }
 
+    //Public
+    public float m_DoubleFireTime;
+
+    //Private
     private InventorySlot m_PrimarySlot, m_SecondarySlot;
+
     void Start()
     {
         SetPrimarySlot(ItemType.BasicFire);

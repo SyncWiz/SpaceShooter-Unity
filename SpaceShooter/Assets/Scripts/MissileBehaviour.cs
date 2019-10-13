@@ -12,6 +12,7 @@ public class MissileBehaviour : MonoBehaviour
     //Private
     private Vector3 m_Direction;
     private Rigidbody2D m_RigidBody2D;
+
     void Start()
     { 
         //TODO use Vector3.forward?

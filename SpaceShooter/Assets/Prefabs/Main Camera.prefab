@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6747465796908219811}
   m_Layer: 0
   m_Name: bottomLimit
-  m_TagString: Untagged
+  m_TagString: CameraLimit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -156,7 +156,7 @@ GameObject:
   - component: {fileID: 6747465797425025734}
   m_Layer: 0
   m_Name: TopLimit
-  m_TagString: Untagged
+  m_TagString: CameraLimit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -213,7 +213,7 @@ GameObject:
   - component: {fileID: 6747465797658435427}
   m_Layer: 0
   m_Name: leftLimit
-  m_TagString: Untagged
+  m_TagString: CameraLimit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -270,7 +270,7 @@ GameObject:
   - component: {fileID: 6747465798570624644}
   m_Layer: 0
   m_Name: rightLimit
-  m_TagString: Untagged
+  m_TagString: CameraLimit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
