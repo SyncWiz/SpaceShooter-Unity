@@ -408,32 +408,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -89.897
       objectReference: {fileID: 0}
-    - target: {fileID: 8436499662489539846, guid: b6d0922e3161a4841b52688a1c4258fe,
-        type: 3}
-      propertyPath: m_InvulneravilityColor.r
-      value: 0.9245283
-      objectReference: {fileID: 0}
-    - target: {fileID: 8436499662489539846, guid: b6d0922e3161a4841b52688a1c4258fe,
-        type: 3}
-      propertyPath: m_InvulneravilityColor.g
-      value: 0.45708492
-      objectReference: {fileID: 0}
-    - target: {fileID: 8436499662489539846, guid: b6d0922e3161a4841b52688a1c4258fe,
-        type: 3}
-      propertyPath: m_InvulneravilityColor.b
-      value: 0.047970813
-      objectReference: {fileID: 0}
-    - target: {fileID: 8436499662489539846, guid: b6d0922e3161a4841b52688a1c4258fe,
-        type: 3}
-      propertyPath: m_BulletOffsetX
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8436499662489539846, guid: b6d0922e3161a4841b52688a1c4258fe,
-        type: 3}
-      propertyPath: m_MissileBullet
-      value: 
-      objectReference: {fileID: 1842107442458350483, guid: 9313a73bc6df04074aad4e4edf4c8561,
-        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6d0922e3161a4841b52688a1c4258fe, type: 3}
 --- !u!1001 &9141620434937940718

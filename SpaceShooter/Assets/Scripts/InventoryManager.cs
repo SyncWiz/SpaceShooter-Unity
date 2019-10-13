@@ -11,7 +11,7 @@ public enum ItemType
     Invulnerability
 }
 
-public class Inventory : MonoBehaviour
+public class InventoryManager : MonoBehaviour
 {
     public float m_DoubleFireTime;
     private struct InventorySlot
