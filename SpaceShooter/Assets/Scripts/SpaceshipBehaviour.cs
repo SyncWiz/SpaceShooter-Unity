@@ -8,7 +8,7 @@ public class SpaceshipBehaviour : MonoBehaviour
     public float m_Speed;
     public float m_BulletOffsetX;
     public float m_TimeBetweenPrimaryShoots;
-    public float m_InvulneravilityTime;
+    public float m_InvulnerabilityTime;
     public float m_DamageReceivedTime;
     public float m_TimeBetweenChangingColor;
     public float m_TimeUntilDie;
@@ -19,9 +19,9 @@ public class SpaceshipBehaviour : MonoBehaviour
     public GameObject m_BasicBullet;
     public GameObject m_DoubleBullet;
     public GameObject m_MissileBullet;
-    public GameObject m_InvulneravilityCircle;
+    public GameObject m_InvulnerabilityCircle;
     public Vector3 m_BasicBulletRotation;
-    public Color m_InvulneravilityColor;
+    public Color m_InvulnerabilityColor;
     public Color m_DamageReceivedColor;
 
     //Private
@@ -102,9 +102,9 @@ public class SpaceshipBehaviour : MonoBehaviour
                 break;
             case ItemType.Invulnerability:
                 m_CanRecieveDamage = false;
-                m_InvulneravilityCircle.SetActive(true);
-                StartCoroutine(InvulneravilityEffect(m_InvulneravilityColor));
-                Invoke("ReturnFromInvulneravilityState", m_InvulneravilityTime);
+                m_InvulnerabilityCircle.SetActive(true);
+                StartCoroutine(InvulnerabilityEffect(m_InvulnerabilityColor));
+                Invoke("ReturnFromInvulnerabilityState", m_InvulnerabilityTime);
                 //TODO sound
                 break;
             case ItemType.Empty:
@@ -121,18 +121,18 @@ public class SpaceshipBehaviour : MonoBehaviour
 
         m_Health -= damage;
 
-
         if (m_IsMainPlayer)
         {
             m_CanRecieveDamage = false;
-            StartCoroutine(InvulneravilityEffect(m_DamageReceivedColor));
-            Invoke("ReturnFromInvulneravilityState", m_DamageReceivedTime);
+            StartCoroutine(InvulnerabilityEffect(m_DamageReceivedColor));
+            Invoke("ReturnFromInvulnerabilityState", m_DamageReceivedTime);
             //TODO sound
         }
         else
         {
             m_SpriteRenderer.color = m_DamageReceivedColor;
             Invoke("RecoverOriginalColor", m_DamageReceivedTime);
+            //TODO sound
         }
 
         if (m_Health <= 0)
@@ -149,11 +149,12 @@ public class SpaceshipBehaviour : MonoBehaviour
         //TODO sound + effect
     }
 
-    void ReturnFromInvulneravilityState()
+    void ReturnFromInvulnerabilityState()
     {
         m_CanRecieveDamage = true;
         m_SpriteRenderer.color = m_OriginalColor;
-        m_InvulneravilityCircle.SetActive(false);
+        m_InvulnerabilityCircle.SetActive(false);
+        StopAllCoroutines();
     }
 
     void RecoverOriginalColor()
@@ -161,7 +162,7 @@ public class SpaceshipBehaviour : MonoBehaviour
         m_SpriteRenderer.color = m_OriginalColor;
     }
 
-    IEnumerator InvulneravilityEffect(Color color)
+    IEnumerator InvulnerabilityEffect(Color color)
     {
         while (!m_CanRecieveDamage)
         {
@@ -169,7 +170,7 @@ public class SpaceshipBehaviour : MonoBehaviour
             {
                 m_SpriteRenderer.color = color;
             }
-            else
+            else if(m_SpriteRenderer.color != m_OriginalColor)
             {
                 RecoverOriginalColor();
             }
