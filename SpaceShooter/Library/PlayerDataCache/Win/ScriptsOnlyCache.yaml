@@ -4,9 +4,11 @@ ScriptsOnlyBuild:
     - BulletBehaviour
     - DestroyAfterAnimationEnd
     - InventoryManager
+    - KamikazeEnemyController
     - MissileBehaviour
     - PlayerController
     - PowerUpBehaviour
+    - ShooterEnemyController
     - SpaceshipBehaviour
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
@@ -14,12 +16,6 @@ ScriptsOnlyBuild:
     - UnityEditor.Tilemaps.GridPalettes
     - UnityEditor.Tilemaps.SceneViewGridManager
     - UnityEditor.Tilemaps.TileDragAndDropManager
-    UnityEditor.Graphs.dll:
-    - UnityEditor.Graphs.AnimationBlendTree.Graph
-    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.Graph
-    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -62,11 +58,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10234}
     - Class: 114
-      Script: {instanceID: 10354}
+      Script: {instanceID: 10250}
     - Class: 114
-      Script: {instanceID: 10470}
+      Script: {instanceID: 10356}
     - Class: 114
-      Script: {instanceID: 10596}
+      Script: {instanceID: 10436}
+    - Class: 114
+      Script: {instanceID: 10474}
+    - Class: 114
+      Script: {instanceID: 10600}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -168,7 +168,7 @@ ScriptsOnlyBuild:
     className: TMP_InputField
   - hash:
       serializedVersion: 2
-      Hash: 3ce61cc21109dff136c3239c1a22baec
+      Hash: a85237bd3c446d9fbc7f94e7248d1f58
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: BulletBehaviour
@@ -228,7 +228,7 @@ ScriptsOnlyBuild:
     className: TMP_SubMeshUI
   - hash:
       serializedVersion: 2
-      Hash: 9ed7ea901bdb1abf5b0e216cd10ba51f
+      Hash: 2ed95a358f8eda6168003c46a5b37693
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MissileBehaviour
@@ -256,6 +256,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: DestroyAfterAnimationEnd
+  - hash:
+      serializedVersion: 2
+      Hash: ab9be5edbcfe6a634e0d0ec0e0570148
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ShooterEnemyController
   - hash:
       serializedVersion: 2
       Hash: cc4274b586df3c02688bac01b88bd16c
@@ -294,6 +300,12 @@ ScriptsOnlyBuild:
     className: PowerUpBehaviour
   - hash:
       serializedVersion: 2
+      Hash: 83228ce06b227003ff371e1c65a9740d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: KamikazeEnemyController
+  - hash:
+      serializedVersion: 2
       Hash: b3ab2106268377ffe25dd18ac23dca28
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -306,7 +318,7 @@ ScriptsOnlyBuild:
     className: ScrollRect
   - hash:
       serializedVersion: 2
-      Hash: 48a9b359d77fc79c1cfc1ef7db54f8b3
+      Hash: 0d9c95335b9840e9a7d0463526a7a69a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SpaceshipBehaviour

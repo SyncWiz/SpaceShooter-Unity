@@ -45,4 +45,17 @@ public class PlayerController : MonoBehaviour
             m_MainSpaceshipBehaviour.ReceiveDamage(1);
         }
     }
+
+    private void OnTriggerStay2D(Collider2D collider)
+    {
+        //TODO update this in the future
+        if (collider.gameObject.tag == "EnemyBullet")
+        {
+            m_MainSpaceshipBehaviour.ReceiveDamage(collider.gameObject.GetComponent<BulletBehaviour>().m_Damage);
+        }
+        if (collider.gameObject.tag == "Enemy")
+        {
+            m_MainSpaceshipBehaviour.ReceiveDamage(1);
+        }
+    }
 }

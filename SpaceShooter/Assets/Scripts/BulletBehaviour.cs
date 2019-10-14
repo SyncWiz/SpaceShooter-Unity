@@ -52,7 +52,14 @@ public class BulletBehaviour : MonoBehaviour
         //TODO update this in the future
         if (collider.gameObject.tag == m_TagDetection)
         {
-            Destroy(gameObject);
+            if(m_AllyBullet)
+            {
+                Destroy(gameObject);
+            }
+            else if(collider.gameObject.GetComponent<SpaceshipBehaviour>().m_CanRecieveDamage)
+            {
+                Destroy(gameObject);
+            }
         }
     }
 }

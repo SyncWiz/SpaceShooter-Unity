@@ -114,12 +114,19 @@ MonoBehaviour:
   m_BulletOffsetX: 0
   m_TimeBetweenPrimaryShoots: 0
   m_InvulneravilityTime: 0
+  m_DamageReceivedTime: 0.05
+  m_TimeBetweenChangingColor: 0
+  m_TimeUntilDie: 0.05
+  m_IsMainPlayer: 0
+  m_CanRecieveDamage: 0
   m_Health: 2
   m_BasicBullet: {fileID: 0}
   m_DoubleBullet: {fileID: 0}
   m_MissileBullet: {fileID: 0}
+  m_InvulneravilityCircle: {fileID: 0}
   m_BasicBulletRotation: {x: 0, y: 0, z: 0}
   m_InvulneravilityColor: {r: 0, g: 0, b: 0, a: 0}
+  m_DamageReceivedColor: {r: 0.98039216, g: 0.06806724, b: 0.023529401, a: 1}
 --- !u!61 &95588958
 BoxCollider2D:
   m_ObjectHideFlags: 0
