@@ -21,6 +21,7 @@ public class KamikazeEnemyController : MonoBehaviour
     Camera m_MainCamera;
     EnemyStates m_CurrentState;
     Transform m_MainShipTransform;
+    bool m_CanChangeDirection;
 
     void Start()
     {
@@ -28,6 +29,7 @@ public class KamikazeEnemyController : MonoBehaviour
         m_MainCamera = Camera.main;
         m_CurrentState = EnemyStates.IDLE;
         m_MainShipTransform = m_MainShip.transform;
+        m_CanChangeDirection = true;
     }
 
     void Update()
@@ -58,9 +60,11 @@ public class KamikazeEnemyController : MonoBehaviour
                 }
             break;
             case EnemyStates.MOVE:
-                if (viewPosition.y >= 1.0f || viewPosition.y <= 0.0f)
+                if ((viewPosition.y > 1.0f || viewPosition.y < 0.0f) && m_CanChangeDirection)
                 {
                     m_Direction.y = -m_Direction.y;
+                    m_CanChangeDirection = false;
+                    Invoke("AllowChangeDirection", 0.25f);
                 }
                 m_SpaceshipBehaviour.Move(m_Direction.x, m_Direction.y);
             break;
@@ -72,6 +76,11 @@ public class KamikazeEnemyController : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+
+    private void AllowChangeDirection()
+    {
+        m_CanChangeDirection = true;
     }
 
     private void OnTriggerEnter2D(Collider2D collider)
