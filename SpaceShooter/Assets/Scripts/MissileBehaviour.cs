@@ -16,8 +16,7 @@ public class MissileBehaviour : MonoBehaviour
 
     void Start()
     { 
-        //TODO use Vector3.forward?
-        m_Direction = new Vector2(1, 0);
+        m_Direction = Vector2.right;
         m_RigidBody2D = GetComponent<Rigidbody2D>();
         Invoke("Explode", m_TimeToExplode);
     }
@@ -35,6 +34,7 @@ public class MissileBehaviour : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
+        //TODO update this in the future
         if (collider.gameObject.tag == "Enemy")
         {
             Explode();

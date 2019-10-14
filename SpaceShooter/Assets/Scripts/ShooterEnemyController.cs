@@ -1,18 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+public enum EnemyStates
+{
+    IDLE,
+    MOVE,
+    MOVE_TO_POINT,
+    IMPULSE,
+    WAIT,
+    WAIT_SHOOT
+}
 
 public class ShooterEnemyController : MonoBehaviour
 {
-    enum States
-    {
-        IDLE,
-        IMPULSE,
-        WAIT,
-        WAIT_SHOOT
-    }
     //Public
-    public float m_DistanceToStartBehaving;
     public float m_CenterDestinationPositionOffset;
     public float m_DistanceAccelerating;
     public float m_DistanceToChangeDestination;
@@ -23,7 +24,7 @@ public class ShooterEnemyController : MonoBehaviour
     public bool m_IsStatic;
 
     //Private
-    private States m_CurrentState;
+    private EnemyStates m_CurrentState;
     private SpaceshipBehaviour m_SpaceshipBehaviour;
     private Camera m_MainCamera;
     private Vector3 m_TargetPosition;
@@ -31,7 +32,7 @@ public class ShooterEnemyController : MonoBehaviour
 
     void Start()
     {
-        m_CurrentState = States.IDLE;
+        m_CurrentState = EnemyStates.IDLE;
         m_SpaceshipBehaviour = GetComponent<SpaceshipBehaviour>();
         m_MainCamera = Camera.main;
         GenerateTargetPosition();
@@ -47,20 +48,21 @@ public class ShooterEnemyController : MonoBehaviour
     {
         switch(m_CurrentState)
         {
-            case States.IDLE:
-                if (Vector3.Distance(m_MainShip.transform.position, transform.position) <= m_DistanceToStartBehaving)
+            case EnemyStates.IDLE:
+                Vector3 viewPosition = m_MainCamera.WorldToViewportPoint(transform.position);
+                if (viewPosition.x <= 1.0f && viewPosition.x >= 0.0f && viewPosition.y <= 1.0f && viewPosition.y >= 0.0f)
                 {
-                    if(!m_IsStatic)
+                    if (!m_IsStatic)
                     {
-                        m_CurrentState = States.IMPULSE;
+                        m_CurrentState = EnemyStates.IMPULSE;
                     }
                     else
                     {
-                        m_CurrentState = States.WAIT_SHOOT;
+                        m_CurrentState = EnemyStates.WAIT_SHOOT;
                     }
                 }
             break;
-            case States.IMPULSE:
+            case EnemyStates.IMPULSE:
                 Vector2 force = new Vector2(0, m_TargetPosition.y);
                 m_SpaceshipBehaviour.MoveForce(force);
                 if (Vector3.Distance(m_TargetPosition, transform.position) <= m_DistanceAccelerating)
@@ -68,25 +70,17 @@ public class ShooterEnemyController : MonoBehaviour
                     GenerateTargetPosition();
                 }
             break;
-            case States.WAIT:
+            case EnemyStates.WAIT:
                 if (Vector3.Distance(m_TargetPosition, transform.position) <= m_DistanceToChangeDestination)
                 {
 
-                    m_CurrentState = States.IMPULSE;
+                    m_CurrentState = EnemyStates.IMPULSE;
                 }
                 break;
         }
 
         if (Debug.isDebugBuild)
         {
-            if (Vector3.Distance(m_MainShip.transform.position, transform.position) >= m_DistanceToStartBehaving)
-            {
-                Debug.DrawLine(m_MainShip.transform.position, transform.position, Color.red);
-            }
-            else
-            {
-                Debug.DrawLine(m_MainShip.transform.position, transform.position, Color.green);
-            }
             Debug.DrawLine(transform.position, m_TargetPosition, Color.yellow);
         }
     }
@@ -114,7 +108,7 @@ public class ShooterEnemyController : MonoBehaviour
 
     void CheckShoot()
     {
-        if(m_CurrentTime >= m_ShootTime && m_CurrentState != States.IDLE)
+        if(m_CurrentTime >= m_ShootTime && m_CurrentState != EnemyStates.IDLE)
         {
             m_SpaceshipBehaviour.UsePrimaryInventorySlot();
             m_CurrentTime = 0.0f;

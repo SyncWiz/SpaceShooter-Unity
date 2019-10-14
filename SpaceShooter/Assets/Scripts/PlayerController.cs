@@ -22,15 +22,27 @@ public class PlayerController : MonoBehaviour
         float moveVertical = Input.GetAxis("Vertical");
         m_MainSpaceshipBehaviour.Move(moveHorizontal, moveVertical);
         
-
         if (Input.GetButton("Fire1"))
         {
             m_MainSpaceshipBehaviour.UsePrimaryInventorySlot();
         }
-        //TODO setup proper fire2
-        if (Input.GetButton("Fire2") || Input.GetKeyDown(KeyCode.LeftControl))
+
+        if (Input.GetButton("Fire2"))
         {
             m_MainSpaceshipBehaviour.UseSecondaryInventorySlot();
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collider)
+    {
+        //TODO update this in the future
+        if (collider.gameObject.tag == "EnemyBullet")
+        {
+            m_MainSpaceshipBehaviour.ReceiveDamage(collider.gameObject.GetComponent<BulletBehaviour>().m_Damage);
+        }
+        if (collider.gameObject.tag == "Enemy")
+        {
+            m_MainSpaceshipBehaviour.ReceiveDamage(1);
         }
     }
 }

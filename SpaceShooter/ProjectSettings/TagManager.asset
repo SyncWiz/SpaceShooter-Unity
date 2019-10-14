@@ -10,6 +10,7 @@ TagManager:
   - MainShipBullet
   - MainShipMissile
   - MainShipExplosion
+  - EnemyBullet
   layers:
   - Default
   - TransparentFX
