@@ -17,10 +17,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -66,9 +64,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10354}
     - Class: 114
-      Script: {instanceID: 10594}
+      Script: {instanceID: 10470}
     - Class: 114
-      Script: {instanceID: 13612}
+      Script: {instanceID: 10596}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -308,6 +306,12 @@ ScriptsOnlyBuild:
     className: ScrollRect
   - hash:
       serializedVersion: 2
+      Hash: 48a9b359d77fc79c1cfc1ef7db54f8b3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SpaceshipBehaviour
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -528,13 +532,7 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 48a9b359d77fc79c1cfc1ef7db54f8b3
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: SpaceshipBehaviour
   platform: 5
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: /Users/David/Desktop/test/SpaceShooter.exe
+  playerPath: C:/Users/dcervera/Desktop/SpaceShooter.exe

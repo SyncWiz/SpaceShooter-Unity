@@ -7,6 +7,7 @@ public class MissileBehaviour : MonoBehaviour
     //Public
     public float m_Speed;
     public float m_TimeToExplode;
+    public int m_Damage;
     public GameObject m_Explosion;
 
     //Private
@@ -32,9 +33,9 @@ public class MissileBehaviour : MonoBehaviour
         Destroy(gameObject);
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collision.gameObject.tag == "Enemy")
+        if (collider.gameObject.tag == "Enemy")
         {
             Explode();
         }

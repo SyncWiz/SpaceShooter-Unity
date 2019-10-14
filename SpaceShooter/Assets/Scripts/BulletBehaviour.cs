@@ -7,6 +7,7 @@ public class BulletBehaviour : MonoBehaviour
     //Public
     public Vector3 m_Direction;
     public float m_Speed;
+    public int m_Damage;
 
     //Private
     private Camera m_MainCamera;

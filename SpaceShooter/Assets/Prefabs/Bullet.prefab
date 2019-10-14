@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5562645288781215112}
   m_Layer: 0
   m_Name: Bullet
-  m_TagString: Untagged
+  m_TagString: MainShipBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -97,6 +97,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Direction: {x: 1, y: 0, z: 0}
   m_Speed: 10
+  m_Damage: 1
 --- !u!50 &5562645288781215115
 Rigidbody2D:
   serializedVersion: 4

@@ -7,6 +7,9 @@ TagManager:
   - MainShip
   - Enemy
   - CameraLimit
+  - MainShipBullet
+  - MainShipMissile
+  - MainShipExplosion
   layers:
   - Default
   - TransparentFX

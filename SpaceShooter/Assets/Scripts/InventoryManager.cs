@@ -41,22 +41,18 @@ public class InventoryManager : MonoBehaviour
 
     public void SetPrimarySlot(ItemType item)
     {
-        if(item == ItemType.BasicFire || item == ItemType.DoubleFire)
+        Debug.Assert(item == ItemType.BasicFire || item == ItemType.DoubleFire);
+        m_PrimarySlot.SetCurrentItem(item);
+        if (item == ItemType.DoubleFire)
         {
-            m_PrimarySlot.SetCurrentItem(item);
-            if(item == ItemType.DoubleFire)
-            {
-                Invoke("SetBasicFire", m_DoubleFireTime);
-            }
+            Invoke("SetBasicFire", m_DoubleFireTime);
         }
     }
 
     public void SetSecondarySlot(ItemType item)
     {
-        if (item == ItemType.Missile || item == ItemType.Invulnerability || item == ItemType.Empty)
-        {
-            m_SecondarySlot.SetCurrentItem(item);
-        }
+        Debug.Assert(item == ItemType.Missile || item == ItemType.Invulnerability || item == ItemType.Empty);
+        m_SecondarySlot.SetCurrentItem(item); 
     }
 
     public ItemType GetPrimarySlot()

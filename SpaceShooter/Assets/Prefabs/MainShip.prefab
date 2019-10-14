@@ -169,7 +169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b03ff9d6863e54b5cb11e73b4c348a11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Speed: 5
+  m_Speed: 3
   m_BulletOffsetX: 0.3
   m_TimeBetweenPrimaryShoots: 0.15
   m_InvulneravilityTime: 2
@@ -180,4 +180,5 @@ MonoBehaviour:
     type: 3}
   m_MissileBullet: {fileID: 1842107442458350483, guid: 9313a73bc6df04074aad4e4edf4c8561,
     type: 3}
+  m_BasicBulletRotation: {x: 0, y: 0, z: 0}
   m_InvulneravilityColor: {r: 1, g: 0.62184244, b: 0.0047169924, a: 1}

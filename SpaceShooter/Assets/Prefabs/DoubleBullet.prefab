@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7909374660982873633}
   m_Layer: 0
   m_Name: DoubleBullet
-  m_TagString: Untagged
+  m_TagString: MainShipBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -95,8 +95,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22496a126bf12a5418abe74fac2e936c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Direction: {x: 1, y: 0}
+  m_Direction: {x: 1, y: 0, z: 0}
   m_Speed: 15
+  m_Damage: 1
 --- !u!50 &7909374660982873632
 Rigidbody2D:
   serializedVersion: 4
