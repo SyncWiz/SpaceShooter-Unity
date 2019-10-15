@@ -239,13 +239,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Speed: 3
   m_BulletOffsetX: 0.3
+  m_DoubleBulletOffsetY: 0.15
   m_TimeBetweenPrimaryShoots: 0.15
   m_InvulnerabilityTime: 5
   m_DamageReceivedTime: 1.5
   m_TimeBetweenChangingColor: 0.15
   m_TimeUntilDie: 0.05
+  m_NumberOfBulletsInCircle: 0
+  m_RadiusCircleBullets: 0
   m_IsMainPlayer: 1
   m_CanRecieveDamage: 0
+  m_CanShoot: 1
   m_Health: 5
   m_BasicBullet: {fileID: 5562645288781215116, guid: 905b03ce8b75c97499bf06d6cd209c1a,
     type: 3}

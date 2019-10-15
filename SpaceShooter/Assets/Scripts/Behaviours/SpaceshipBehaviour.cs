@@ -22,6 +22,7 @@ public class SpaceshipBehaviour : MonoBehaviour
     //Public
     public float m_Speed;
     public float m_BulletOffsetX;
+    public float m_DoubleBulletOffsetY;
     public float m_TimeBetweenPrimaryShoots;
     public float m_InvulnerabilityTime;
     public float m_DamageReceivedTime;
@@ -114,8 +115,8 @@ public class SpaceshipBehaviour : MonoBehaviour
                     }
                 break;
                 case ItemType.DoubleFire:
-                    Vector3 bulletPosition1 = new Vector3(transform.position.x + m_BulletOffsetX, transform.position.y + 0.15f, transform.position.z);
-                    Vector3 bulletPosition2 = new Vector3(transform.position.x + m_BulletOffsetX, transform.position.y - 0.15f, transform.position.z);
+                    Vector3 bulletPosition1 = new Vector3(transform.position.x + m_BulletOffsetX, transform.position.y + m_DoubleBulletOffsetY, transform.position.z);
+                    Vector3 bulletPosition2 = new Vector3(transform.position.x + m_BulletOffsetX, transform.position.y - m_DoubleBulletOffsetY, transform.position.z);
                     Fire(bulletPosition1, m_DoubleBullet, Vector3.zero);
                     Fire(bulletPosition2, m_DoubleBullet, Vector3.zero);
                 break;
@@ -131,22 +132,16 @@ public class SpaceshipBehaviour : MonoBehaviour
         {
             case ItemType.Missile:
                 Vector3 missilePosition = new Vector3(transform.position.x + m_BulletOffsetX, transform.position.y, transform.position.z);
-                Instantiate(m_MissileBullet, missilePosition, Quaternion.identity);
+                Fire(missilePosition, m_MissileBullet, Vector3.zero);
                 //TODO sound
-                break;
+            break;
             case ItemType.Invulnerability:
-                m_CanRecieveDamage = false;
-                StopAllCoroutines();
-                CancelInvoke("ReturnFromInvulnerabilityState");
-                RecoverOriginalColor();
-                m_InvulnerabilityCircle.SetActive(true);
-                StartCoroutine(InvulnerabilityEffect(m_InvulnerabilityColor));
-                Invoke("ReturnFromInvulnerabilityState", m_InvulnerabilityTime);
+                ApplyInvulnerabilityPowerup();
                 //TODO sound
-                break;
+            break;
             case ItemType.Empty:
                 //TODO sound or somefeedback
-                break;
+            break;
         }
         m_Inventory.SetSecondarySlot(ItemType.Empty);
     }
@@ -206,10 +201,21 @@ public class SpaceshipBehaviour : MonoBehaviour
 
     }
 
-    public void Die()
+    void Die()
     {
         Destroy(gameObject);
         //TODO sound + effect
+    }
+
+    void ApplyInvulnerabilityPowerup()
+    {
+        m_CanRecieveDamage = false;
+        StopAllCoroutines();
+        CancelInvoke("ReturnFromInvulnerabilityState");
+        RecoverOriginalColor();
+        m_InvulnerabilityCircle.SetActive(true);
+        StartCoroutine(InvulnerabilityEffect(m_InvulnerabilityColor));
+        Invoke("ReturnFromInvulnerabilityState", m_InvulnerabilityTime);
     }
 
     void ReturnFromInvulnerabilityState()

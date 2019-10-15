@@ -257,8 +257,8 @@ MonoBehaviour:
     y: 0
     width: 345
     height: 563
-  m_MinSize: {x: 202, y: 222}
-  m_MaxSize: {x: 4002, y: 4022}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -453,9 +453,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 68310000
+      m_SelectedIDs: dc310000
       m_LastClickedID: 0
-      m_ExpandedIDs: 06fbffff6afbffff
+      m_ExpandedIDs: 56fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -617,20 +617,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Prefabs/Enemy
+    - Assets/Prefabs/Player
   m_ViewMode: 1
   m_StartGridSize: 96
   m_LastFolders:
-  - Assets/Prefabs/Enemy
+  - Assets/Prefabs/Player
   m_LastFoldersGridSize: 96
   m_LastProjectPath: D:\Projects\SpaceShooter\SpaceShooter
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: a2300000
-    m_LastClickedID: 12450
-    m_ExpandedIDs: 00000000662d00009e2d00004a2e0000622f0000bc31000000ca9a3b
+    m_SelectedIDs: 542f0000
+    m_LastClickedID: 12116
+    m_ExpandedIDs: 00000000782d0000b02d00005c2e0000742f0000ce31000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -658,7 +658,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000662d00009e2d00004a2e0000622f0000bc310000
+    m_ExpandedIDs: 00000000782d0000b02d00005c2e0000742f0000ce310000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -777,4 +777,4 @@ MonoBehaviour:
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 70
+  m_LastVerticalScrollValue: 265
