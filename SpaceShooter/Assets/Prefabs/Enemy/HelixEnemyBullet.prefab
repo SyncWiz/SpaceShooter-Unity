@@ -111,7 +111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22496a126bf12a5418abe74fac2e936c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Direction: {x: 0, y: 0, z: 0}
-  m_Speed: 0
+  m_Direction: {x: -0.40673655, y: 0.91354555, z: 0}
+  m_Speed: 2
   m_Damage: 1
   m_AllyBullet: 0

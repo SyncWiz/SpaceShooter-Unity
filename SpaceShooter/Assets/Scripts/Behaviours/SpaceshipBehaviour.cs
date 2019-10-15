@@ -136,6 +136,9 @@ public class SpaceshipBehaviour : MonoBehaviour
                 break;
             case ItemType.Invulnerability:
                 m_CanRecieveDamage = false;
+                StopAllCoroutines();
+                CancelInvoke("ReturnFromInvulnerabilityState");
+                RecoverOriginalColor();
                 m_InvulnerabilityCircle.SetActive(true);
                 StartCoroutine(InvulnerabilityEffect(m_InvulnerabilityColor));
                 Invoke("ReturnFromInvulnerabilityState", m_InvulnerabilityTime);
