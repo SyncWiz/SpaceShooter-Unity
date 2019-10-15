@@ -55,15 +55,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\BulletBehaviour.cs" />
-     <Compile Include="Assets\Scripts\DestroyAfterAnimationEnd.cs" />
-     <Compile Include="Assets\Scripts\InventoryManager.cs" />
-     <Compile Include="Assets\Scripts\KamikazeEnemyController.cs" />
-     <Compile Include="Assets\Scripts\MissileBehaviour.cs" />
-     <Compile Include="Assets\Scripts\PlayerController.cs" />
-     <Compile Include="Assets\Scripts\PowerUpBehaviour.cs" />
-     <Compile Include="Assets\Scripts\ShooterEnemyController.cs" />
-     <Compile Include="Assets\Scripts\SpaceshipBehaviour.cs" />
+     <Compile Include="Assets\Scripts\Behaviours\BulletBehaviour.cs" />
+     <Compile Include="Assets\Scripts\Behaviours\InventoryBehaviour.cs" />
+     <Compile Include="Assets\Scripts\Behaviours\MissileBehaviour.cs" />
+     <Compile Include="Assets\Scripts\Behaviours\PowerUpBehaviour.cs" />
+     <Compile Include="Assets\Scripts\Behaviours\SpaceshipBehaviour.cs" />
+     <Compile Include="Assets\Scripts\Enemy\HelixEnemyController.cs" />
+     <Compile Include="Assets\Scripts\Enemy\KamikazeEnemyController.cs" />
+     <Compile Include="Assets\Scripts\Enemy\ReceiveDamageEnemy.cs" />
+     <Compile Include="Assets\Scripts\Enemy\ShooterEnemyController.cs" />
+     <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\Utils\DestroyAfterAnimationEnd.cs" />
+     <Compile Include="Assets\Scripts\Utils\DestroyWhenNoPlayable.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>D:/Projects/SpaceShooter/SpaceShooter/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
