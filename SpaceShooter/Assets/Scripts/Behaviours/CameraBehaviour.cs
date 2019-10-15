@@ -8,7 +8,6 @@ public class CameraBehaviour : MonoBehaviour
     public Vector3 m_Direction;
     public float m_Speed;
 
-    // Update is called once per frame
     void Update()
     {
         transform.position += m_Direction * m_Speed * Time.deltaTime;

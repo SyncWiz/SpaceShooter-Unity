@@ -95,6 +95,7 @@ GameObject:
   - component: {fileID: 8436499662489539847}
   - component: {fileID: 804363802}
   - component: {fileID: 2002030046}
+  - component: {fileID: 6794697349627367146}
   m_Layer: 0
   m_Name: MainShip
   m_TagString: MainShip
@@ -242,7 +243,6 @@ MonoBehaviour:
   m_DoubleBulletOffsetY: 0.15
   m_TimeBetweenPrimaryShoots: 0.15
   m_InvulnerabilityTime: 5
-  m_DamageReceivedTime: 1.5
   m_TimeBetweenChangingColor: 0.15
   m_TimeUntilDie: 0.05
   m_NumberOfBulletsInCircle: 0
@@ -260,7 +260,6 @@ MonoBehaviour:
   m_InvulnerabilityCircle: {fileID: 382514103}
   m_BasicBulletRotation: {x: 0, y: 0, z: 0}
   m_InvulnerabilityColor: {r: 1, g: 0.88550174, b: 0, a: 1}
-  m_DamageReceivedColor: {r: 1, g: 0, b: 0.08972883, a: 1}
 --- !u!114 &2002030046
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -274,3 +273,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_DoubleFireTime: 5
+--- !u!114 &6794697349627367146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8436499662489539850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b5d986cf107f504da9ff0d343cab183, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_DamageReceivedColor: {r: 0.98039216, g: 0.06666667, b: 0.023529412, a: 1}
+  m_DamageReceivedTime: 0.05

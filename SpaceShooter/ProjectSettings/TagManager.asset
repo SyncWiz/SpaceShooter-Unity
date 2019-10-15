@@ -11,6 +11,7 @@ TagManager:
   - MainShipMissile
   - MainShipExplosion
   - EnemyBullet
+  - Asteroid
   layers:
   - Default
   - TransparentFX

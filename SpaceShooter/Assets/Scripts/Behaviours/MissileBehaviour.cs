@@ -34,8 +34,7 @@ public class MissileBehaviour : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        //TODO update this in the future
-        if (collider.gameObject.tag == "Enemy")
+        if (collider.gameObject.tag == "Enemy" || collider.gameObject.tag == "Asteroid")
         {
             Explode();
         }

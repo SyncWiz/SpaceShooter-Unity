@@ -55,6 +55,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Behaviours\AsteroidBehaviour.cs" />
      <Compile Include="Assets\Scripts\Behaviours\BulletBehaviour.cs" />
      <Compile Include="Assets\Scripts\Behaviours\CameraBehaviour.cs" />
      <Compile Include="Assets\Scripts\Behaviours\InventoryBehaviour.cs" />
@@ -68,6 +69,8 @@
      <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
      <Compile Include="Assets\Scripts\Utils\DestroyAfterAnimationEnd.cs" />
      <Compile Include="Assets\Scripts\Utils\DestroyWhenNoPlayable.cs" />
+     <Compile Include="Assets\Scripts\Utils\MathUtils.cs" />
+     <Compile Include="Assets\Scripts\Utils\ReceiveDamageEffect.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>D:/Projects/SpaceShooter/SpaceShooter/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>

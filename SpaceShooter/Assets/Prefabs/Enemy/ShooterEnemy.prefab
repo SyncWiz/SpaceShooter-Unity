@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 1858064412}
   - component: {fileID: 4294185126130768283}
   - component: {fileID: 1858064413}
+  - component: {fileID: 1860712955}
   m_Layer: 0
   m_Name: ShooterEnemy
   m_TagString: Enemy
@@ -101,9 +102,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Speed: 2
   m_BulletOffsetX: -0.5
+  m_DoubleBulletOffsetY: 0
   m_TimeBetweenPrimaryShoots: 1
   m_InvulnerabilityTime: 0
-  m_DamageReceivedTime: 0.05
   m_TimeBetweenChangingColor: 0
   m_TimeUntilDie: 0.05
   m_NumberOfBulletsInCircle: 0
@@ -119,7 +120,6 @@ MonoBehaviour:
   m_InvulnerabilityCircle: {fileID: 0}
   m_BasicBulletRotation: {x: 0, y: 0, z: 90}
   m_InvulnerabilityColor: {r: 0, g: 0, b: 0, a: 0}
-  m_DamageReceivedColor: {r: 0.98039216, g: 0.06806724, b: 0.023529401, a: 1}
 --- !u!114 &3278016447370799487
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -225,3 +225,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aaa59c260d8825e48ab659c821e1e708, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1860712955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3278016447370799484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b5d986cf107f504da9ff0d343cab183, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_DamageReceivedColor: {r: 0.98039216, g: 0.06666667, b: 0.023529412, a: 1}
+  m_DamageReceivedTime: 0.05

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    //Private
     SpaceshipBehaviour m_MainSpaceshipBehaviour;
 
     private void Start()
@@ -35,12 +36,11 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        //TODO update this in the future
         if (collider.gameObject.tag == "EnemyBullet")
         {
             m_MainSpaceshipBehaviour.ReceiveDamage(collider.gameObject.GetComponent<BulletBehaviour>().m_Damage);
         }
-        if (collider.gameObject.tag == "Enemy")
+        if (collider.gameObject.tag == "Enemy" || collider.gameObject.tag == "Asteroid")
         {
             m_MainSpaceshipBehaviour.ReceiveDamage(1);
         }
@@ -48,12 +48,11 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D collider)
     {
-        //TODO update this in the future
         if (collider.gameObject.tag == "EnemyBullet")
         {
             m_MainSpaceshipBehaviour.ReceiveDamage(collider.gameObject.GetComponent<BulletBehaviour>().m_Damage);
         }
-        if (collider.gameObject.tag == "Enemy")
+        if (collider.gameObject.tag == "Enemy" || collider.gameObject.tag == "Asteroid")
         {
             m_MainSpaceshipBehaviour.ReceiveDamage(1);
         }

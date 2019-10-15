@@ -25,7 +25,6 @@ public class SpaceshipBehaviour : MonoBehaviour
     public float m_DoubleBulletOffsetY;
     public float m_TimeBetweenPrimaryShoots;
     public float m_InvulnerabilityTime;
-    public float m_DamageReceivedTime;
     public float m_TimeBetweenChangingColor;
     public float m_TimeUntilDie;
     public float m_NumberOfBulletsInCircle;
@@ -41,7 +40,6 @@ public class SpaceshipBehaviour : MonoBehaviour
     public GameObject m_InvulnerabilityCircle;
     public Vector3 m_BasicBulletRotation;
     public Color m_InvulnerabilityColor;
-    public Color m_DamageReceivedColor;
 
     //Private
     private float m_CurrentTime;
@@ -50,13 +48,15 @@ public class SpaceshipBehaviour : MonoBehaviour
     private Color m_OriginalColor;
     private Rigidbody2D m_RigidBody2D;
     private BulletBehaviour m_BulletBehaviour;
+    private ReceiveDamageEffect m_ReceiveDamageEffect;
 
     #region General behaviour  
     void Start()
     {
         m_Inventory = GetComponent<InventoryBehaviour>();
         m_SpriteRenderer = GetComponent<SpriteRenderer>();
-        if(m_CanShoot)
+        m_ReceiveDamageEffect = GetComponent<ReceiveDamageEffect>();
+        if (m_CanShoot)
         {
             m_BulletBehaviour = m_BasicBullet.GetComponent<BulletBehaviour>();
         }
@@ -160,7 +160,7 @@ public class SpaceshipBehaviour : MonoBehaviour
         float currentAngle = 0;
         for (int i = 0; i < m_NumberOfBulletsInCircle; i++)
         {
-            Vector3 position = GetPositionAtCircle(center, m_RadiusCircleBullets, currentAngle);
+            Vector3 position = MathUtils.GetPositionAtCircle(center, m_RadiusCircleBullets, currentAngle);
             currentAngle += angleStep;
             Vector3 direction = position - transform.position;
             direction.z = 0;
@@ -179,18 +179,15 @@ public class SpaceshipBehaviour : MonoBehaviour
 
         m_Health -= damage;
 
-        if (m_IsMainPlayer)
+        if(m_IsMainPlayer)
         {
             m_CanRecieveDamage = false;
-            StartCoroutine(InvulnerabilityEffect(m_DamageReceivedColor));
-            Invoke("ReturnFromInvulnerabilityState", m_DamageReceivedTime);
-            //TODO sound
+            StartCoroutine(InvulnerabilityEffect(m_ReceiveDamageEffect.m_DamageReceivedColor));
+            Invoke("ReturnFromInvulnerabilityState", m_ReceiveDamageEffect.m_DamageReceivedTime);
         }
         else
         {
-            m_SpriteRenderer.color = m_DamageReceivedColor;
-            Invoke("RecoverOriginalColor", m_DamageReceivedTime);
-            //TODO sound
+            m_ReceiveDamageEffect.ApplyEffect();
         }
 
         if (m_Health <= 0)
@@ -198,7 +195,6 @@ public class SpaceshipBehaviour : MonoBehaviour
             Invoke("Die", m_TimeUntilDie);
             //TODO gameflow controller force endgame
         }
-
     }
 
     void Die()
@@ -212,7 +208,7 @@ public class SpaceshipBehaviour : MonoBehaviour
         m_CanRecieveDamage = false;
         StopAllCoroutines();
         CancelInvoke("ReturnFromInvulnerabilityState");
-        RecoverOriginalColor();
+        m_SpriteRenderer.color = m_OriginalColor;
         m_InvulnerabilityCircle.SetActive(true);
         StartCoroutine(InvulnerabilityEffect(m_InvulnerabilityColor));
         Invoke("ReturnFromInvulnerabilityState", m_InvulnerabilityTime);
@@ -236,26 +232,10 @@ public class SpaceshipBehaviour : MonoBehaviour
             }
             else if (m_SpriteRenderer.color != m_OriginalColor)
             {
-                RecoverOriginalColor();
+                m_SpriteRenderer.color = m_OriginalColor;
             }
             yield return new WaitForSeconds(m_TimeBetweenChangingColor);
         }
-    }
-    #endregion
-
-    #region Utils
-    void RecoverOriginalColor()
-    {
-        m_SpriteRenderer.color = m_OriginalColor;
-    }
-
-    Vector3 GetPositionAtCircle(Vector3 center, float radius, float degreeAngle)
-    {
-        Vector3 position;
-        position.x = center.x + (radius * Mathf.Sin(degreeAngle * Mathf.Deg2Rad));
-        position.y = center.y + (radius * Mathf.Cos(degreeAngle * Mathf.Deg2Rad));
-        position.z = center.z;
-        return position;
     }
     #endregion
 }

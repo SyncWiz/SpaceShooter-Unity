@@ -30,7 +30,10 @@ public class BulletBehaviour : MonoBehaviour
     void Update()
     {
         Move();
-        CheckForDestroy();
+        if(!MathUtils.IsPointInsideCameraView(transform.position))
+        {
+            Destroy(gameObject);
+        }
     }
 
     void Move()
@@ -38,18 +41,8 @@ public class BulletBehaviour : MonoBehaviour
         transform.position += m_Direction * m_Speed * Time.deltaTime;
     }
 
-    void CheckForDestroy()
-    {
-        Vector3 viewPosition = m_MainCamera.WorldToViewportPoint(transform.position);
-        if (viewPosition.x > 1.0f || viewPosition.x < 0.0f || viewPosition.y > 1.0f || viewPosition.y < 0.0f)
-        {
-            Destroy(gameObject);
-        }
-    }
-
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        //TODO update this in the future
         if (collider.gameObject.tag == m_TagDetection)
         {
             if(m_AllyBullet)
@@ -57,6 +50,14 @@ public class BulletBehaviour : MonoBehaviour
                 Destroy(gameObject);
             }
             else if(collider.gameObject.GetComponent<SpaceshipBehaviour>().m_CanRecieveDamage)
+            {
+                Destroy(gameObject);
+            }
+        }
+
+        if(collider.gameObject.tag == "Asteroid")
+        {
+            if (m_AllyBullet)
             {
                 Destroy(gameObject);
             }
