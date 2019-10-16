@@ -9,15 +9,18 @@ public class BulletBehaviour : MonoBehaviour
     public float m_Speed;
     public int m_Damage;
     public bool m_AllyBullet;
+    public bool m_SinusoidalMovement;
 
     //Private
     private Camera m_MainCamera;
     private string m_TagDetection;
+    private Vector3 m_StartPosition;
 
     void Start()
     {
         m_MainCamera = Camera.main;
-        if(m_AllyBullet)
+        m_StartPosition = transform.position;
+        if (m_AllyBullet)
         {
             m_TagDetection = "Enemy";
         }
@@ -38,7 +41,14 @@ public class BulletBehaviour : MonoBehaviour
 
     void Move()
     {
-        transform.position += m_Direction * m_Speed * Time.deltaTime;
+        if(!m_SinusoidalMovement)
+        {
+            transform.position += m_Direction * m_Speed * Time.deltaTime;
+        }
+        else
+        {
+            transform.position = new Vector3(transform.position.x + (m_Direction.x * m_Speed * Time.deltaTime), m_StartPosition.y + Mathf.Sin(Time.time * m_Speed), 0.0f);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collider)

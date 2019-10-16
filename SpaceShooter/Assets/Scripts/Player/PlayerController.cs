@@ -40,6 +40,10 @@ public class PlayerController : MonoBehaviour
         {
             m_MainSpaceshipBehaviour.ReceiveDamage(collider.gameObject.GetComponent<BulletBehaviour>().m_Damage);
         }
+        if (collider.gameObject.tag == "EnemyMissile")
+        {
+            m_MainSpaceshipBehaviour.ReceiveDamage(collider.gameObject.GetComponent<MissileBehaviour>().m_Damage);
+        }
         if (collider.gameObject.tag == "Enemy" || collider.gameObject.tag == "Asteroid")
         {
             m_MainSpaceshipBehaviour.ReceiveDamage(1);
@@ -51,6 +55,10 @@ public class PlayerController : MonoBehaviour
         if (collider.gameObject.tag == "EnemyBullet")
         {
             m_MainSpaceshipBehaviour.ReceiveDamage(collider.gameObject.GetComponent<BulletBehaviour>().m_Damage);
+        }
+        if(collider.gameObject.tag == "EnemyMissile")
+        {
+            m_MainSpaceshipBehaviour.ReceiveDamage(collider.gameObject.GetComponent<MissileBehaviour>().m_Damage);
         }
         if (collider.gameObject.tag == "Enemy" || collider.gameObject.tag == "Asteroid")
         {

@@ -14,7 +14,8 @@ public enum EnemyStates
 public enum FireType
 {
     DEFAULT,
-    CIRCLE
+    CIRCLE,
+    SINUSOIDAL
 }
 
 public class SpaceshipBehaviour : MonoBehaviour
@@ -39,6 +40,7 @@ public class SpaceshipBehaviour : MonoBehaviour
     public GameObject m_MissileBullet;
     public GameObject m_InvulnerabilityCircle;
     public Vector3 m_BasicBulletRotation;
+    public Vector3 m_MissileBulletRotation;
     public Color m_InvulnerabilityColor;
 
     //Private
@@ -49,6 +51,7 @@ public class SpaceshipBehaviour : MonoBehaviour
     private Rigidbody2D m_RigidBody2D;
     private BulletBehaviour m_BulletBehaviour;
     private ReceiveDamageEffect m_ReceiveDamageEffect;
+    private Vector3 m_OriginalBulletDirection;
 
     #region General behaviour  
     void Start()
@@ -59,6 +62,7 @@ public class SpaceshipBehaviour : MonoBehaviour
         if (m_CanShoot)
         {
             m_BulletBehaviour = m_BasicBullet.GetComponent<BulletBehaviour>();
+            m_OriginalBulletDirection = m_BulletBehaviour.m_Direction;
         }
         m_OriginalColor = m_SpriteRenderer.color;
         m_RigidBody2D = GetComponent<Rigidbody2D>();
@@ -74,6 +78,14 @@ public class SpaceshipBehaviour : MonoBehaviour
     void UpdateTimer()
     {
         m_CurrentTime += Time.deltaTime;
+    }
+
+    void OnApplicationQuit()
+    {
+        if (m_CanShoot)
+        {
+            m_BulletBehaviour.m_Direction = m_OriginalBulletDirection;
+        }
     }
     #endregion
 
@@ -107,10 +119,20 @@ public class SpaceshipBehaviour : MonoBehaviour
                     if(fireType == FireType.DEFAULT)
                     {
                         Vector3 bulletPosition = new Vector3(transform.position.x + m_BulletOffsetX, transform.position.y, transform.position.z);
+                        m_BulletBehaviour.m_SinusoidalMovement = false;
+                        m_BulletBehaviour.m_Direction = m_OriginalBulletDirection;
+                        Fire(bulletPosition, m_BasicBullet, m_BasicBulletRotation);
+                    }
+                    else if(fireType == FireType.SINUSOIDAL)
+                    {
+                        Vector3 bulletPosition = new Vector3(transform.position.x + m_BulletOffsetX, transform.position.y, transform.position.z);
+                        m_BulletBehaviour.m_Direction = m_OriginalBulletDirection;
+                        m_BulletBehaviour.m_SinusoidalMovement = true;
                         Fire(bulletPosition, m_BasicBullet, m_BasicBulletRotation);
                     }
                     else if(fireType == FireType.CIRCLE)
                     {
+                        m_BulletBehaviour.m_SinusoidalMovement = false;
                         FireInCircle(m_BasicBullet);
                     }
                 break;
@@ -132,7 +154,7 @@ public class SpaceshipBehaviour : MonoBehaviour
         {
             case ItemType.Missile:
                 Vector3 missilePosition = new Vector3(transform.position.x + m_BulletOffsetX, transform.position.y, transform.position.z);
-                Fire(missilePosition, m_MissileBullet, Vector3.zero);
+                Fire(missilePosition, m_MissileBullet, m_MissileBulletRotation);
                 //TODO sound
             break;
             case ItemType.Invulnerability:
@@ -203,7 +225,7 @@ public class SpaceshipBehaviour : MonoBehaviour
         //TODO sound + effect
     }
 
-    void ApplyInvulnerabilityPowerup()
+    public void ApplyInvulnerabilityPowerup()
     {
         m_CanRecieveDamage = false;
         StopAllCoroutines();
