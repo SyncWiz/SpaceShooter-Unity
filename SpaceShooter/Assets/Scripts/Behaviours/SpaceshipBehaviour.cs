@@ -55,6 +55,11 @@ public class SpaceshipBehaviour : MonoBehaviour
     private ReceiveDamageEffect m_ReceiveDamageEffect;
     private Vector3 m_OriginalBulletDirection;
 
+    void Awake()
+    {
+        m_CanRecieveDamage = true;
+    }
+
     #region General behaviour  
     void Start()
     {
@@ -69,7 +74,6 @@ public class SpaceshipBehaviour : MonoBehaviour
         m_OriginalColor = m_SpriteRenderer.color;
         m_RigidBody2D = GetComponent<Rigidbody2D>();
         m_CurrentTime = 0.0f;
-        m_CanRecieveDamage = true;
     }
 
     void Update()

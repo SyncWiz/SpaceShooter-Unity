@@ -45,6 +45,7 @@ public class BossController : MonoBehaviour
         m_SpriteRenderer = GetComponent<SpriteRenderer>();
         m_ReceiveDamageEffect = GetComponent<ReceiveDamageEffect>();
         m_MaxHealth = m_SpaceshipBehaviour.m_Health;
+        m_SpaceshipBehaviour.m_CanRecieveDamage = false;
     }
 
     void Update()
@@ -67,6 +68,7 @@ public class BossController : MonoBehaviour
         m_IsInsideCamera = MathUtils.IsPointInsideCameraView(position);
         if(m_IsInsideCamera)
         {
+            m_SpaceshipBehaviour.m_CanRecieveDamage = true;
             //TODO sound or something
         }
     }
