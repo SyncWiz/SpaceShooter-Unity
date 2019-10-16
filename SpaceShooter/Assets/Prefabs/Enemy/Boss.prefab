@@ -181,6 +181,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_DamageReceivedColor: {r: 0.98039216, g: 0.06666667, b: 0.023529412, a: 1}
   m_DamageReceivedTime: 0.05
+  m_OriginalColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!70 &6502586273401944009
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -213,15 +214,15 @@ MonoBehaviour:
   m_BulletOffsetX: -2
   m_DoubleBulletOffsetY: 0
   m_TimeBetweenPrimaryShoots: 0.5
-  m_InvulnerabilityTime: 2
+  m_InvulnerabilityTime: 1
   m_TimeBetweenChangingColor: 0.1
   m_TimeUntilDie: 0.5
   m_NumberOfBulletsInCircle: 25
-  m_RadiusCircleBullets: 1
+  m_RadiusCircleBullets: 1.5
   m_IsMainPlayer: 0
   m_CanRecieveDamage: 0
   m_CanShoot: 1
-  m_Health: 200
+  m_Health: 150
   m_BasicBullet: {fileID: 1318475905130476087, guid: ab5599853ea2add40977dbaf1885a6b0,
     type: 3}
   m_DoubleBullet: {fileID: 1318475905130476087, guid: ab5599853ea2add40977dbaf1885a6b0,
@@ -232,6 +233,7 @@ MonoBehaviour:
   m_BasicBulletRotation: {x: 0, y: 0, z: 0}
   m_MissileBulletRotation: {x: 0, y: 0, z: 90}
   m_InvulnerabilityColor: {r: 0.38074043, g: 0.8679245, b: 0.47004268, a: 1}
+  m_OriginalColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!114 &8618599447430186234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -244,10 +246,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1965fb5e2a86af49b9b3f0e0682cb02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_TimeBetweenActions: 1
+  m_TimeBetweenActions: 1.5
+  m_TimeBetweenActionsInRage: 0.5
   m_TopLimit: 2.3
   m_BottomLimit: -2.4
+  m_HorizontalSpeed: 1
   m_VerticalSpeed: 1
+  m_VerticalSpeedInRage: 2.5
+  m_CameraOffsetXToStart: 3
+  m_ColorRageMode: {r: 1, g: 0.5780301, b: 0.16862744, a: 1}
 --- !u!114 &8618599447430186235
 MonoBehaviour:
   m_ObjectHideFlags: 0

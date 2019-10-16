@@ -14,48 +14,84 @@ public class BossController : MonoBehaviour
 
     //Public 
     public float m_TimeBetweenActions;
+    public float m_TimeBetweenActionsInRage;
     public float m_TopLimit;
     public float m_BottomLimit;
+    public float m_HorizontalSpeed;
     public float m_VerticalSpeed;
+    public float m_VerticalSpeedInRage;
+    public float m_CameraOffsetXToStart;
+    public Color m_ColorRageMode;
 
     //Private
     BossStates m_CurrentState;
     SpaceshipBehaviour m_SpaceshipBehaviour;
     InventoryBehaviour m_InventoryBehaviour;
-    private bool dirTop = true;
+    ReceiveDamageEffect m_ReceiveDamageEffect;
+    private bool m_MovingTop;
+    private bool m_IsRageMode;
+    private bool m_IsInsideCamera;
     private float m_CurrentTime;
-
+    private int m_MaxHealth;
+    private SpriteRenderer m_SpriteRenderer;
 
     void Start()
     {
+        m_IsInsideCamera = false;
+        m_MovingTop = true;
+        m_IsRageMode = false;
         m_SpaceshipBehaviour = GetComponent<SpaceshipBehaviour>();
         m_InventoryBehaviour = GetComponent<InventoryBehaviour>();
+        m_SpriteRenderer = GetComponent<SpriteRenderer>();
+        m_ReceiveDamageEffect = GetComponent<ReceiveDamageEffect>();
+        m_MaxHealth = m_SpaceshipBehaviour.m_Health;
     }
 
     void Update()
     {
-        Move();
-        UpdateTimer();
-        UpdateState();
+        if(!m_IsInsideCamera)
+        {
+            CheckIsInsideCamera();
+        }
+        else
+        {
+            CheckDirection();
+            UpdateTimer();
+            UpdateState();
+        }
     }
 
-    void Move()
+    void CheckIsInsideCamera()
     {
-        transform.position += new Vector3(1, 0, 0) * 1 * Time.deltaTime;
+        Vector3 position = new Vector3(transform.position.x + m_CameraOffsetXToStart, transform.position.y, transform.position.z);
+        m_IsInsideCamera = MathUtils.IsPointInsideCameraView(position);
+        if(m_IsInsideCamera)
+        {
+            //TODO sound or something
+        }
+    }
 
-        if (dirTop)
-            transform.Translate(new Vector3(1, 0, 0) * m_VerticalSpeed * Time.deltaTime);
+    void CheckDirection()
+    {
+        if (m_MovingTop)
+        {
+            m_SpaceshipBehaviour.MoveTranslate(new Vector3(m_VerticalSpeed * Time.deltaTime, 0, 0));
+        }
         else
-            transform.Translate(new Vector3(-1, 0, 0) * m_VerticalSpeed * Time.deltaTime);
+        {
+            m_SpaceshipBehaviour.MoveTranslate(new Vector3(-m_VerticalSpeed * Time.deltaTime, 0, 0));
+
+        }
+        m_SpaceshipBehaviour.MoveTranslate(new Vector3(0, -m_HorizontalSpeed * Time.deltaTime, 0));
 
         if (transform.position.y >= m_TopLimit)
         {
-            dirTop = false;
+            m_MovingTop = false;
         }
 
         if (transform.position.y <= m_BottomLimit)
         {
-            dirTop = true;
+            m_MovingTop = true;
         }
     }
 
@@ -68,6 +104,7 @@ public class BossController : MonoBehaviour
     {
         if(m_CurrentTime >= m_TimeBetweenActions)
         {
+            //TODO sounds for each one
             BossStates action = (BossStates) Random.Range(0, 4);
             switch (action)
             {
@@ -88,5 +125,21 @@ public class BossController : MonoBehaviour
             m_CurrentTime = 0;
         }
 
+        if(!m_IsRageMode && m_SpaceshipBehaviour.m_Health <= m_MaxHealth / 2)
+        {
+            EnterRageMode();
+        }
+    }
+
+    void EnterRageMode()
+    {
+        //TODO sound
+        Debug.Log("Enter Rage Mode!");
+        m_IsRageMode = true;
+        m_ReceiveDamageEffect.m_OriginalColor = m_ColorRageMode;
+        m_SpaceshipBehaviour.m_OriginalColor = m_ColorRageMode;
+        m_SpriteRenderer.color = m_ColorRageMode;
+        m_TimeBetweenActions = m_TimeBetweenActionsInRage;
+        m_VerticalSpeed = m_VerticalSpeedInRage;
     }
 }

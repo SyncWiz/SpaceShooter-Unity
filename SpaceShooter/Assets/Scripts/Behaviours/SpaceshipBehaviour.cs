@@ -42,12 +42,14 @@ public class SpaceshipBehaviour : MonoBehaviour
     public Vector3 m_BasicBulletRotation;
     public Vector3 m_MissileBulletRotation;
     public Color m_InvulnerabilityColor;
+    [HideInInspector]
+    public Color m_OriginalColor;
 
     //Private
     private float m_CurrentTime;
     private InventoryBehaviour m_Inventory;
     private SpriteRenderer m_SpriteRenderer;
-    private Color m_OriginalColor;
+    
     private Rigidbody2D m_RigidBody2D;
     private BulletBehaviour m_BulletBehaviour;
     private ReceiveDamageEffect m_ReceiveDamageEffect;
@@ -104,6 +106,11 @@ public class SpaceshipBehaviour : MonoBehaviour
     public void MoveTo(Vector3 destination)
     {
         transform.position = Vector3.Lerp(transform.position, destination, m_Speed * Time.deltaTime);
+    }
+
+    public void MoveTranslate(Vector3 point)
+    {
+        transform.Translate(point);
     }
     #endregion
 

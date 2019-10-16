@@ -7,10 +7,11 @@ public class ReceiveDamageEffect : MonoBehaviour
     //Public 
     public Color m_DamageReceivedColor;
     public float m_DamageReceivedTime;
+    [HideInInspector]
+    public Color m_OriginalColor;
 
     //Private
     SpriteRenderer m_SpriteRenderer;
-    Color m_OriginalColor;
 
     void Start()
     {

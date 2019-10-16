@@ -118,9 +118,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Speed: 12
   m_TimeToExplode: 1.5
-  m_Damage: 5
+  m_NumberOfBulletsAfterExplosion: 0
+  m_ExplosionRadius: 0
+  m_Damage: 15
   m_Explosion: {fileID: 135273953706699462, guid: f02f21ef0f29e41bd831664968d73946,
     type: 3}
+  m_BasicBullet: {fileID: 0}
   m_Direction: {x: 1, y: 0, z: 0}
   m_IsAlly: 1
 --- !u!50 &1842107442458350484
