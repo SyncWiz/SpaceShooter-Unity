@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 5029467008885329788}
   - component: {fileID: 5029467008885329731}
   - component: {fileID: 5029467008885329730}
-  - component: {fileID: 95588958}
   - component: {fileID: 1399484733}
   - component: {fileID: 1399484734}
   - component: {fileID: 491209073}
+  - component: {fileID: 1113130767}
   m_Layer: 0
   m_Name: KamikazeEnemyUniform
   m_TagString: Enemy
@@ -32,7 +32,7 @@ Transform:
   m_GameObject: {fileID: 5029467008885329729}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.99, y: 0.01, z: 0}
-  m_LocalScale: {x: 1.4357, y: 1.4357, z: 1.4357}
+  m_LocalScale: {x: 0.108600445, y: 0.108600445, z: 0.108600445}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 24c0ce31536736a4c93129a5cb9de2c2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 860a2774974ce584abd750ad32a59a72, type: 3}
   m_Color: {r: 0.4138483, g: 0.7636338, b: 0.9433962, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -98,7 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2dbb0f763d519134b9bbfda08479a551, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Direction: {x: -1, y: 5, z: 0}
+  m_Direction: {x: -1, y: 1, z: 0}
   m_ShipType: 0
   m_MainShip: {fileID: 0}
 --- !u!114 &5029467008885329730
@@ -113,7 +113,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b03ff9d6863e54b5cb11e73b4c348a11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Speed: 1
+  m_Speed: 1.5
   m_BulletOffsetX: 0
   m_DoubleBulletOffsetY: 0
   m_TimeBetweenPrimaryShoots: 0
@@ -132,32 +132,6 @@ MonoBehaviour:
   m_InvulnerabilityCircle: {fileID: 0}
   m_BasicBulletRotation: {x: 0, y: 0, z: 0}
   m_InvulnerabilityColor: {r: 0, g: 0, b: 0, a: 0}
---- !u!61 &95588958
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5029467008885329729}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.32, y: 0.32}
-    newSize: {x: 0.32, y: 0.32}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.32, y: 0.32}
-  m_EdgeRadius: 0
 --- !u!114 &1399484733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -197,3 +171,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_DamageReceivedColor: {r: 0.98039216, g: 0.06666667, b: 0.023529412, a: 1}
   m_DamageReceivedTime: 0.05
+--- !u!61 &1113130767
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5029467008885329729}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 10.24, y: 4.57}
+    newSize: {x: 0.32, y: 0.32}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 10.24, y: 4.57}
+  m_EdgeRadius: 0
