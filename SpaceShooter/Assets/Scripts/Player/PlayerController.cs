@@ -14,7 +14,10 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        ProcessInput();
+        if(!GameFlowManager.Instance.IsGamePaused())
+        {
+            ProcessInput();
+        }
     }
 
     void ProcessInput()

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
+
 public enum EnemyStates
 {
     IDLE,
@@ -21,6 +22,7 @@ public enum FireType
 public class SpaceshipBehaviour : MonoBehaviour
 {
     //Public
+    public int m_Points;
     public float m_Speed;
     public float m_BulletOffsetX;
     public float m_DoubleBulletOffsetY;
@@ -44,6 +46,7 @@ public class SpaceshipBehaviour : MonoBehaviour
     public Color m_InvulnerabilityColor;
     [HideInInspector]
     public Color m_OriginalColor;
+    public UnityEvent m_HealthChangedEvent;
 
     //Private
     private float m_CurrentTime;
@@ -215,6 +218,7 @@ public class SpaceshipBehaviour : MonoBehaviour
         if(m_IsMainPlayer)
         {
             m_CanRecieveDamage = false;
+            m_HealthChangedEvent.Invoke();
             StartCoroutine(InvulnerabilityEffect(m_ReceiveDamageEffect.m_DamageReceivedColor));
             Invoke("ReturnFromInvulnerabilityState", m_ReceiveDamageEffect.m_DamageReceivedTime);
         }
@@ -232,6 +236,14 @@ public class SpaceshipBehaviour : MonoBehaviour
 
     void Die()
     {
+        if(m_IsMainPlayer)
+        {
+            GameFlowManager.Instance.EndGame();
+        }
+        else
+        {
+            GameFlowManager.Instance.AddScorePoints(m_Points);
+        }
         Destroy(gameObject);
         //TODO sound + effect
     }

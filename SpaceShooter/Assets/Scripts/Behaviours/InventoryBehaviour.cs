@@ -1,6 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.Events;
 
 public enum ItemType
 {
@@ -29,6 +28,9 @@ public class InventoryBehaviour : MonoBehaviour
 
     //Public
     public float m_DoubleFireTime;
+    public bool m_IsMainInventory;
+    public UnityEvent m_PrimarySlotChangedEvent;
+    public UnityEvent m_SecondarySlotChangedEvent;
 
     //Private
     private InventorySlot m_PrimarySlot, m_SecondarySlot;
@@ -43,6 +45,10 @@ public class InventoryBehaviour : MonoBehaviour
     {
         Debug.Assert(item == ItemType.BasicFire || item == ItemType.DoubleFire);
         m_PrimarySlot.SetCurrentItem(item);
+        if(m_IsMainInventory)
+        {
+            m_PrimarySlotChangedEvent.Invoke();
+        }
         if (item == ItemType.DoubleFire)
         {
             Invoke("SetBasicFire", m_DoubleFireTime);
@@ -52,7 +58,11 @@ public class InventoryBehaviour : MonoBehaviour
     public void SetSecondarySlot(ItemType item)
     {
         Debug.Assert(item == ItemType.Missile || item == ItemType.Invulnerability || item == ItemType.Empty);
-        m_SecondarySlot.SetCurrentItem(item); 
+        m_SecondarySlot.SetCurrentItem(item);
+        if (m_IsMainInventory)
+        {
+            m_SecondarySlotChangedEvent.Invoke();
+        }
     }
 
     public ItemType GetPrimarySlot()

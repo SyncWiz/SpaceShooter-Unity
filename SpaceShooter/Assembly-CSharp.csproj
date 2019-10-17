@@ -67,6 +67,14 @@
      <Compile Include="Assets\Scripts\Enemy\KamikazeEnemyController.cs" />
      <Compile Include="Assets\Scripts\Enemy\ReceiveDamageEnemy.cs" />
      <Compile Include="Assets\Scripts\Enemy\ShooterEnemyController.cs" />
+     <Compile Include="Assets\Scripts\General\BackgroundController.cs" />
+     <Compile Include="Assets\Scripts\General\GameFlowManager.cs" />
+     <Compile Include="Assets\Scripts\General\UI\DeadMenuController.cs" />
+     <Compile Include="Assets\Scripts\General\UI\HUDController.cs" />
+     <Compile Include="Assets\Scripts\General\UI\MainGameUIController.cs" />
+     <Compile Include="Assets\Scripts\General\UI\MainMenuController.cs" />
+     <Compile Include="Assets\Scripts\General\UI\PauseMenuController.cs" />
+     <Compile Include="Assets\Scripts\General\UI\UIController.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
      <Compile Include="Assets\Scripts\Utils\DestroyAfterAnimationEnd.cs" />
      <Compile Include="Assets\Scripts\Utils\DestroyWhenNoPlayable.cs" />
