@@ -111,6 +111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b03ff9d6863e54b5cb11e73b4c348a11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Points: 200
   m_Speed: 0
   m_BulletOffsetX: 0
   m_DoubleBulletOffsetY: 0
@@ -130,7 +131,12 @@ MonoBehaviour:
   m_MissileBullet: {fileID: 0}
   m_InvulnerabilityCircle: {fileID: 0}
   m_BasicBulletRotation: {x: 0, y: 0, z: 0}
+  m_MissileBulletRotation: {x: 0, y: 0, z: 0}
   m_InvulnerabilityColor: {r: 0, g: 0, b: 0, a: 0}
+  m_OriginalColor: {r: 0, g: 0, b: 0, a: 0}
+  m_HealthChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &327271869
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -144,6 +150,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_DoubleFireTime: 0
+  m_IsMainInventory: 0
+  m_PrimarySlotChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SecondarySlotChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &7793401517968160369
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -183,6 +196,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_DamageReceivedColor: {r: 0.98039216, g: 0.06666667, b: 0.023529412, a: 1}
   m_DamageReceivedTime: 0.05
+  m_OriginalColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!58 &657031970
 CircleCollider2D:
   m_ObjectHideFlags: 0

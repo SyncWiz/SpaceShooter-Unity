@@ -36,6 +36,7 @@ public class UIController : MonoBehaviour
             m_Menus.Add("MainMenu", FindObjectOfType<MainMenuController>().gameObject);
             m_Menus.Add("PauseMenu", FindObjectOfType<PauseMenuController>().gameObject);
             m_Menus.Add("DeadMenu", FindObjectOfType<DeadMenuController>().gameObject);
+            m_Menus.Add("WinMenu", FindObjectOfType<WinMenuController>().gameObject);
             HideAll();
         }
         else

@@ -126,6 +126,13 @@ public class GameFlowManager : MonoBehaviour
         UIController.Instance.Show("DeadMenu");
     }
 
+    public void Win()
+    {
+        ReturnToMainMenu();
+        UIController.Instance.Hide("MainMenu");
+        UIController.Instance.Show("WinMenu");
+    }
+
     public void ReturnToMainMenuFromDeadMenu()
     {
         UIController.Instance.Show("MainMenu");

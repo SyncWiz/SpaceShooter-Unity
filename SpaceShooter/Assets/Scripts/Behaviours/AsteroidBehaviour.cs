@@ -5,6 +5,7 @@ using UnityEngine;
 public class AsteroidBehaviour : MonoBehaviour
 {
     //Public 
+    public int m_Points;
     public float m_Degrees;
     public float m_Health;
     public float m_Speed;
@@ -36,10 +37,6 @@ public class AsteroidBehaviour : MonoBehaviour
         }
         Rotate();
         CheckHealth();
-        if (!MathUtils.IsPointInsideCameraView(transform.position))
-        {
-            Destroy(gameObject);
-        }
     }
 
     void Move()
@@ -82,6 +79,7 @@ public class AsteroidBehaviour : MonoBehaviour
                 Instantiate(m_Chunk, position, Quaternion.identity);
             }
         }
+        GameFlowManager.Instance.AddScorePoints(m_Points);
         Destroy(gameObject);
         //TODO sound
     }

@@ -33,6 +33,7 @@ public class SpaceshipBehaviour : MonoBehaviour
     public float m_NumberOfBulletsInCircle;
     public float m_RadiusCircleBullets;
     public bool m_IsMainPlayer;
+    public bool m_IsFinalBoss;
     [HideInInspector]
     public bool m_CanRecieveDamage;
     public bool m_CanShoot;
@@ -243,6 +244,10 @@ public class SpaceshipBehaviour : MonoBehaviour
         else
         {
             GameFlowManager.Instance.AddScorePoints(m_Points);
+            if(m_IsFinalBoss)
+            {
+                GameFlowManager.Instance.Win();
+            }
         }
         Destroy(gameObject);
         //TODO sound + effect

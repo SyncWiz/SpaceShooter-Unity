@@ -210,6 +210,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b03ff9d6863e54b5cb11e73b4c348a11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_Points: 250
   m_Speed: 0
   m_BulletOffsetX: -2
   m_DoubleBulletOffsetY: 0
@@ -220,6 +221,7 @@ MonoBehaviour:
   m_NumberOfBulletsInCircle: 25
   m_RadiusCircleBullets: 1.5
   m_IsMainPlayer: 0
+  m_IsFinalBoss: 1
   m_CanRecieveDamage: 0
   m_CanShoot: 1
   m_Health: 150
@@ -234,6 +236,9 @@ MonoBehaviour:
   m_MissileBulletRotation: {x: 0, y: 0, z: 90}
   m_InvulnerabilityColor: {r: 0.38074043, g: 0.8679245, b: 0.47004268, a: 1}
   m_OriginalColor: {r: 0, g: 0, b: 0, a: 0}
+  m_HealthChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &8618599447430186234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -281,3 +286,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_DoubleFireTime: 0
+  m_IsMainInventory: 0
+  m_PrimarySlotChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SecondarySlotChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []

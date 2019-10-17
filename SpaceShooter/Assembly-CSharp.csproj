@@ -75,6 +75,7 @@
      <Compile Include="Assets\Scripts\General\UI\MainMenuController.cs" />
      <Compile Include="Assets\Scripts\General\UI\PauseMenuController.cs" />
      <Compile Include="Assets\Scripts\General\UI\UIController.cs" />
+     <Compile Include="Assets\Scripts\General\UI\WinMenuController.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
      <Compile Include="Assets\Scripts\Utils\DestroyAfterAnimationEnd.cs" />
      <Compile Include="Assets\Scripts\Utils\DestroyWhenNoPlayable.cs" />

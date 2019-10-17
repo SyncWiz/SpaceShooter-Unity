@@ -56,7 +56,7 @@ public class HUDController : MonoBehaviour
 
     private void UpdateHealth()
     {
-        m_HealthText.text = "Health: " + m_SpaceshipBehaviour.m_Health;
+        m_HealthText.text = m_SpaceshipBehaviour.m_Health.ToString(); ;
     }
 
     private void UpdatePrimarySlot()
