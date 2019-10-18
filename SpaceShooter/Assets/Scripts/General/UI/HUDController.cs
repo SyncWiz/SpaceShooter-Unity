@@ -51,7 +51,7 @@ public class HUDController : MonoBehaviour
 
     private void UpdateScore()
     {
-        m_ScoreText.text = "Score: " + GameFlowManager.Instance.GetScore();
+        m_ScoreText.text = GameFlowManager.Instance.GetScore().ToString();
     }
 
     private void UpdateHealth()

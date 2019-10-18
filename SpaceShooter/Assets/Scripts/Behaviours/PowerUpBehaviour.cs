@@ -7,15 +7,18 @@ public class PowerUpBehaviour : MonoBehaviour
     //public
     public ItemType m_ItemType;
     public float m_MovementSpeed;
+    
 
     //Private
     Vector3 m_Direction;
     Camera m_MainCamera;
+    AudioSource m_PowerupSound;
 
     private void Start()
     {
         m_MainCamera = Camera.main;
         m_Direction = Vector3.up;
+        m_PowerupSound = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -46,7 +49,8 @@ public class PowerUpBehaviour : MonoBehaviour
     {
         if (collision.gameObject.tag == "MainShip")
         {
-            switch(m_ItemType)
+            m_PowerupSound.PlayOneShot(m_PowerupSound.clip);
+            switch (m_ItemType)
             {
                 case ItemType.DoubleFire:
                     collision.gameObject.GetComponent<InventoryBehaviour>().SetPrimarySlot(m_ItemType);
@@ -56,8 +60,9 @@ public class PowerUpBehaviour : MonoBehaviour
                     collision.gameObject.GetComponent<InventoryBehaviour>().SetSecondarySlot(m_ItemType);
                 break;
             }
-            Destroy(gameObject);
-            //TODO sound
+            gameObject.GetComponent<SpriteRenderer>().enabled = false;
+            gameObject.GetComponent<Collider2D>().enabled = false;
+            Destroy(gameObject, 1.0f);
         }
     }
 }

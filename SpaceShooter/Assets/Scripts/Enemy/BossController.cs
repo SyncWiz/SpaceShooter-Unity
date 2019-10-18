@@ -23,17 +23,19 @@ public class BossController : MonoBehaviour
     public float m_CameraOffsetXToStart;
     public Color m_ColorRageMode;
 
+
     //Private
-    BossStates m_CurrentState;
-    SpaceshipBehaviour m_SpaceshipBehaviour;
-    InventoryBehaviour m_InventoryBehaviour;
-    ReceiveDamageEffect m_ReceiveDamageEffect;
+    private BossStates m_CurrentState;
+    private SpaceshipBehaviour m_SpaceshipBehaviour;
+    private InventoryBehaviour m_InventoryBehaviour;
+    private ReceiveDamageEffect m_ReceiveDamageEffect;
     private bool m_MovingTop;
     private bool m_IsRageMode;
     private bool m_IsInsideCamera;
     private float m_CurrentTime;
     private int m_MaxHealth;
     private SpriteRenderer m_SpriteRenderer;
+    public AudioSource m_RageEnterSound;
 
     void Start()
     {
@@ -46,6 +48,9 @@ public class BossController : MonoBehaviour
         m_ReceiveDamageEffect = GetComponent<ReceiveDamageEffect>();
         m_MaxHealth = m_SpaceshipBehaviour.m_Health;
         m_SpaceshipBehaviour.m_CanRecieveDamage = false;
+
+        AudioSource[] sources = GetComponents<AudioSource>();
+        m_RageEnterSound = sources[sources.Length - 1];
     }
 
     void Update()
@@ -69,7 +74,7 @@ public class BossController : MonoBehaviour
         if(m_IsInsideCamera)
         {
             m_SpaceshipBehaviour.m_CanRecieveDamage = true;
-            //TODO sound or something
+            m_RageEnterSound.PlayOneShot(m_RageEnterSound.clip);
         }
     }
 
@@ -106,7 +111,6 @@ public class BossController : MonoBehaviour
     {
         if(m_CurrentTime >= m_TimeBetweenActions)
         {
-            //TODO sounds for each one
             BossStates action = (BossStates) Random.Range(0, 4);
             switch (action)
             {
@@ -135,8 +139,7 @@ public class BossController : MonoBehaviour
 
     void EnterRageMode()
     {
-        //TODO sound
-        Debug.Log("Enter Rage Mode!");
+        m_RageEnterSound.PlayOneShot(m_RageEnterSound.clip);
         m_IsRageMode = true;
         m_ReceiveDamageEffect.m_OriginalColor = m_ColorRageMode;
         m_SpaceshipBehaviour.m_OriginalColor = m_ColorRageMode;

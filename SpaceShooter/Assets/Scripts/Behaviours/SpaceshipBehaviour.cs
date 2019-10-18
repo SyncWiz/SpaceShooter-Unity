@@ -48,23 +48,30 @@ public class SpaceshipBehaviour : MonoBehaviour
     [HideInInspector]
     public Color m_OriginalColor;
     public UnityEvent m_HealthChangedEvent;
+    private AudioClip m_BasicShootAudio;
 
     //Private
     private float m_CurrentTime;
     private InventoryBehaviour m_Inventory;
     private SpriteRenderer m_SpriteRenderer;
-    
     private Rigidbody2D m_RigidBody2D;
     private BulletBehaviour m_BulletBehaviour;
     private ReceiveDamageEffect m_ReceiveDamageEffect;
     private Vector3 m_OriginalBulletDirection;
+    private AudioSource m_AudioSource;
+    private AudioClip m_DoubleShootAudio;
+    private AudioClip m_MissileAudio;
+    private AudioClip m_InvulnerabilityAudio;
+    private AudioClip m_EmptyAudio;
+    private AudioClip m_DieSound;
+    private AudioClip m_ReceiveDamageSound;
 
+    #region General behaviour
     void Awake()
     {
         m_CanRecieveDamage = true;
     }
 
-    #region General behaviour  
     void Start()
     {
         m_Inventory = GetComponent<InventoryBehaviour>();
@@ -78,6 +85,28 @@ public class SpaceshipBehaviour : MonoBehaviour
         m_OriginalColor = m_SpriteRenderer.color;
         m_RigidBody2D = GetComponent<Rigidbody2D>();
         m_CurrentTime = 0.0f;
+
+        //Assign sounds
+        AudioSource[] audioSources = GetComponents<AudioSource>();
+        m_AudioSource = audioSources[0];
+        m_DieSound = audioSources[0].clip;
+
+        if (m_CanShoot)
+        {
+            m_BasicShootAudio = audioSources[1].clip;
+
+            if (m_IsMainPlayer || m_IsFinalBoss)
+            {
+                m_DoubleShootAudio = audioSources[2].clip;
+                m_MissileAudio = audioSources[3].clip;
+                m_InvulnerabilityAudio = audioSources[4].clip;
+                m_EmptyAudio = audioSources[5].clip;
+                if(m_IsMainPlayer)
+                {
+                    m_ReceiveDamageSound = audioSources[6].clip;
+                }
+            }
+        }
     }
 
     void Update()
@@ -131,7 +160,8 @@ public class SpaceshipBehaviour : MonoBehaviour
             switch (item)
             {
                 case ItemType.BasicFire:
-                    if(fireType == FireType.DEFAULT)
+                    m_AudioSource.PlayOneShot(m_BasicShootAudio);
+                    if (fireType == FireType.DEFAULT)
                     {
                         Vector3 bulletPosition = new Vector3(transform.position.x + m_BulletOffsetX, transform.position.y, transform.position.z);
                         m_BulletBehaviour.m_SinusoidalMovement = false;
@@ -152,6 +182,7 @@ public class SpaceshipBehaviour : MonoBehaviour
                     }
                 break;
                 case ItemType.DoubleFire:
+                    m_AudioSource.PlayOneShot(m_DoubleShootAudio);
                     Vector3 bulletPosition1 = new Vector3(transform.position.x + m_BulletOffsetX, transform.position.y + m_DoubleBulletOffsetY, transform.position.z);
                     Vector3 bulletPosition2 = new Vector3(transform.position.x + m_BulletOffsetX, transform.position.y - m_DoubleBulletOffsetY, transform.position.z);
                     Fire(bulletPosition1, m_DoubleBullet, Vector3.zero);
@@ -170,15 +201,14 @@ public class SpaceshipBehaviour : MonoBehaviour
             case ItemType.Missile:
                 Vector3 missilePosition = new Vector3(transform.position.x + m_BulletOffsetX, transform.position.y, transform.position.z);
                 Fire(missilePosition, m_MissileBullet, m_MissileBulletRotation);
-                //TODO sound
-            break;
+                m_AudioSource.PlayOneShot(m_MissileAudio);
+                break;
             case ItemType.Invulnerability:
                 ApplyInvulnerabilityPowerup();
-                //TODO sound
-            break;
+                break;
             case ItemType.Empty:
-                //TODO sound or somefeedback
-            break;
+                m_AudioSource.PlayOneShot(m_EmptyAudio);
+                break;
         }
         m_Inventory.SetSecondarySlot(ItemType.Empty);
     }
@@ -218,6 +248,7 @@ public class SpaceshipBehaviour : MonoBehaviour
 
         if(m_IsMainPlayer)
         {
+            m_AudioSource.PlayOneShot(m_ReceiveDamageSound);
             m_CanRecieveDamage = false;
             m_HealthChangedEvent.Invoke();
             StartCoroutine(InvulnerabilityEffect(m_ReceiveDamageEffect.m_DamageReceivedColor));
@@ -231,7 +262,6 @@ public class SpaceshipBehaviour : MonoBehaviour
         if (m_Health <= 0)
         {
             Invoke("Die", m_TimeUntilDie);
-            //TODO gameflow controller force endgame
         }
     }
 
@@ -249,12 +279,16 @@ public class SpaceshipBehaviour : MonoBehaviour
                 GameFlowManager.Instance.Win();
             }
         }
-        Destroy(gameObject);
-        //TODO sound + effect
+        gameObject.GetComponent<SpriteRenderer>().enabled = false;
+        gameObject.GetComponent<Collider2D>().enabled = false;
+        m_AudioSource.PlayOneShot(m_DieSound);
+        Destroy(gameObject, 1.0f);
+        enabled = false;
     }
 
     public void ApplyInvulnerabilityPowerup()
     {
+        m_AudioSource.PlayOneShot(m_InvulnerabilityAudio);
         m_CanRecieveDamage = false;
         StopAllCoroutines();
         CancelInvoke("ReturnFromInvulnerabilityState");

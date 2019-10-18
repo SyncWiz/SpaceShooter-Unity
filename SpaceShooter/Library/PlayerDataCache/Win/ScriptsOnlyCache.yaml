@@ -1,19 +1,31 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - AsteroidBehaviour
+    - BackgroundController
+    - BossController
     - BulletBehaviour
     - CameraBehaviour
+    - DeadMenuController
     - DestroyAfterAnimationEnd
     - DestroyWhenNoPlayable
+    - GameFlowManager
+    - HUDController
     - HelixEnemyController
     - InventoryBehaviour
     - KamikazeEnemyController
+    - MainGameUIController
+    - MainMenuController
     - MissileBehaviour
+    - PauseMenuController
     - PlayerController
     - PowerUpBehaviour
+    - ReceiveDamageEffect
     - ReceiveDamageEnemy
     - ShooterEnemyController
     - SpaceshipBehaviour
+    - UIController
+    - WinMenuController
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
@@ -22,9 +34,17 @@ ScriptsOnlyBuild:
     - UnityEditor.Tilemaps.TileDragAndDropManager
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
-    - UnityEditor.TestTools.TestRunner.TestListCacheData
+    UnityEngine.UI.dll:
+    - UnityEngine.EventSystems.EventSystem
+    - UnityEngine.EventSystems.StandaloneInputModule
+    - UnityEngine.UI.Button
+    - UnityEngine.UI.CanvasScaler
+    - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.Image
+    - UnityEngine.UI.RawImage
+    - UnityEngine.UI.Text
   sceneClasses:
-    Assets/Scenes/SampleScene.unity:
+    Assets/Scenes/MainGame.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -43,6 +63,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 61
       Script: {instanceID: 0}
+    - Class: 70
+      Script: {instanceID: 0}
     - Class: 74
       Script: {instanceID: 0}
     - Class: 81
@@ -54,38 +76,127 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9820}
+      Script: {instanceID: 9670}
     - Class: 114
-      Script: {instanceID: 9904}
+      Script: {instanceID: 9804}
     - Class: 114
-      Script: {instanceID: 9932}
+      Script: {instanceID: 9822}
     - Class: 114
-      Script: {instanceID: 10114}
+      Script: {instanceID: 9836}
     - Class: 114
-      Script: {instanceID: 10236}
+      Script: {instanceID: 9876}
     - Class: 114
-      Script: {instanceID: 10252}
+      Script: {instanceID: 9908}
     - Class: 114
-      Script: {instanceID: 10358}
+      Script: {instanceID: 9936}
     - Class: 114
-      Script: {instanceID: 10394}
+      Script: {instanceID: 10118}
     - Class: 114
-      Script: {instanceID: 10422}
+      Script: {instanceID: 10240}
     - Class: 114
-      Script: {instanceID: 10442}
+      Script: {instanceID: 10256}
     - Class: 114
-      Script: {instanceID: 10480}
+      Script: {instanceID: 10362}
     - Class: 114
-      Script: {instanceID: 10902}
+      Script: {instanceID: 10390}
+    - Class: 114
+      Script: {instanceID: 10400}
+    - Class: 114
+      Script: {instanceID: 10428}
+    - Class: 114
+      Script: {instanceID: 10450}
+    - Class: 114
+      Script: {instanceID: 10488}
+    - Class: 114
+      Script: {instanceID: 10688}
+    - Class: 114
+      Script: {instanceID: 10754}
+    - Class: 114
+      Script: {instanceID: 10916}
+    - Class: 114
+      Script: {instanceID: 11148}
+    - Class: 114
+      Script: {instanceID: 11166}
+    - Class: 114
+      Script: {instanceID: 11296}
     - Class: 114
       Script: {instanceID: 11554}
+    - Class: 114
+      Script: {instanceID: 11580}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
     - Class: 212
       Script: {instanceID: 0}
     - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/MainMenu.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 9670}
+    - Class: 114
+      Script: {instanceID: 9836}
+    - Class: 114
+      Script: {instanceID: 9876}
+    - Class: 114
+      Script: {instanceID: 10286}
+    - Class: 114
+      Script: {instanceID: 10436}
+    - Class: 114
+      Script: {instanceID: 10504}
+    - Class: 114
+      Script: {instanceID: 10668}
+    - Class: 114
+      Script: {instanceID: 10688}
+    - Class: 114
+      Script: {instanceID: 10888}
+    - Class: 114
+      Script: {instanceID: 11076}
+    - Class: 114
+      Script: {instanceID: 11148}
+    - Class: 114
+      Script: {instanceID: 11518}
+    - Class: 114
+      Script: {instanceID: 11520}
+    - Class: 114
+      Script: {instanceID: 11526}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -124,6 +235,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: GroupTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MainGameUIController
   - hash:
       serializedVersion: 2
       Hash: a5781dc71a671b1ad2b38de19f24b71f
@@ -180,7 +297,7 @@ ScriptsOnlyBuild:
     className: TMP_InputField
   - hash:
       serializedVersion: 2
-      Hash: a85237bd3c446d9fbc7f94e7248d1f58
+      Hash: a434d9e349cec86ec3d3c8ced3047870
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: BulletBehaviour
@@ -246,7 +363,7 @@ ScriptsOnlyBuild:
     className: TMP_SubMeshUI
   - hash:
       serializedVersion: 2
-      Hash: 2ed95a358f8eda6168003c46a5b37693
+      Hash: 05f682ab5db80f0c8e613ab3934cc075
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MissileBehaviour
@@ -318,7 +435,13 @@ ScriptsOnlyBuild:
     className: PowerUpBehaviour
   - hash:
       serializedVersion: 2
-      Hash: 17da20673646f43da98e5f13b3374461
+      Hash: 0a7b086c274bfb9d871612293093947c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BossController
+  - hash:
+      serializedVersion: 2
+      Hash: b15bcdc44caa1ebef99af9a929863448
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: InventoryBehaviour
@@ -328,6 +451,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: DestroyWhenNoPlayable
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PauseMenuController
   - hash:
       serializedVersion: 2
       Hash: 83228ce06b227003ff371e1c65a9740d
@@ -348,7 +477,7 @@ ScriptsOnlyBuild:
     className: ScrollRect
   - hash:
       serializedVersion: 2
-      Hash: 5459e83d84aacb62367241b4a69b04d2
+      Hash: 153b487511feb909a12ad030b36cf268
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SpaceshipBehaviour
@@ -358,6 +487,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: SignalTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: UIController
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -390,6 +525,12 @@ ScriptsOnlyBuild:
     className: RawImage
   - hash:
       serializedVersion: 2
+      Hash: 90dbbca5fd684ce32135f28eda249638
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BackgroundController
+  - hash:
+      serializedVersion: 2
       Hash: 5ad4aa237d47ac2bab17bacb672edf7a
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -406,6 +547,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: SignalReceiver
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MainMenuController
   - hash:
       serializedVersion: 2
       Hash: 5ad4aa237d47ac2bab17bacb672edf7a
@@ -450,6 +597,12 @@ ScriptsOnlyBuild:
     className: TimelineAsset
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DeadMenuController
+  - hash:
+      serializedVersion: 2
       Hash: 3b760e6526e13f7504f59e210145899a
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -468,6 +621,12 @@ ScriptsOnlyBuild:
     className: GraphicRaycaster
   - hash:
       serializedVersion: 2
+      Hash: 52ce8c6a84c73c475783815d762509e2
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ReceiveDamageEffect
+  - hash:
+      serializedVersion: 2
       Hash: 88cc9df3c6fc697bfbeacd24c0d6f2d7
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools
@@ -478,6 +637,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: MarkerTrack
+  - hash:
+      serializedVersion: 2
+      Hash: aeeb81217b90cfc656431cb2a4d9026d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HUDController
   - hash:
       serializedVersion: 2
       Hash: d791aa6007fa3640be1164ea75bb087d
@@ -540,6 +705,18 @@ ScriptsOnlyBuild:
     className: Dropdown
   - hash:
       serializedVersion: 2
+      Hash: 161d5e1b5204582566bcf61c06715b6d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GameFlowManager
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: WinMenuController
+  - hash:
+      serializedVersion: 2
       Hash: 748dd2a2a28da4e618912da5ac45684b
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
@@ -556,6 +733,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: SignalEmitter
+  - hash:
+      serializedVersion: 2
+      Hash: bc6ba389ae89c6ade9e7db551dc0e0a3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AsteroidBehaviour
   - hash:
       serializedVersion: 2
       Hash: 7072231382eb3c4871b3dd75ad0227e1
@@ -582,5 +765,6 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   platform: 5
   scenePathNames:
-  - Assets/Scenes/SampleScene.unity
-  playerPath: C:/Users/dcervera/Desktop/SpaceShooter.exe
+  - Assets/Scenes/MainMenu.unity
+  - Assets/Scenes/MainGame.unity
+  playerPath: C:/Users/dcervera/Desktop/SpaceShooter2D/SpaceShooter.exe

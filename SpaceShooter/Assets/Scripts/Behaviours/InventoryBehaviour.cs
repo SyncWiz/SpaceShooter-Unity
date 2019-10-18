@@ -78,5 +78,9 @@ public class InventoryBehaviour : MonoBehaviour
     private void SetBasicFire()
     {
         m_PrimarySlot.SetCurrentItem(ItemType.BasicFire);
+        if (m_IsMainInventory)
+        {
+            m_PrimarySlotChangedEvent.Invoke();
+        }
     }
 }

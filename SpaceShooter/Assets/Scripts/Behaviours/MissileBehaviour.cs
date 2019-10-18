@@ -18,12 +18,14 @@ public class MissileBehaviour : MonoBehaviour
     //Private
     private Rigidbody2D m_RigidBody2D;
     private BulletBehaviour m_BulletBehaviour;
+    private AudioSource m_ExplosionSound;
 
     void Start()
     { 
         m_RigidBody2D = GetComponent<Rigidbody2D>();
         Invoke("Explode", m_TimeToExplode);
-        if(!m_IsAlly)
+        m_ExplosionSound = GetComponent<AudioSource>();
+        if (!m_IsAlly)
         {
             m_BulletBehaviour = m_BasicBullet.GetComponent<BulletBehaviour>();
         }
@@ -39,7 +41,6 @@ public class MissileBehaviour : MonoBehaviour
         if(m_IsAlly)
         {
             Instantiate(m_Explosion, transform.position, Quaternion.identity);
-            Destroy(gameObject);
         }
         else
         {
@@ -65,10 +66,15 @@ public class MissileBehaviour : MonoBehaviour
                 direction.Normalize();
                 m_BulletBehaviour.m_Direction = direction;
                 Instantiate(m_BasicBullet, position, Quaternion.identity);
-            }
-
-            Destroy(gameObject);
+            } 
         }
+
+        m_ExplosionSound.PlayOneShot(m_ExplosionSound.clip);
+        gameObject.GetComponent<SpriteRenderer>().enabled = false;
+        gameObject.GetComponent<Collider2D>().enabled = false;
+        CancelInvoke("Explode");
+        enabled = false;
+        Destroy(gameObject, 1.0f);
     }
 
     private void OnTriggerEnter2D(Collider2D collider)

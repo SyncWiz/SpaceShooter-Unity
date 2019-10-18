@@ -3,10 +3,14 @@ using UnityEngine.UI;
 
 public class WinMenuController : MonoBehaviour
 {
+    //Public
+    public GameObject m_ButtonSound;
+
     //Private
     private Button[] m_Buttons;
     private Text[] m_Texts;
     private Text m_ScoreText;
+    private AudioSource m_AudioSource;
 
     private void Start()
     {
@@ -22,21 +26,23 @@ public class WinMenuController : MonoBehaviour
             if (text.name == "Score")
             {
                 m_ScoreText = text;
-                m_ScoreText.text = "Score: " + GameFlowManager.Instance.GetScore();
+                m_ScoreText.text = GameFlowManager.Instance.GetScore().ToString();
                 break;
             }
         }
+        m_AudioSource = m_ButtonSound.GetComponent<AudioSource>();
         GameFlowManager.Instance.m_ScoreChangedEvent.AddListener(UpdateScore);
     }
 
     private void UpdateScore()
     {
-        m_ScoreText.text = "Score: " + GameFlowManager.Instance.GetScore();
+        m_ScoreText.text = GameFlowManager.Instance.GetScore().ToString();
     }
 
 
     public void RunOption(string option)
     {
+        m_AudioSource.PlayOneShot(m_AudioSource.clip);
         switch (option)
         {
             case "PlayAgain":

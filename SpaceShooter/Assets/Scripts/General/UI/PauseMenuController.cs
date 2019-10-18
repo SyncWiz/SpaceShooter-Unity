@@ -3,8 +3,12 @@ using UnityEngine.UI;
 
 public class PauseMenuController : MonoBehaviour
 {
+    //Public
+    public GameObject m_ButtonSound;
+
     //Private
     private Button[] m_Buttons;
+    private AudioSource m_AudioSource;
 
     private void Start()
     {
@@ -13,9 +17,11 @@ public class PauseMenuController : MonoBehaviour
         {
             button.onClick.AddListener(() => RunOption(button.name));
         }
+        m_AudioSource = m_ButtonSound.GetComponent<AudioSource>();
     }
     public void RunOption(string option)
     {
+        m_AudioSource.PlayOneShot(m_AudioSource.clip);
         switch (option)
         {
             case "ResumeGame":

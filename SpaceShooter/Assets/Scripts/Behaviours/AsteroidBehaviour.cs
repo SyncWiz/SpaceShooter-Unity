@@ -19,6 +19,8 @@ public class AsteroidBehaviour : MonoBehaviour
     //Private
     AsteroidBehaviour m_AsteroidBehaviour;
     ReceiveDamageEffect m_ReceiveDamageEffect;
+    AudioSource m_ExplosionAudio;
+    bool m_CanExplode;
 
     void Start()
     {
@@ -27,6 +29,8 @@ public class AsteroidBehaviour : MonoBehaviour
         {
             m_AsteroidBehaviour = m_Chunk.GetComponent<AsteroidBehaviour>();
         }
+        m_ExplosionAudio = GetComponent<AudioSource>();
+        m_CanExplode = true;
     }
 
     void Update()
@@ -52,7 +56,7 @@ public class AsteroidBehaviour : MonoBehaviour
 
     void CheckHealth()
     {
-        if (m_Health <= 0)
+        if (m_Health <= 0 && m_CanExplode)
         {
             Explode();
         }
@@ -79,9 +83,12 @@ public class AsteroidBehaviour : MonoBehaviour
                 Instantiate(m_Chunk, position, Quaternion.identity);
             }
         }
+        m_CanExplode = false;
         GameFlowManager.Instance.AddScorePoints(m_Points);
-        Destroy(gameObject);
-        //TODO sound
+        gameObject.GetComponent<SpriteRenderer>().enabled = false;
+        gameObject.GetComponent<Collider2D>().enabled = false;
+        m_ExplosionAudio.PlayOneShot(m_ExplosionAudio.clip);
+        Destroy(gameObject, 1.0f);
     }
 
     private void OnTriggerEnter2D(Collider2D collider)
