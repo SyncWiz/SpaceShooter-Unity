@@ -71,6 +71,8 @@ public class GameFlowManager : MonoBehaviour
         SceneManager.LoadScene("MainGame", LoadSceneMode.Single);
         UIController.Instance.HideAll();
         m_InMainGame = true;
+        m_Score = 0;
+        m_ScoreChangedEvent.Invoke();
     }
 
     public void PauseGame()

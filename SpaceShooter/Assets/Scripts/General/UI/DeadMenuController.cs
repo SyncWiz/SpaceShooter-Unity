@@ -26,7 +26,7 @@ public class DeadMenuController : MonoBehaviour
             if(text.name == "Score")
             {
                 m_ScoreText = text;
-                m_ScoreText.text = GameFlowManager.Instance.GetScore().ToString();
+                UpdateScore();
                 break;
             }
         }
@@ -36,7 +36,7 @@ public class DeadMenuController : MonoBehaviour
 
     private void UpdateScore()
     {
-        m_ScoreText.text = GameFlowManager.Instance.GetScore().ToString();
+        m_ScoreText.text = "Score: " + GameFlowManager.Instance.GetScore();
     }
 
 
