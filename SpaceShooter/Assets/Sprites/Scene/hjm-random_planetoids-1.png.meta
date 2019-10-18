@@ -1,0 +1,2047 @@
+fileFormatVersion: 2
+guid: 7210ce506eb92d146adc3c3d49b04556
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1734539830521928280
+    second: hjm-random_planetoids-1_0
+  - first:
+      213: -3909064344792986206
+    second: hjm-random_planetoids-1_1
+  - first:
+      213: -2924313244075608428
+    second: hjm-random_planetoids-1_2
+  - first:
+      213: 4692555410572833455
+    second: hjm-random_planetoids-1_3
+  - first:
+      213: 2766571647069820344
+    second: hjm-random_planetoids-1_4
+  - first:
+      213: 5980823624727658452
+    second: hjm-random_planetoids-1_5
+  - first:
+      213: -227265703045362167
+    second: hjm-random_planetoids-1_6
+  - first:
+      213: -3109451742007810077
+    second: hjm-random_planetoids-1_7
+  - first:
+      213: -6864652316989073088
+    second: hjm-random_planetoids-1_8
+  - first:
+      213: -1977354715420847643
+    second: hjm-random_planetoids-1_9
+  - first:
+      213: 4978468996983541992
+    second: hjm-random_planetoids-1_10
+  - first:
+      213: 1337926710462590207
+    second: hjm-random_planetoids-1_11
+  - first:
+      213: -4380247930539739079
+    second: hjm-random_planetoids-1_12
+  - first:
+      213: 638876114732279430
+    second: hjm-random_planetoids-1_13
+  - first:
+      213: -7973646018739892029
+    second: hjm-random_planetoids-1_14
+  - first:
+      213: 6303196916584123403
+    second: hjm-random_planetoids-1_15
+  - first:
+      213: 6888127448330511079
+    second: hjm-random_planetoids-1_16
+  - first:
+      213: 3929500053567353842
+    second: hjm-random_planetoids-1_17
+  - first:
+      213: 7946154537690083106
+    second: hjm-random_planetoids-1_18
+  - first:
+      213: -4698320528303330889
+    second: hjm-random_planetoids-1_19
+  - first:
+      213: 4882743962891740107
+    second: hjm-random_planetoids-1_20
+  - first:
+      213: -4709692845493193798
+    second: hjm-random_planetoids-1_21
+  - first:
+      213: 6248664997151439541
+    second: hjm-random_planetoids-1_22
+  - first:
+      213: -5669081227522949175
+    second: hjm-random_planetoids-1_23
+  - first:
+      213: -949839977604160524
+    second: hjm-random_planetoids-1_24
+  - first:
+      213: -511392703045532992
+    second: hjm-random_planetoids-1_25
+  - first:
+      213: 3739001345642441760
+    second: hjm-random_planetoids-1_26
+  - first:
+      213: -561745259353812996
+    second: hjm-random_planetoids-1_27
+  - first:
+      213: 4135848532865635991
+    second: hjm-random_planetoids-1_28
+  - first:
+      213: -8711229010354824056
+    second: hjm-random_planetoids-1_29
+  - first:
+      213: -3168589762960989734
+    second: hjm-random_planetoids-1_30
+  - first:
+      213: 6588470467431426596
+    second: hjm-random_planetoids-1_31
+  - first:
+      213: -6210081236991846541
+    second: hjm-random_planetoids-1_32
+  - first:
+      213: 2541369557414517538
+    second: hjm-random_planetoids-1_33
+  - first:
+      213: 7162564464902185864
+    second: hjm-random_planetoids-1_34
+  - first:
+      213: -1220881894996284809
+    second: hjm-random_planetoids-1_35
+  - first:
+      213: -5247688415990670855
+    second: hjm-random_planetoids-1_36
+  - first:
+      213: 5772463700088108231
+    second: hjm-random_planetoids-1_37
+  - first:
+      213: 5438495911465500550
+    second: hjm-random_planetoids-1_38
+  - first:
+      213: 1276545561885391598
+    second: hjm-random_planetoids-1_39
+  - first:
+      213: 7074632745644390210
+    second: hjm-random_planetoids-1_40
+  - first:
+      213: 1820301415068120901
+    second: hjm-random_planetoids-1_41
+  - first:
+      213: -7356956651177084908
+    second: hjm-random_planetoids-1_42
+  - first:
+      213: -3425677445105149056
+    second: hjm-random_planetoids-1_43
+  - first:
+      213: -350827539405465897
+    second: hjm-random_planetoids-1_44
+  - first:
+      213: 2803072217632346086
+    second: hjm-random_planetoids-1_45
+  - first:
+      213: 4596442963082004492
+    second: hjm-random_planetoids-1_46
+  - first:
+      213: -330386135326070690
+    second: hjm-random_planetoids-1_47
+  - first:
+      213: -3972816608369569701
+    second: hjm-random_planetoids-1_48
+  - first:
+      213: -439066600125798743
+    second: hjm-random_planetoids-1_49
+  - first:
+      213: 5822135995205823692
+    second: hjm-random_planetoids-1_50
+  - first:
+      213: 1722044348196499094
+    second: hjm-random_planetoids-1_51
+  - first:
+      213: 6199691399139069865
+    second: hjm-random_planetoids-1_52
+  - first:
+      213: 1479290522889818440
+    second: hjm-random_planetoids-1_53
+  - first:
+      213: 3741760095613633379
+    second: hjm-random_planetoids-1_54
+  - first:
+      213: 3160188776585727411
+    second: hjm-random_planetoids-1_55
+  - first:
+      213: 1979769823036711995
+    second: hjm-random_planetoids-1_56
+  - first:
+      213: -580595732511414312
+    second: hjm-random_planetoids-1_57
+  - first:
+      213: -7795764742623844787
+    second: hjm-random_planetoids-1_58
+  - first:
+      213: 8507374593789855992
+    second: hjm-random_planetoids-1_59
+  - first:
+      213: -8740585946647951608
+    second: hjm-random_planetoids-1_60
+  - first:
+      213: 8281599628015568541
+    second: hjm-random_planetoids-1_61
+  - first:
+      213: 4344818109244166854
+    second: hjm-random_planetoids-1_62
+  - first:
+      213: 2408740051282267714
+    second: hjm-random_planetoids-1_63
+  - first:
+      213: -6394247029014950039
+    second: hjm-random_planetoids-1_64
+  - first:
+      213: -3614428696936402195
+    second: hjm-random_planetoids-1_65
+  - first:
+      213: 7454897306990562428
+    second: hjm-random_planetoids-1_66
+  - first:
+      213: 2524521124989166825
+    second: hjm-random_planetoids-1_67
+  - first:
+      213: 1399677586959908829
+    second: hjm-random_planetoids-1_68
+  - first:
+      213: 210089504330048635
+    second: hjm-random_planetoids-1_69
+  - first:
+      213: -1484850436593612386
+    second: hjm-random_planetoids-1_70
+  - first:
+      213: -5494107739029226093
+    second: hjm-random_planetoids-1_71
+  - first:
+      213: 7506941964240047054
+    second: hjm-random_planetoids-1_72
+  - first:
+      213: 7708657189267899545
+    second: hjm-random_planetoids-1_73
+  - first:
+      213: -3837580657687975658
+    second: hjm-random_planetoids-1_74
+  - first:
+      213: -7442768423760574789
+    second: hjm-random_planetoids-1_75
+  - first:
+      213: 1374036107253218172
+    second: hjm-random_planetoids-1_76
+  - first:
+      213: 8149247840295436700
+    second: hjm-random_planetoids-1_77
+  - first:
+      213: 200494637470524760
+    second: hjm-random_planetoids-1_78
+  - first:
+      213: -3168977214281615559
+    second: hjm-random_planetoids-1_79
+  - first:
+      213: 2210605426240220171
+    second: hjm-random_planetoids-1_80
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: hjm-random_planetoids-1_0
+      rect:
+        serializedVersion: 2
+        x: 1416
+        y: 1524
+        width: 118
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 978b321e01459a94da64795bf78c383b
+      internalID: 1734539830521928280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-random_planetoids-1_1
+      rect:
+        serializedVersion: 2
+        x: 1548
+        y: 1458
+        width: 121
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 915485ee18ebae24db8137105528cc4a
+      internalID: -3909064344792986206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-random_planetoids-1_2
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 1418
+        width: 127
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b519eeb1664b9049a0005310a6b86ba
+      internalID: -2924313244075608428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-random_planetoids-1_3
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 1418
+        width: 266
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5a3b0408d5ab634497911f7419c90d3
+      internalID: 4692555410572833455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-random_planetoids-1_4
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 1394
+        width: 70
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 600ed0e41c7189649b6795a660718759
+      internalID: 2766571647069820344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-random_planetoids-1_5
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 1385
+        width: 117
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df15efb95bd82c940954607316c21abd
+      internalID: 5980823624727658452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-random_planetoids-1_6
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 1250
+        width: 107
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b3c3a8567651d44389fda4ea3e1a800
+      internalID: -227265703045362167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-random_planetoids-1_7
+      rect:
+        serializedVersion: 2
+        x: 1292
+        y: 1324
+        width: 73
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca2bc8233f7646a42b260637fbd72cb3
+      internalID: -3109451742007810077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-random_planetoids-1_8
+      rect:
+        serializedVersion: 2
+        x: 1416
+        y: 1239
+        width: 80
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cee9d92b2e4d0c94b9799fccf3725069
+      internalID: -6864652316989073088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-random_planetoids-1_9
+      rect:
+        serializedVersion: 2
+        x: 1810
+        y: 1311
+        width: 98
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6537335f20c969547a58753b2b0141b1
+      internalID: -1977354715420847643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-random_planetoids-1_10
+      rect:
+        serializedVersion: 2
+        x: 1951
+        y: 1241
+        width: 94
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0037af6adcc9f6743aea0c3f63a14d5a
+      internalID: 4978468996983541992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-random_planetoids-1_11
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 1135
+        width: 42
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86653130da8668b45a50aeafa0a6a250
+      internalID: 1337926710462590207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-random_planetoids-1_12
+      rect:
+        serializedVersion: 2
+        x: 1013
+        y: 1188
+        width: 105
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 199003ce05437d4498990d269b78474c
+      internalID: -4380247930539739079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-random_planetoids-1_13
+      rect:
+        serializedVersion: 2
+        x: 1137
+        y: 1124
+        width: 114
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d63384e7272b6845b517a631f244675
+      internalID: 638876114732279430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-random_planetoids-1_14
+      rect:
+        serializedVersion: 2
+        x: 1554
+        y: 1169
+        width: 84
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c32ef2863d79f0a44b6101bdd86d185e
+      internalID: -7973646018739892029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-random_planetoids-1_15
+      rect:
+        serializedVersion: 2
+        x: 1690
+        y: 1112
+        width: 95
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d0680360c53d5f42bf71516628f7021
+      internalID: 6303196916584123403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-random_planetoids-1_16
+      rect:
+        serializedVersion: 2
+        x: 2080
+        y: 1168
+        width: 104
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37607416890eed4489c9de12468044ce
+      internalID: 6888127448330511079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-random_planetoids-1_17
+      rect:
+        serializedVersion: 2
+        x: 2204
+        y: 1107
+        width: 119
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a449c5419eeff845b02c1f13c600b49
+      internalID: 3929500053567353842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-random_planetoids-1_18
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 1149
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c1d443c3a10cf54292505fcca678cce
+      internalID: 7946154537690083106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-random_planetoids-1_19
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1066
+        width: 40
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97795236b93ee2145b6455e744b95e62
+      internalID: -4698320528303330889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-random_planetoids-1_20
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 1088
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e625edce44999a84ea7a9e95bdf41d0c
+      internalID: 4882743962891740107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-random_planetoids-1_21
+      rect:
+        serializedVersion: 2
+        x: 1265
+        y: 1046
+        width: 109
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea2c321025133e242bda92a75314f95c
+      internalID: -4709692845493193798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-random_planetoids-1_22
+      rect:
+        serializedVersion: 2
+        x: 1832
+        y: 1046
+        width: 86
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8f1359fa42f4d64ca5744cfbbb4651a
+      internalID: 6248664997151439541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-random_planetoids-1_23
+      rect:
+        serializedVersion: 2
+        x: 2339
+        y: 1046
+        width: 116
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a8e9c0d9eeb814418356e21debba7c9
+      internalID: -5669081227522949175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-random_planetoids-1_24
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 986
+        width: 106
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f35b3e4fcbccf914ca7be7f1c3292c3c
+      internalID: -949839977604160524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-random_planetoids-1_25
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 926
+        width: 106
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1dc05e36aeff4741ae5b9c8e032a155
+      internalID: -511392703045532992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-random_planetoids-1_26
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 988
+        width: 60
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e9cc01e297d4ec45b974f728256f7af
+      internalID: 3739001345642441760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-random_planetoids-1_27
+      rect:
+        serializedVersion: 2
+        x: 1407
+        y: 968
+        width: 94
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cdb111468848204285a1f4d77ab2cd3
+      internalID: -561745259353812996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-random_planetoids-1_28
+      rect:
+        serializedVersion: 2
+        x: 1549
+        y: 891
+        width: 92
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5edc33e9454c5a24f9eb2b46ae5a2355
+      internalID: 4135848532865635991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-random_planetoids-1_29
+      rect:
+        serializedVersion: 2
+        x: 1970
+        y: 976
+        width: 68
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f516c2cc179840c4aa2a17b0f2e7e2fb
+      internalID: -8711229010354824056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-random_planetoids-1_30
+      rect:
+        serializedVersion: 2
+        x: 2102
+        y: 913
+        width: 67
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 469a3e4af41fe9a40bd4d2ab96d0661c
+      internalID: -3168589762960989734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-random_planetoids-1_31
+      rect:
+        serializedVersion: 2
+        x: 2479
+        y: 979
+        width: 105
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88e4083369fe60943a44d2468e74e370
+      internalID: 6588470467431426596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-random_planetoids-1_32
+      rect:
+        serializedVersion: 2
+        x: 2616
+        y: 908
+        width: 94
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d8ff0c28d7d3e4499b4b6d460f2bb7c
+      internalID: -6210081236991846541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-random_planetoids-1_33
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 860
+        width: 59
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15d3fb460e05118469338b0b8c1ec3ea
+      internalID: 2541369557414517538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-random_planetoids-1_34
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 848
+        width: 101
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 488c757217a0bd645a1a2e190404f1eb
+      internalID: 7162564464902185864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-random_planetoids-1_35
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 918
+        width: 72
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dc60268c565b0a4bb31ce006693e81d
+      internalID: -1220881894996284809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-random_planetoids-1_36
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 832
+        width: 104
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2347022d83da728469bbeb07143ec8cd
+      internalID: -5247688415990670855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-random_planetoids-1_37
+      rect:
+        serializedVersion: 2
+        x: 2231
+        y: 851
+        width: 64
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4831ce1e82877a74f9d961d40062441e
+      internalID: 5772463700088108231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-random_planetoids-1_38
+      rect:
+        serializedVersion: 2
+        x: 2754
+        y: 843
+        width: 101
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dc94105aa104ca49aa93aabb8826051
+      internalID: 5438495911465500550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-random_planetoids-1_39
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 829
+        width: 35
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1aae00bf871fed4db2dcf891bea237c
+      internalID: 1276545561885391598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-random_planetoids-1_40
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 772
+        width: 102
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 491a60f5e06ac6c4bb98ca3f1567fbab
+      internalID: 7074632745644390210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-random_planetoids-1_41
+      rect:
+        serializedVersion: 2
+        x: 1159
+        y: 848
+        width: 74
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a421df452540c74eb299b38013601e1
+      internalID: 1820301415068120901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-random_planetoids-1_42
+      rect:
+        serializedVersion: 2
+        x: 1813
+        y: 780
+        width: 103
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72b5195f1294bfa4d977d9215862830e
+      internalID: -7356956651177084908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-random_planetoids-1_43
+      rect:
+        serializedVersion: 2
+        x: 2363
+        y: 786
+        width: 75
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e6bb506475574d43b099026383dc720
+      internalID: -3425677445105149056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-random_planetoids-1_44
+      rect:
+        serializedVersion: 2
+        x: 2890
+        y: 782
+        width: 114
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2711e526bad4dc4584e1d7414ab0679
+      internalID: -350827539405465897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-random_planetoids-1_45
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 797
+        width: 54
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e7052818f16ce749afd45bda00a2e3f
+      internalID: 2803072217632346086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-random_planetoids-1_46
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 707
+        width: 96
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eb995f5ed553f0458c85435f833d2ee
+      internalID: 4596442963082004492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-random_planetoids-1_47
+      rect:
+        serializedVersion: 2
+        x: 1309
+        y: 777
+        width: 57
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc5527fa157288f4299a8e9f67e343fd
+      internalID: -330386135326070690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-random_planetoids-1_48
+      rect:
+        serializedVersion: 2
+        x: 1945
+        y: 712
+        width: 102
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 495ba50040fc464479087f3085ab4c78
+      internalID: -3972816608369569701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-random_planetoids-1_49
+      rect:
+        serializedVersion: 2
+        x: 2488
+        y: 719
+        width: 105
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34d174b96c8db3b47ac03f553004991f
+      internalID: -439066600125798743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-random_planetoids-1_50
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 726
+        width: 65
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cd8b057f83e4c54dbe12129e8165d79
+      internalID: 5822135995205823692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-random_planetoids-1_51
+      rect:
+        serializedVersion: 2
+        x: 1445
+        y: 754
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5318f5de191faca47a465b7a9a4a318a
+      internalID: 1722044348196499094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-random_planetoids-1_52
+      rect:
+        serializedVersion: 2
+        x: 1451
+        y: 712
+        width: 39
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a8bb7059346b1c4abfaf5de827e464f
+      internalID: 6199691399139069865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-random_planetoids-1_53
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 652
+        width: 70
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57d620ad040b8de45b80b88118d1843a
+      internalID: 1479290522889818440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-random_planetoids-1_54
+      rect:
+        serializedVersion: 2
+        x: 1012
+        y: 632
+        width: 104
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30b2da36fb4259247ba509507a0e7d55
+      internalID: 3741760095613633379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-random_planetoids-1_55
+      rect:
+        serializedVersion: 2
+        x: 1151
+        y: 565
+        width: 103
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 487d69d479c40b24f87c8386a9f7d10c
+      internalID: 3160188776585727411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-random_planetoids-1_56
+      rect:
+        serializedVersion: 2
+        x: 1580
+        y: 665
+        width: 19
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c72d578579b4664088db98187c75cb4
+      internalID: 1979769823036711995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-random_planetoids-1_57
+      rect:
+        serializedVersion: 2
+        x: 1595
+        y: 653
+        width: 25
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9908c74358809947a4963530d5dfe65
+      internalID: -580595732511414312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-random_planetoids-1_58
+      rect:
+        serializedVersion: 2
+        x: 1702
+        y: 593
+        width: 53
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fef63e48878965f46ada1207cd185c38
+      internalID: -7795764742623844787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-random_planetoids-1_59
+      rect:
+        serializedVersion: 2
+        x: 2070
+        y: 643
+        width: 104
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 597fbe7be1011764cb3e156e4b7c2a6e
+      internalID: 8507374593789855992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-random_planetoids-1_60
+      rect:
+        serializedVersion: 2
+        x: 2212
+        y: 577
+        width: 103
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd334b24e1ca7e04ba1df5fc2a58e3c2
+      internalID: -8740585946647951608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-random_planetoids-1_61
+      rect:
+        serializedVersion: 2
+        x: 2623
+        y: 654
+        width: 97
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf906a4ff75ba15418022c1512bbeb1d
+      internalID: 8281599628015568541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-random_planetoids-1_62
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 588
+        width: 64
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30a170b30281aa34a8a844a333f48dcc
+      internalID: 4344818109244166854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-random_planetoids-1_63
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 520
+        width: 57
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 505b7d3e550d32b489215e23b5ae27b5
+      internalID: 2408740051282267714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-random_planetoids-1_64
+      rect:
+        serializedVersion: 2
+        x: 1284
+        y: 504
+        width: 104
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96ef293fbea67a34d8780a6c642635f6
+      internalID: -6394247029014950039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-random_planetoids-1_65
+      rect:
+        serializedVersion: 2
+        x: 1831
+        y: 532
+        width: 62
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 848a50a45fc92474e8cd47a7f8daf60b
+      internalID: -3614428696936402195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-random_planetoids-1_66
+      rect:
+        serializedVersion: 2
+        x: 2360
+        y: 510
+        width: 101
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f9f9a1614d022a4d9b745eafde89aa5
+      internalID: 7454897306990562428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-random_planetoids-1_67
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 460
+        width: 54
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3732b2d711953b449a39672cb7d097f
+      internalID: 2524521124989166825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-random_planetoids-1_68
+      rect:
+        serializedVersion: 2
+        x: 1420
+        y: 443
+        width: 87
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6aee30c663cfc04449b898b468704a66
+      internalID: 1399677586959908829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-random_planetoids-1_69
+      rect:
+        serializedVersion: 2
+        x: 1541
+        y: 376
+        width: 89
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5ed7ee217c20de4e9a779033e0d8fb2
+      internalID: 210089504330048635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-random_planetoids-1_70
+      rect:
+        serializedVersion: 2
+        x: 1955
+        y: 466
+        width: 81
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92fad998c2b64d94e956e7531698e10c
+      internalID: -1484850436593612386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-random_planetoids-1_71
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 401
+        width: 61
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d344ce46fe58c7b42a1a951d3cbcc930
+      internalID: -5494107739029226093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-random_planetoids-1_72
+      rect:
+        serializedVersion: 2
+        x: 1677
+        y: 312
+        width: 107
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecac9dde4b241e447acbc5ee5641f20a
+      internalID: 7506941964240047054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-random_planetoids-1_73
+      rect:
+        serializedVersion: 2
+        x: 2098
+        y: 399
+        width: 64
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53530016be39f3f4e8de3ed430b6151f
+      internalID: 7708657189267899545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-random_planetoids-1_74
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 340
+        width: 33
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92d7bb7f5cd61fc4191817b3b4cf0c76
+      internalID: -3837580657687975658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-random_planetoids-1_75
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 330
+        width: 36
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0f70922330789e4080572ac9c441bd3
+      internalID: -7442768423760574789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-random_planetoids-1_76
+      rect:
+        serializedVersion: 2
+        x: 1816
+        y: 246
+        width: 107
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 097591e2b7b444d46bedf532b52f3833
+      internalID: 1374036107253218172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-random_planetoids-1_77
+      rect:
+        serializedVersion: 2
+        x: 1293
+        y: 274
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e32dd14a8b6a1c441b61dee958ae2aa6
+      internalID: 8149247840295436700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-random_planetoids-1_78
+      rect:
+        serializedVersion: 2
+        x: 1323
+        y: 262
+        width: 34
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fef78219d5abe8f4a970f99269405adb
+      internalID: 200494637470524760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-random_planetoids-1_79
+      rect:
+        serializedVersion: 2
+        x: 1437
+        y: 193
+        width: 67
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60ad5efd7c095f34e8c88d8648de27ab
+      internalID: -3168977214281615559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hjm-random_planetoids-1_80
+      rect:
+        serializedVersion: 2
+        x: 1570
+        y: 124
+        width: 64
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 922ed120d15e8b245afbe8b0f072a458
+      internalID: 2210605426240220171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

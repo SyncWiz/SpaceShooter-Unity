@@ -48,7 +48,6 @@ public class SpaceshipBehaviour : MonoBehaviour
     [HideInInspector]
     public Color m_OriginalColor;
     public UnityEvent m_HealthChangedEvent;
-    private AudioClip m_BasicShootAudio;
 
     //Private
     private float m_CurrentTime;
@@ -59,6 +58,7 @@ public class SpaceshipBehaviour : MonoBehaviour
     private ReceiveDamageEffect m_ReceiveDamageEffect;
     private Vector3 m_OriginalBulletDirection;
     private AudioSource m_AudioSource;
+    private AudioClip m_BasicShootAudio;
     private AudioClip m_DoubleShootAudio;
     private AudioClip m_MissileAudio;
     private AudioClip m_InvulnerabilityAudio;

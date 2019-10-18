@@ -5,23 +5,26 @@ public class HUDController : MonoBehaviour
 {
     //Public
     public GameObject m_MainPlayer;
+    public Color m_HidedObjectColor;
 
     //Private
-    private Text[] m_Texts;
     private Text m_ScoreText;
     private Text m_HealthText;
-    private Text m_PrimarySlotText;
-    private Text m_SecondarySlotText;
+    private RawImage m_BasicShoot;
+    private RawImage m_DoubleShoot;
+    private RawImage m_MissileShoot;
+    private RawImage m_Invulnerability;
+    private Color m_OriginalColor;
     private InventoryBehaviour m_InventoryBehaviour;
     private SpaceshipBehaviour m_SpaceshipBehaviour;
 
     private void Start()
     {
-        m_Texts = GetComponentsInChildren<Text>();
+        Text[] texts = GetComponentsInChildren<Text>();
         m_InventoryBehaviour = m_MainPlayer.GetComponent<InventoryBehaviour>();
         m_SpaceshipBehaviour = m_MainPlayer.GetComponent<SpaceshipBehaviour>();
 
-        foreach (Text text in m_Texts)
+        foreach (Text text in texts)
         {
             switch(text.name)
             {
@@ -33,16 +36,35 @@ public class HUDController : MonoBehaviour
                     m_HealthText = text;
                     UpdateHealth();
                     break;
-               case "SlotOne":
-                    m_PrimarySlotText = text;
-                    UpdatePrimarySlot();
-               break;
-               case "SlotTwo":
-                    m_SecondarySlotText = text;
-                    UpdateSecondarySlot();
-               break;
             }
         }
+
+        RawImage[] rawImages = GetComponentsInChildren<RawImage>();
+        foreach (RawImage image in rawImages)
+        {
+            switch (image.name)
+            {
+                case "BasicFire":
+                    m_BasicShoot = image;
+                break;
+
+                case "DoubleFire":
+                    m_DoubleShoot = image;
+                break;
+
+                case "Missile":
+                    m_MissileShoot = image;
+                break;
+
+                case "Invulnerability":
+                    m_Invulnerability = image;
+                break;
+            }
+        }
+
+        m_OriginalColor = m_BasicShoot.color;
+        UpdatePrimarySlot();
+        UpdateSecondarySlot();
         GameFlowManager.Instance.m_ScoreChangedEvent.AddListener(UpdateScore);
         m_SpaceshipBehaviour.m_HealthChangedEvent.AddListener(UpdateHealth);
         m_InventoryBehaviour.m_PrimarySlotChangedEvent.AddListener(UpdatePrimarySlot);
@@ -61,11 +83,35 @@ public class HUDController : MonoBehaviour
 
     private void UpdatePrimarySlot()
     {
-        m_PrimarySlotText.text = m_InventoryBehaviour.GetPrimarySlot().ToString();
+        switch(m_InventoryBehaviour.GetPrimarySlot())
+        {
+            case ItemType.BasicFire:
+                m_BasicShoot.color = m_OriginalColor;
+                m_DoubleShoot.color = m_HidedObjectColor;
+            break;
+            case ItemType.DoubleFire:
+                m_BasicShoot.color = m_HidedObjectColor;
+                m_DoubleShoot.color = m_OriginalColor;
+            break;
+        }
     }
 
     private void UpdateSecondarySlot()
     {
-        m_SecondarySlotText.text = m_InventoryBehaviour.GetSecondarySlot().ToString();
+        switch (m_InventoryBehaviour.GetSecondarySlot())
+        {
+            case ItemType.Missile:
+                m_MissileShoot.color = m_OriginalColor;
+                m_Invulnerability.color = m_HidedObjectColor;
+            break;
+            case ItemType.Invulnerability:
+                m_MissileShoot.color = m_HidedObjectColor;
+                m_Invulnerability.color = m_OriginalColor;
+                break;
+            case ItemType.Empty:
+                m_MissileShoot.color = m_HidedObjectColor;
+                m_Invulnerability.color = m_HidedObjectColor;
+            break;
+        }
     }
 }
