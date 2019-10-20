@@ -56,7 +56,7 @@ Moves up-down without horizontal speed. Shoots in straight line constantly. Low-
 Static. Shoots in circle pattern. High health.
 
 ### Boss
-!(https://imgur.com/adTJiN7)
+![Image](https://i.imgur.com/adTJiN7.png)
 Highest health of the game. Moves up-down with horizontal speed. 4 different attacks:
 -Invulnerability: Gets invencible during a low time frame.
 -Missile: Launch a missile that explodes after a framerate, this explosion spawn bullets in a circle pattern. This bullets can travel in straight line or sinusoidal.
