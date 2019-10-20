@@ -15,17 +15,23 @@ At the end of the level you will find a boss that once he gets really hurt start
  * Alt-Left/B button - Use secondary inventory slot
  * Escape/Start button - Pause/Resume game
 
-### Power-ups
-## Blue power-up
+## Power-ups
+### Blue power-up
 This power change your basic shoot (Primary inventory slot) for a double shoot that is deactivated after a frametime.
 
-## Red power-up
+### Red power-up
 This power gives you a missile that is stored in your secondary inventory slot. Once is used a missile is shooted and explode after a frametime or when colliding with an enemy. High damage.
 
-## Yellow power-up
+### Yellow power-up
 This power gives you a shield that is stored in your secondary inventory slot. Once is used a shield is deployed around you and gives invulnerability during a frame time.
 
-### Enemies
+## Enemies
+### Kamikaze Enemy
+### Shooter Enemy
+### Helix Enemy
+### Boss
+
+## Challenges during development
 
 
 
