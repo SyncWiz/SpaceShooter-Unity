@@ -38,18 +38,18 @@ This power gives player ship a shield that is stored in your secondary inventory
 Big rock with high health. When destroying it splices in smaller chunks with lower health. It also gives points.
 
 ## Enemies
-### Kamikaze Enemy
-## Blue
+## Kamikaze Enemy
+### Blue
 ![Image](https://i.imgur.com/txBBSFf.png)
 
 Moves up-down with horizontal speed. Medium health.
 
-## Grey
+### Grey
 ![Image](https://i.imgur.com/hJ9rUEz.png)
 
 Static. Medium health.
 
-## Yellow
+### Yellow
 ![Image](https://i.imgur.com/QsaEfPX.png)
 
 Chaser. Follow the mainship trying to crash with him. Medium health.
@@ -59,12 +59,12 @@ Chaser. Follow the mainship trying to crash with him. Medium health.
 
 Moves up-down without horizontal speed. Shoots in straight line constantly. Low-medium health.
 
-### Helix Enemy
+## Helix Enemy
 ![Image](https://i.imgur.com/UwEPFjV.png)
 
 Static. Shoots in circle pattern. High health.
 
-### Boss
+## Boss
 ![Image](https://i.imgur.com/adTJiN7.png)
 Highest health of the game. Moves up-down with horizontal speed. 4 different attacks:
 -Invulnerability: Gets invencible during a low time frame.
@@ -72,7 +72,7 @@ Highest health of the game. Moves up-down with horizontal speed. 4 different att
 -Basic Shooting: Shoots a bullet that follows a sinusoidal movement.
 -Circle shooting: Shoots in circle pattern.
 
-## Challenges during development
+# Challenges during development
 The most challenging thing it has been to have the most complete experience (gameplay, UI, music...) within giving time (12 days), also I hadn't implemented any UI until now on Unity and this has difficulted a bit the development.
 
 
