@@ -23,6 +23,7 @@ public class SpaceshipBehaviour : MonoBehaviour
 {
     //Public
     public int m_Points;
+    public int m_Health;
     public float m_Speed;
     public float m_BulletOffsetX;
     public float m_DoubleBulletOffsetY;
@@ -37,7 +38,6 @@ public class SpaceshipBehaviour : MonoBehaviour
     [HideInInspector]
     public bool m_CanRecieveDamage;
     public bool m_CanShoot;
-    public int m_Health;
     public GameObject m_BasicBullet;
     public GameObject m_DoubleBullet;
     public GameObject m_MissileBullet;
@@ -269,7 +269,7 @@ public class SpaceshipBehaviour : MonoBehaviour
     {
         if(m_IsMainPlayer)
         {
-            GameFlowManager.Instance.EndGame();
+            GameFlowManager.Instance.Lose();
         }
         else
         {
@@ -286,7 +286,7 @@ public class SpaceshipBehaviour : MonoBehaviour
         enabled = false;
     }
 
-    public void ApplyInvulnerabilityPowerup()
+    void ApplyInvulnerabilityPowerup()
     {
         m_AudioSource.PlayOneShot(m_InvulnerabilityAudio);
         m_CanRecieveDamage = false;

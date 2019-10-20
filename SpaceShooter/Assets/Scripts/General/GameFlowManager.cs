@@ -55,7 +55,7 @@ public class GameFlowManager : MonoBehaviour
     {
         if (Input.GetButtonDown("Cancel") && m_InMainGame)
         {
-            if(Time.timeScale == 0)
+            if(Time.timeScale <= 0.0f)
             {
                 ResumeGame();
             }
@@ -121,7 +121,7 @@ public class GameFlowManager : MonoBehaviour
         return m_Score;
     }
 
-    public void EndGame()
+    public void Lose()
     {
         ReturnToMainMenu();
         UIController.Instance.Hide("MainMenu");
@@ -135,7 +135,7 @@ public class GameFlowManager : MonoBehaviour
         UIController.Instance.Show("WinMenu");
     }
 
-    public void ReturnToMainMenuFromDeadMenu()
+    public void ShowMainMenu()
     {
         UIController.Instance.Show("MainMenu");
         UIController.Instance.Hide("DeadMenu");

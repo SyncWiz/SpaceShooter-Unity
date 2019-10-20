@@ -1,17 +1,15 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class AsteroidBehaviour : MonoBehaviour
 {
     //Public 
     public int m_Points;
-    public float m_Degrees;
-    public float m_Health;
-    public float m_Speed;
-    public bool m_IsMain;
     public int m_NumberOfChunksAfterExplosion;
+    public bool m_IsMain;
     public Vector3 m_RotationDirection;
+    public float m_Degrees;
+    public float m_Speed;
+    public float m_Health;
     [HideInInspector]
     public Vector3 m_Direction;
     public GameObject m_Chunk;

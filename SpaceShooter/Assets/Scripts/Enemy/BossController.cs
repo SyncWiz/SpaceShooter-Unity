@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System;
 using UnityEngine;
 
 public class BossController : MonoBehaviour
@@ -25,7 +24,6 @@ public class BossController : MonoBehaviour
 
 
     //Private
-    private BossStates m_CurrentState;
     private SpaceshipBehaviour m_SpaceshipBehaviour;
     private InventoryBehaviour m_InventoryBehaviour;
     private ReceiveDamageEffect m_ReceiveDamageEffect;
@@ -61,7 +59,6 @@ public class BossController : MonoBehaviour
         }
         else
         {
-            CheckDirection();
             UpdateTimer();
             UpdateState();
         }
@@ -78,7 +75,7 @@ public class BossController : MonoBehaviour
         }
     }
 
-    void CheckDirection()
+    void Move()
     {
         if (m_MovingTop)
         {
@@ -109,9 +106,10 @@ public class BossController : MonoBehaviour
 
     void UpdateState()
     {
-        if(m_CurrentTime >= m_TimeBetweenActions)
+        Move();
+        if (m_CurrentTime >= m_TimeBetweenActions)
         {
-            BossStates action = (BossStates) Random.Range(0, 4);
+            BossStates action = (BossStates) UnityEngine.Random.Range(0, Enum.GetNames(typeof(BossStates)).Length);
             switch (action)
             {
                 case BossStates.ATTACK_1:
@@ -125,7 +123,8 @@ public class BossController : MonoBehaviour
                     m_SpaceshipBehaviour.UseSecondaryInventorySlot();
                 break;
                 case BossStates.INVULNERAVILITY:
-                    m_SpaceshipBehaviour.ApplyInvulnerabilityPowerup();
+                    m_InventoryBehaviour.SetSecondarySlot(ItemType.Invulnerability);
+                    m_SpaceshipBehaviour.UseSecondaryInventorySlot();
                 break;
             }
             m_CurrentTime = 0;

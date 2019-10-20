@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class ShooterEnemyController : MonoBehaviour
 {
@@ -8,9 +6,7 @@ public class ShooterEnemyController : MonoBehaviour
     public float m_CenterDestinationPositionOffset;
     public float m_DistanceAccelerating;
     public float m_DistanceToChangeDestination;
-    public float m_ShootTime;
     public float m_CameraLimitYOffset;
-    public GameObject m_MainShip;
     public bool m_InvertHalf;
     public bool m_IsStatic;
 
@@ -19,7 +15,6 @@ public class ShooterEnemyController : MonoBehaviour
     private SpaceshipBehaviour m_SpaceshipBehaviour;
     private Camera m_MainCamera;
     private Vector3 m_TargetPosition;
-    private float m_CurrentTime;
 
     void Start()
     {
@@ -34,8 +29,7 @@ public class ShooterEnemyController : MonoBehaviour
         switch(m_CurrentState)
         {
             case EnemyStates.IDLE:
-                Vector3 viewPosition = m_MainCamera.WorldToViewportPoint(transform.position);
-                if (viewPosition.x <= 1.0f && viewPosition.x >= 0.0f && viewPosition.y <= 1.0f && viewPosition.y >= 0.0f)
+                if (MathUtils.IsPointInsideCameraView(transform.position))
                 {
                     if (!m_IsStatic)
                     {

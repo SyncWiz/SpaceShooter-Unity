@@ -7,21 +7,19 @@ public class DeadMenuController : MonoBehaviour
     public GameObject m_ButtonSound;
 
     //Private
-    private Button[] m_Buttons;
-    private Text[] m_Texts;
     private Text m_ScoreText;
     private AudioSource m_AudioSource;
 
     private void Start()
     {
-        m_Buttons = GetComponentsInChildren<Button>();
-        foreach (Button button in m_Buttons)
+        Button[] buttons = GetComponentsInChildren<Button>();
+        foreach (Button button in buttons)
         {
             button.onClick.AddListener(() => RunOption(button.name));
         }
 
-        m_Texts = GetComponentsInChildren<Text>();
-        foreach (Text text in m_Texts)
+        Text[] texts = GetComponentsInChildren<Text>();
+        foreach (Text text in texts)
         {
             if(text.name == "Score")
             {
@@ -50,7 +48,7 @@ public class DeadMenuController : MonoBehaviour
                 break;
 
             case "Return":
-                GameFlowManager.Instance.ReturnToMainMenuFromDeadMenu();
+                GameFlowManager.Instance.ShowMainMenu();
             break;
 
             default:

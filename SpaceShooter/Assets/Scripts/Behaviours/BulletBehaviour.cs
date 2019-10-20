@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class BulletBehaviour : MonoBehaviour
 {
@@ -12,13 +10,11 @@ public class BulletBehaviour : MonoBehaviour
     public bool m_SinusoidalMovement;
 
     //Private
-    private Camera m_MainCamera;
     private string m_TagDetection;
     private Vector3 m_StartPosition;
 
     void Start()
     {
-        m_MainCamera = Camera.main;
         m_StartPosition = transform.position;
         if (m_AllyBullet)
         {

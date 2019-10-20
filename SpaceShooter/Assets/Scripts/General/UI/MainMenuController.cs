@@ -7,13 +7,12 @@ public class MainMenuController : MonoBehaviour
     public GameObject m_ButtonSound;
 
     //Private
-    private Button[] m_Buttons;
     private AudioSource m_AudioSource;
 
     private void Start()
     {
-        m_Buttons = GetComponentsInChildren<Button>();
-        foreach (Button button in m_Buttons)
+        Button[] buttons = GetComponentsInChildren<Button>();
+        foreach (Button button in buttons)
         {
             button.onClick.AddListener(() => RunOption(button.name));
         }

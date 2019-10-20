@@ -7,7 +7,6 @@ public class PowerUpBehaviour : MonoBehaviour
     //public
     public ItemType m_ItemType;
     public float m_MovementSpeed;
-    
 
     //Private
     Vector3 m_Direction;
