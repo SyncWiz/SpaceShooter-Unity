@@ -19,12 +19,12 @@ At the end of the level you will find a boss that once he gets really hurt start
 ## Blue power-up
 ![Image](https://i.imgur.com/L0QSQSB.png)
 
-This power changes player basic shoot (Primary inventory slot) for a double shoot that is deactivated after a time frame.
+This power changes player basic shoot (Primary inventory slot) to a double shoot that is deactivated after a time frame.
 
 ## Red power-up
 ![Image](https://i.imgur.com/2oPBozC.png)
 
-This power gives player a missile that is stored in your secondary inventory slot. Once is used a missile is shooted and explode after a time frame or when colliding with an enemy. High damage.
+This power gives player a missile that is stored in your secondary inventory slot. Once is used a missile is launched that explodes after a time frame or when colliding with an enemy. High damage.
 
 ## Yellow power-up
 ![Image](https://i.imgur.com/LI7ya2M.png)
@@ -35,7 +35,7 @@ This power gives player ship a shield that is stored in your secondary inventory
 ## Asteroid
 ![Image](https://i.imgur.com/ouwrP8L.png)
 
-Big rock with high health. When destroying it splices in smaller chunks with lower health. It also gives points.
+Big rock with high health. When destroying it spawns smaller chunks with lower health. It also gives points.
 
 # Enemies
 ## Kamikaze Enemy
