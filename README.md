@@ -17,7 +17,7 @@ At the end of the level you will find a boss that once he gets really hurt start
 
 ## Power-ups
 ### Blue power-up
-![Image](https://imgur.com/L0QSQSB)
+![Image] (https://imgur.com/L0QSQSB)
 This power changes player basic shoot (Primary inventory slot) for a double shoot that is deactivated after a time frame.
 
 ### Red power-up
@@ -30,7 +30,7 @@ This power gives player ship a shield that is stored in your secondary inventory
 
 ## Obstacles
 ### Asteroid
-![Image](https://imgur.com/a/5XpY92r)
+![Image] (https://imgur.com/a/5XpY92r)
 Big rock with high health. When destroying it splices in smaller chunks with lower health. It also gives points.
 
 ## Enemies
@@ -44,19 +44,19 @@ Moves up-down with horizontal speed. Medium health.
 Static. Medium health.
 
 ## Yellow
-![Image](https://imgur.com/QsaEfPX)
+![Image] (https://imgur.com/QsaEfPX)
 Chaser. Follow the mainship trying to crash with him. Medium health.
 
 ### Shooter Enemy
-![Image](https://imgur.com/QsaEfPX)
+![Image] (https://imgur.com/QsaEfPX)
 Moves up-down without horizontal speed. Shoots in straight line constantly. Low-medium health.
 
 ### Helix Enemy
-![Image](https://imgur.com/UwEPFjV)
+![Image] (https://imgur.com/UwEPFjV)
 Static. Shoots in circle pattern. High health.
 
 ### Boss
-![Image](https://imgur.com/adTJiN7)
+![Image] (https://imgur.com/adTJiN7)
 Highest health of the game. Moves up-down with horizontal speed. 4 different attacks:
 -Invulnerability: Gets invencible during a low time frame.
 -Missile: Launch a missile that explodes after a framerate, this explosion spawn bullets in a circle pattern. This bullets can travel in straight line or sinusoidal.
