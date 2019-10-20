@@ -6,7 +6,7 @@ Asteroids! is a 2D space shooter made with Unity.
 
 The game consists on kill as much as you can while surviving until the end of the level, kill will give you points that are going to be stored on a counter on the top-right. You have a total of 6 lifes, if you get hit 6 times you will die and you will have to play from the beginning.
 
-At the end of the level you will find a boss that once he gets really hurt start a rage mode. Be careful!
+At the end of the level you will find a boss that once he gets really hurt starts a rage mode. Be careful!
 
 ### Controls
 
