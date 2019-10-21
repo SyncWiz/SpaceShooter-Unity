@@ -4,9 +4,9 @@ Asteroids! is a 2D space shooter made with Unity.
 
 # Game
 
-The game consists on kill as much as you can while surviving until the end of the level, killing/destroying will give you points that are going to be stored on a counter on the top-right. You have a total of 6 lifes, if you get hit 6 times you will die and you will have to play from the beginning.
+The game consists on kill as much as you can while surviving until the end of the level, killing/destroying will give you points (counter on the top-right). You have a total of 6 lifes, if you get hit 6 times you will die and you will have to play from the beginning.
 
-At the end of the level you will find a boss that once he gets really hurt starts a rage mode. Be careful!
+At the end of the level you will find a final boss. Be careful!
 
 # Controls
 
@@ -69,11 +69,11 @@ Static. Shoots in circle pattern. High health.
 
 Highest health of the game. Moves up-down with horizontal speed. 4 different attacks:
 -Invulnerability: Gets invencible during a low time frame.
--Missile: Launch a missile that explodes after a framerate, this explosion spawn bullets in a circle pattern. This bullets can travel in straight line or sinusoidal.
+-Missile: Launch a missile that explodes after a time frame, this explosion spawn bullets in a circle pattern. This bullets can travel in straight line or sinusoidal.
 -Basic Shooting: Shoots a bullet that follows a sinusoidal movement.
 -Circle shooting: Shoots in circle pattern.
 
-These attacks are executed randomly within a constant frame time, when the boss health is below 1/3 it starts a rage mode reducing the time between these random attacks.
+These attacks are executed randomly within a constant time frame, when the boss health is below 1/3 it starts a rage mode reducing the time between these random attacks.
 
 # Challenges during development
 
