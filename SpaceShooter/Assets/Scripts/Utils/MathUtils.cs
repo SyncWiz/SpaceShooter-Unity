@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-
 public static class MathUtils
 {
     public static Vector3 GetPositionAtCircle(Vector3 center, float radius, float degreeAngle)
