@@ -33,7 +33,7 @@ public class BossController : MonoBehaviour
     private float m_CurrentTime;
     private int m_MaxHealth;
     private SpriteRenderer m_SpriteRenderer;
-    public AudioSource m_RageEnterSound;
+    private AudioSource m_RageEnterSound;
 
     void Start()
     {

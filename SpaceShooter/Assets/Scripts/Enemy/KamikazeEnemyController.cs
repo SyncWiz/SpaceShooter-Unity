@@ -32,12 +32,10 @@ public class KamikazeEnemyController : MonoBehaviour
 
     void Update()
     {
-        Vector3 viewPosition;
         switch (m_CurrentState)
         {
             case EnemyStates.IDLE:
-                viewPosition = m_MainCamera.WorldToViewportPoint(transform.position);
-                if (viewPosition.x <= 1.0f && viewPosition.x >= 0.0f && viewPosition.y <= 1.0f && viewPosition.y >= 0.0f)
+                if (MathUtils.IsPointInsideCameraView(transform.position))
                 {
                     if (m_ShipType == KamikazeType.STATIC)
                     {
@@ -58,7 +56,7 @@ public class KamikazeEnemyController : MonoBehaviour
                 }
             break;
             case EnemyStates.MOVE:
-                viewPosition = m_MainCamera.WorldToViewportPoint(transform.position);
+                Vector3 viewPosition = m_MainCamera.WorldToViewportPoint(transform.position);
                 if ((viewPosition.y > 1.0f || viewPosition.y < 0.0f) && m_CanChangeDirection)
                 {
                     m_Direction.y = -m_Direction.y;
