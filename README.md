@@ -82,6 +82,4 @@ The most challenging thing it has been to have the most complete experience (gam
 
 # Download!
 
-![Windows](https://github.com/sliz3r/Asteroids/releases/tag/v1.0)
-
-
+[Windows](https://github.com/sliz3r/Asteroids/releases/tag/v1.0)
