@@ -80,3 +80,6 @@ These attacks are executed randomly within a constant time frame, when the boss 
 The most challenging thing it has been to have the most complete experience (gameplay, UI, music...) within giving time (12 days), also I hadn't implemented any UI until now on Unity and this has difficulted a bit the development.
 
 
+# Download!
+
+[Windows](https://github.com/sliz3r/Asteroids/releases/tag/v1.0)
