@@ -32,8 +32,17 @@ ScriptsOnlyBuild:
     - UnityEditor.Tilemaps.GridPalettes
     - UnityEditor.Tilemaps.SceneViewGridManager
     - UnityEditor.Tilemaps.TileDragAndDropManager
+    UnityEditor.Graphs.dll:
+    - UnityEditor.Graphs.AnimationBlendTree.Graph
+    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
+    - UnityEditor.Graphs.AnimationStateMachine.Graph
+    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
+    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
+    - UnityEditor.TestTools.TestRunner.TestListCacheData
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
@@ -68,6 +77,10 @@ ScriptsOnlyBuild:
     - Class: 74
       Script: {instanceID: 0}
     - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
       Script: {instanceID: 0}
     - Class: 91
       Script: {instanceID: 0}
@@ -153,6 +166,10 @@ ScriptsOnlyBuild:
     - Class: 48
       Script: {instanceID: 0}
     - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
@@ -393,7 +410,7 @@ ScriptsOnlyBuild:
     className: DestroyAfterAnimationEnd
   - hash:
       serializedVersion: 2
-      Hash: ab9be5edbcfe6a634e0d0ec0e0570148
+      Hash: dc47904d7325d825d28b81cc484de4d6
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ShooterEnemyController
@@ -435,7 +452,7 @@ ScriptsOnlyBuild:
     className: PowerUpBehaviour
   - hash:
       serializedVersion: 2
-      Hash: 0a7b086c274bfb9d871612293093947c
+      Hash: b276e1ebafb6cf5485b40928a3c3ea9e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: BossController
@@ -453,7 +470,7 @@ ScriptsOnlyBuild:
     className: DestroyWhenNoPlayable
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: c852c84c8ba65b037d4a9075ab50a452
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PauseMenuController
@@ -477,7 +494,7 @@ ScriptsOnlyBuild:
     className: ScrollRect
   - hash:
       serializedVersion: 2
-      Hash: 153b487511feb909a12ad030b36cf268
+      Hash: 1bf36ce2cda3ca1b953ec1377620796d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SpaceshipBehaviour
@@ -549,7 +566,7 @@ ScriptsOnlyBuild:
     className: SignalReceiver
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: c852c84c8ba65b037d4a9075ab50a452
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MainMenuController
@@ -597,7 +614,7 @@ ScriptsOnlyBuild:
     className: TimelineAsset
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: c852c84c8ba65b037d4a9075ab50a452
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: DeadMenuController
@@ -639,7 +656,7 @@ ScriptsOnlyBuild:
     className: MarkerTrack
   - hash:
       serializedVersion: 2
-      Hash: aeeb81217b90cfc656431cb2a4d9026d
+      Hash: 84e96d67296e25afb7754d45fd91dd80
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: HUDController
@@ -711,7 +728,7 @@ ScriptsOnlyBuild:
     className: GameFlowManager
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: c852c84c8ba65b037d4a9075ab50a452
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: WinMenuController
@@ -735,7 +752,7 @@ ScriptsOnlyBuild:
     className: SignalEmitter
   - hash:
       serializedVersion: 2
-      Hash: bc6ba389ae89c6ade9e7db551dc0e0a3
+      Hash: bf58d070486894649379475783c4f2e7
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: AsteroidBehaviour
@@ -767,4 +784,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
   - Assets/Scenes/MainGame.unity
-  playerPath: C:/Users/dcervera/Desktop/SpaceShooter2D/SpaceShooter.exe
+  playerPath: C:/Users/dcervera/Desktop/Asteroids/SpaceShooter.exe

@@ -220,6 +220,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Points: 0
+  m_Health: 6
   m_Speed: 3
   m_BulletOffsetX: 0.3
   m_DoubleBulletOffsetY: 0.15
@@ -229,11 +230,11 @@ MonoBehaviour:
   m_TimeUntilDie: 0.05
   m_NumberOfBulletsInCircle: 0
   m_RadiusCircleBullets: 0
+  m_TimeToEndGame: 1
   m_IsMainPlayer: 1
   m_IsFinalBoss: 0
   m_CanRecieveDamage: 0
   m_CanShoot: 1
-  m_Health: 6
   m_BasicBullet: {fileID: 5562645288781215116, guid: 905b03ce8b75c97499bf06d6cd209c1a,
     type: 3}
   m_DoubleBullet: {fileID: 7909374660982873646, guid: 7134208981fd1dd489981b7458061b5b,
@@ -241,6 +242,8 @@ MonoBehaviour:
   m_MissileBullet: {fileID: 1842107442458350483, guid: 9313a73bc6df04074aad4e4edf4c8561,
     type: 3}
   m_InvulnerabilityCircle: {fileID: 382514103}
+  m_DieExplosion: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+    type: 3}
   m_BasicBulletRotation: {x: 0, y: 0, z: 0}
   m_MissileBulletRotation: {x: 0, y: 0, z: 0}
   m_InvulnerabilityColor: {r: 1, g: 0.88550174, b: 0, a: 1}
@@ -248,7 +251,6 @@ MonoBehaviour:
   m_HealthChangedEvent:
     m_PersistentCalls:
       m_Calls: []
-  m_ReceiveDamageSound: {fileID: 0}
 --- !u!114 &2002030046
 MonoBehaviour:
   m_ObjectHideFlags: 0

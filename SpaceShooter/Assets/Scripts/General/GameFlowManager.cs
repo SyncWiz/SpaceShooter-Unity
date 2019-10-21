@@ -100,7 +100,6 @@ public class GameFlowManager : MonoBehaviour
     {
         m_InMainGame = false;
         ResumeGame();
-        SceneManager.UnloadSceneAsync("MainGame");
         UIController.Instance.Show("MainMenu");
         SceneManager.LoadScene("MainMenu", LoadSceneMode.Single);
     }

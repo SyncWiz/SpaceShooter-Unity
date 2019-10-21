@@ -33,6 +33,7 @@ public class SpaceshipBehaviour : MonoBehaviour
     public float m_TimeUntilDie;
     public float m_NumberOfBulletsInCircle;
     public float m_RadiusCircleBullets;
+    public float m_TimeToEndGame;
     public bool m_IsMainPlayer;
     public bool m_IsFinalBoss;
     [HideInInspector]
@@ -42,6 +43,7 @@ public class SpaceshipBehaviour : MonoBehaviour
     public GameObject m_DoubleBullet;
     public GameObject m_MissileBullet;
     public GameObject m_InvulnerabilityCircle;
+    public GameObject m_DieExplosion;
     public Vector3 m_BasicBulletRotation;
     public Vector3 m_MissileBulletRotation;
     public Color m_InvulnerabilityColor;
@@ -65,6 +67,7 @@ public class SpaceshipBehaviour : MonoBehaviour
     private AudioClip m_EmptyAudio;
     private AudioClip m_DieSound;
     private AudioClip m_ReceiveDamageSound;
+    private bool m_IsDead;
 
     #region General behaviour
     void Awake()
@@ -74,6 +77,7 @@ public class SpaceshipBehaviour : MonoBehaviour
 
     void Start()
     {
+        m_IsDead = false;
         m_Inventory = GetComponent<InventoryBehaviour>();
         m_SpriteRenderer = GetComponent<SpriteRenderer>();
         m_ReceiveDamageEffect = GetComponent<ReceiveDamageEffect>();
@@ -119,6 +123,18 @@ public class SpaceshipBehaviour : MonoBehaviour
         m_CurrentTime += Time.deltaTime;
     }
 
+    void UpdateGameState()
+    {
+        if (m_IsMainPlayer)
+        {
+            GameFlowManager.Instance.Lose();
+        }
+        else if(m_IsFinalBoss)
+        {
+            GameFlowManager.Instance.Win();
+        }
+    }
+
     void OnApplicationQuit()
     {
         if (m_CanShoot)
@@ -154,7 +170,7 @@ public class SpaceshipBehaviour : MonoBehaviour
     #region Inventory
     public void UsePrimaryInventorySlot(FireType fireType)
     {
-        if (m_CurrentTime >= m_TimeBetweenPrimaryShoots)
+        if (m_CurrentTime >= m_TimeBetweenPrimaryShoots && !m_IsDead)
         {
             ItemType item = m_Inventory.GetPrimarySlot();
             switch (item)
@@ -195,22 +211,25 @@ public class SpaceshipBehaviour : MonoBehaviour
 
     public void UseSecondaryInventorySlot()
     {
-        ItemType item = m_Inventory.GetSecondarySlot();
-        switch (item)
+        if(!m_IsDead)
         {
-            case ItemType.Missile:
-                Vector3 missilePosition = new Vector3(transform.position.x + m_BulletOffsetX, transform.position.y, transform.position.z);
-                Fire(missilePosition, m_MissileBullet, m_MissileBulletRotation);
-                m_AudioSource.PlayOneShot(m_MissileAudio);
-                break;
-            case ItemType.Invulnerability:
-                ApplyInvulnerabilityPowerup();
-                break;
-            case ItemType.Empty:
-                m_AudioSource.PlayOneShot(m_EmptyAudio);
-                break;
+            ItemType item = m_Inventory.GetSecondarySlot();
+            switch (item)
+            {
+                case ItemType.Missile:
+                    Vector3 missilePosition = new Vector3(transform.position.x + m_BulletOffsetX, transform.position.y, transform.position.z);
+                    Fire(missilePosition, m_MissileBullet, m_MissileBulletRotation);
+                    m_AudioSource.PlayOneShot(m_MissileAudio);
+                    break;
+                case ItemType.Invulnerability:
+                    ApplyInvulnerabilityPowerup();
+                    break;
+                case ItemType.Empty:
+                    m_AudioSource.PlayOneShot(m_EmptyAudio);
+                    break;
+            }
+            m_Inventory.SetSecondarySlot(ItemType.Empty);
         }
-        m_Inventory.SetSecondarySlot(ItemType.Empty);
     }
     #endregion
 
@@ -267,23 +286,23 @@ public class SpaceshipBehaviour : MonoBehaviour
 
     void Die()
     {
-        if(m_IsMainPlayer)
+        if(m_IsDead)
         {
-            GameFlowManager.Instance.Lose();
+            return;
         }
-        else
+
+        m_IsDead = true;
+        Invoke("UpdateGameState", m_TimeToEndGame);
+        if(!m_IsMainPlayer)
         {
             GameFlowManager.Instance.AddScorePoints(m_Points);
-            if(m_IsFinalBoss)
-            {
-                GameFlowManager.Instance.Win();
-            }
         }
+
+        Instantiate(m_DieExplosion, transform.position, Quaternion.identity);
         gameObject.GetComponent<SpriteRenderer>().enabled = false;
         gameObject.GetComponent<Collider2D>().enabled = false;
         m_AudioSource.PlayOneShot(m_DieSound);
-        Destroy(gameObject, 1.0f);
-        enabled = false;
+        Destroy(gameObject, 1.5f);
     }
 
     void ApplyInvulnerabilityPowerup()

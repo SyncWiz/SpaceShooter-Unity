@@ -103,6 +103,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Points: 150
+  m_Health: 5
   m_Speed: 2
   m_BulletOffsetX: -0.5
   m_DoubleBulletOffsetY: 0
@@ -112,16 +113,18 @@ MonoBehaviour:
   m_TimeUntilDie: 0.05
   m_NumberOfBulletsInCircle: 0
   m_RadiusCircleBullets: 0
+  m_TimeToEndGame: 0
   m_IsMainPlayer: 0
   m_IsFinalBoss: 0
   m_CanRecieveDamage: 0
   m_CanShoot: 1
-  m_Health: 5
   m_BasicBullet: {fileID: 542053465690295471, guid: dad254ca69e66a44188fb102e4a7a15c,
     type: 3}
   m_DoubleBullet: {fileID: 0}
   m_MissileBullet: {fileID: 0}
   m_InvulnerabilityCircle: {fileID: 0}
+  m_DieExplosion: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+    type: 3}
   m_BasicBulletRotation: {x: 0, y: 0, z: 90}
   m_MissileBulletRotation: {x: 0, y: 0, z: 0}
   m_InvulnerabilityColor: {r: 0, g: 0, b: 0, a: 0}
@@ -129,7 +132,6 @@ MonoBehaviour:
   m_HealthChangedEvent:
     m_PersistentCalls:
       m_Calls: []
-  m_ReceiveDamageSound: {fileID: 0}
 --- !u!114 &3278016447370799487
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -145,9 +147,7 @@ MonoBehaviour:
   m_CenterDestinationPositionOffset: 1
   m_DistanceAccelerating: 0.75
   m_DistanceToChangeDestination: 0.25
-  m_ShootTime: 1
   m_CameraLimitYOffset: 0.35
-  m_MainShip: {fileID: 0}
   m_InvertHalf: 1
   m_IsStatic: 0
 --- !u!50 &1122170706

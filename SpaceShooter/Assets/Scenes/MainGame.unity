@@ -442,6 +442,12 @@ PrefabInstance:
       propertyPath: m_MainShip
       value: 
       objectReference: {fileID: 8436499663290601533}
+    - target: {fileID: 5029467008885329730, guid: 3f9260943c0bf634a8f16d69c76f333b,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f9260943c0bf634a8f16d69c76f333b, type: 3}
 --- !u!1 &66235310 stripped
@@ -628,6 +634,12 @@ PrefabInstance:
       propertyPath: m_Speed
       value: 2.5
       objectReference: {fileID: 0}
+    - target: {fileID: 5029467008885329730, guid: 3f9260943c0bf634a8f16d69c76f333b,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f9260943c0bf634a8f16d69c76f333b, type: 3}
 --- !u!1 &84695798 stripped
@@ -809,6 +821,12 @@ PrefabInstance:
       propertyPath: m_Health
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 2259456847842930647, guid: fe54f65623116314896e7f7a5cceffc5,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     - target: {fileID: 781621030, guid: fe54f65623116314896e7f7a5cceffc5, type: 3}
       propertyPath: m_audioClip
       value: 
@@ -1098,6 +1116,12 @@ PrefabInstance:
       propertyPath: m_MainShip
       value: 
       objectReference: {fileID: 8436499663290601533}
+    - target: {fileID: 1162854822500721296, guid: 62850d71a67011d40b0fafdf0eeabefc,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62850d71a67011d40b0fafdf0eeabefc, type: 3}
 --- !u!1 &121454221 stripped
@@ -1279,6 +1303,12 @@ PrefabInstance:
       propertyPath: m_MainShip
       value: 
       objectReference: {fileID: 8436499663290601533}
+    - target: {fileID: 1162854822500721296, guid: 62850d71a67011d40b0fafdf0eeabefc,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62850d71a67011d40b0fafdf0eeabefc, type: 3}
 --- !u!1 &126140386 stripped
@@ -1460,6 +1490,12 @@ PrefabInstance:
       propertyPath: m_Health
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 2259456847842930647, guid: fe54f65623116314896e7f7a5cceffc5,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     - target: {fileID: 781621030, guid: fe54f65623116314896e7f7a5cceffc5, type: 3}
       propertyPath: m_audioClip
       value: 
@@ -1749,6 +1785,12 @@ PrefabInstance:
       propertyPath: m_MainShip
       value: 
       objectReference: {fileID: 8436499663290601533}
+    - target: {fileID: 5029467008885329730, guid: 3f9260943c0bf634a8f16d69c76f333b,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f9260943c0bf634a8f16d69c76f333b, type: 3}
 --- !u!1 &131994888 stripped
@@ -2118,6 +2160,12 @@ PrefabInstance:
       propertyPath: m_MainShip
       value: 
       objectReference: {fileID: 8436499663290601533}
+    - target: {fileID: 1162854822500721296, guid: 62850d71a67011d40b0fafdf0eeabefc,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62850d71a67011d40b0fafdf0eeabefc, type: 3}
 --- !u!1 &167203855 stripped
@@ -2299,6 +2347,12 @@ PrefabInstance:
       propertyPath: m_Health
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 2259456847842930647, guid: fe54f65623116314896e7f7a5cceffc5,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     - target: {fileID: 781621030, guid: fe54f65623116314896e7f7a5cceffc5, type: 3}
       propertyPath: m_audioClip
       value: 
@@ -2593,6 +2647,12 @@ PrefabInstance:
       propertyPath: m_Speed
       value: 2.5
       objectReference: {fileID: 0}
+    - target: {fileID: 5029467008885329730, guid: 3f9260943c0bf634a8f16d69c76f333b,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f9260943c0bf634a8f16d69c76f333b, type: 3}
 --- !u!1 &204079360 stripped
@@ -2774,6 +2834,12 @@ PrefabInstance:
       propertyPath: m_MainShip
       value: 
       objectReference: {fileID: 8436499663290601533}
+    - target: {fileID: 1162854822500721296, guid: 62850d71a67011d40b0fafdf0eeabefc,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62850d71a67011d40b0fafdf0eeabefc, type: 3}
 --- !u!1 &212900452 stripped
@@ -2960,6 +3026,12 @@ PrefabInstance:
       propertyPath: m_Speed
       value: 2.5
       objectReference: {fileID: 0}
+    - target: {fileID: 5029467008885329730, guid: 3f9260943c0bf634a8f16d69c76f333b,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f9260943c0bf634a8f16d69c76f333b, type: 3}
 --- !u!1 &242046919 stripped
@@ -3141,6 +3213,12 @@ PrefabInstance:
       propertyPath: m_MainShip
       value: 
       objectReference: {fileID: 8436499663290601533}
+    - target: {fileID: 1162854822500721296, guid: 62850d71a67011d40b0fafdf0eeabefc,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62850d71a67011d40b0fafdf0eeabefc, type: 3}
 --- !u!1 &250475651 stripped
@@ -3245,76 +3323,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!1 &298757953
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 298757954}
-  - component: {fileID: 298757956}
-  - component: {fileID: 298757955}
-  m_Layer: 5
-  m_Name: BasicFire
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &298757954
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 298757953}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1543617300}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -672, y: -364}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &298757955
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 298757953}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Texture: {fileID: 2800000, guid: c639562ea014c154aaa0aeb56f96a080, type: 3}
-  m_UVRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
---- !u!222 &298757956
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 298757953}
-  m_CullTransparentMesh: 0
 --- !u!1001 &344463777
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3461,6 +3469,12 @@ PrefabInstance:
       propertyPath: m_Health
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 3278016447370799456, guid: eac9e90869d04a14eb7f2598f0b07a21,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     - target: {fileID: 3278016447370799487, guid: eac9e90869d04a14eb7f2598f0b07a21,
         type: 3}
       propertyPath: m_InvertHalf
@@ -3566,6 +3580,12 @@ PrefabInstance:
       propertyPath: m_MainShip
       value: 
       objectReference: {fileID: 8436499663290601533}
+    - target: {fileID: 1162854822500721296, guid: 62850d71a67011d40b0fafdf0eeabefc,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62850d71a67011d40b0fafdf0eeabefc, type: 3}
 --- !u!1 &359250471 stripped
@@ -3752,6 +3772,12 @@ PrefabInstance:
       propertyPath: m_Speed
       value: 2.5
       objectReference: {fileID: 0}
+    - target: {fileID: 5029467008885329730, guid: 3f9260943c0bf634a8f16d69c76f333b,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f9260943c0bf634a8f16d69c76f333b, type: 3}
 --- !u!1 &362032047 stripped
@@ -3933,6 +3959,12 @@ PrefabInstance:
       propertyPath: m_MainShip
       value: 
       objectReference: {fileID: 8436499663290601533}
+    - target: {fileID: 1162854822500721296, guid: 62850d71a67011d40b0fafdf0eeabefc,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62850d71a67011d40b0fafdf0eeabefc, type: 3}
 --- !u!1 &386406855 stripped
@@ -4114,6 +4146,12 @@ PrefabInstance:
       propertyPath: m_MainShip
       value: 
       objectReference: {fileID: 8436499663290601533}
+    - target: {fileID: 1162854822500721296, guid: 62850d71a67011d40b0fafdf0eeabefc,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62850d71a67011d40b0fafdf0eeabefc, type: 3}
 --- !u!1 &402952815 stripped
@@ -4438,6 +4476,12 @@ PrefabInstance:
       propertyPath: m_Health
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 3278016447370799456, guid: eac9e90869d04a14eb7f2598f0b07a21,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     - target: {fileID: 3278016447370799487, guid: eac9e90869d04a14eb7f2598f0b07a21,
         type: 3}
       propertyPath: m_IsStatic
@@ -4543,6 +4587,12 @@ PrefabInstance:
       propertyPath: m_MainShip
       value: 
       objectReference: {fileID: 8436499663290601533}
+    - target: {fileID: 1162854822500721296, guid: 62850d71a67011d40b0fafdf0eeabefc,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62850d71a67011d40b0fafdf0eeabefc, type: 3}
 --- !u!1 &487591134 stripped
@@ -4724,6 +4774,12 @@ PrefabInstance:
       propertyPath: m_Health
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 2259456847842930647, guid: fe54f65623116314896e7f7a5cceffc5,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     - target: {fileID: 781621030, guid: fe54f65623116314896e7f7a5cceffc5, type: 3}
       propertyPath: m_audioClip
       value: 
@@ -5013,6 +5069,12 @@ PrefabInstance:
       propertyPath: m_Health
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 2259456847842930647, guid: fe54f65623116314896e7f7a5cceffc5,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     - target: {fileID: 781621030, guid: fe54f65623116314896e7f7a5cceffc5, type: 3}
       propertyPath: m_audioClip
       value: 
@@ -5478,6 +5540,12 @@ PrefabInstance:
       propertyPath: m_Health
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 3278016447370799456, guid: eac9e90869d04a14eb7f2598f0b07a21,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     - target: {fileID: 3278016447370799487, guid: eac9e90869d04a14eb7f2598f0b07a21,
         type: 3}
       propertyPath: m_InvertHalf
@@ -5771,6 +5839,12 @@ PrefabInstance:
       propertyPath: m_MainShip
       value: 
       objectReference: {fileID: 8436499663290601533}
+    - target: {fileID: 1162854822500721296, guid: 62850d71a67011d40b0fafdf0eeabefc,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62850d71a67011d40b0fafdf0eeabefc, type: 3}
 --- !u!1 &557207013 stripped
@@ -5957,6 +6031,12 @@ PrefabInstance:
       propertyPath: m_Speed
       value: 2.5
       objectReference: {fileID: 0}
+    - target: {fileID: 5029467008885329730, guid: 3f9260943c0bf634a8f16d69c76f333b,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f9260943c0bf634a8f16d69c76f333b, type: 3}
 --- !u!1 &560425377 stripped
@@ -6143,6 +6223,12 @@ PrefabInstance:
       propertyPath: m_Speed
       value: 2.5
       objectReference: {fileID: 0}
+    - target: {fileID: 5029467008885329730, guid: 3f9260943c0bf634a8f16d69c76f333b,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f9260943c0bf634a8f16d69c76f333b, type: 3}
 --- !u!1 &570854862 stripped
@@ -6497,76 +6583,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!1 &624544430
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 624544431}
-  - component: {fileID: 624544433}
-  - component: {fileID: 624544432}
-  m_Layer: 5
-  m_Name: DoubleFire
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &624544431
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 624544430}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1543617300}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -561, y: -364}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &624544432
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 624544430}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Texture: {fileID: 2800000, guid: fbdc75064d6fb9b4496664573214a0c0, type: 3}
-  m_UVRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
---- !u!222 &624544433
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 624544430}
-  m_CullTransparentMesh: 0
 --- !u!1001 &696685194
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6644,6 +6660,12 @@ PrefabInstance:
       propertyPath: m_Health
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 3278016447370799456, guid: eac9e90869d04a14eb7f2598f0b07a21,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     - target: {fileID: 3278016447370799487, guid: eac9e90869d04a14eb7f2598f0b07a21,
         type: 3}
       propertyPath: m_InvertHalf
@@ -6749,6 +6771,12 @@ PrefabInstance:
       propertyPath: m_Health
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 3278016447370799456, guid: eac9e90869d04a14eb7f2598f0b07a21,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     - target: {fileID: 3278016447370799487, guid: eac9e90869d04a14eb7f2598f0b07a21,
         type: 3}
       propertyPath: m_InvertHalf
@@ -6854,6 +6882,12 @@ PrefabInstance:
       propertyPath: m_MainShip
       value: 
       objectReference: {fileID: 8436499663290601533}
+    - target: {fileID: 1162854822500721296, guid: 62850d71a67011d40b0fafdf0eeabefc,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62850d71a67011d40b0fafdf0eeabefc, type: 3}
 --- !u!1 &725445589 stripped
@@ -7040,6 +7074,12 @@ PrefabInstance:
       propertyPath: m_Speed
       value: 2.5
       objectReference: {fileID: 0}
+    - target: {fileID: 5029467008885329730, guid: 3f9260943c0bf634a8f16d69c76f333b,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f9260943c0bf634a8f16d69c76f333b, type: 3}
 --- !u!1 &739036133 stripped
@@ -7226,6 +7266,12 @@ PrefabInstance:
       propertyPath: m_Speed
       value: 2.5
       objectReference: {fileID: 0}
+    - target: {fileID: 5029467008885329730, guid: 3f9260943c0bf634a8f16d69c76f333b,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f9260943c0bf634a8f16d69c76f333b, type: 3}
 --- !u!1 &747013439 stripped
@@ -7412,6 +7458,12 @@ PrefabInstance:
       propertyPath: m_Speed
       value: 2.5
       objectReference: {fileID: 0}
+    - target: {fileID: 5029467008885329730, guid: 3f9260943c0bf634a8f16d69c76f333b,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f9260943c0bf634a8f16d69c76f333b, type: 3}
 --- !u!1 &765056595 stripped
@@ -7593,6 +7645,12 @@ PrefabInstance:
       propertyPath: m_MainShip
       value: 
       objectReference: {fileID: 8436499663290601533}
+    - target: {fileID: 1162854822500721296, guid: 62850d71a67011d40b0fafdf0eeabefc,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62850d71a67011d40b0fafdf0eeabefc, type: 3}
 --- !u!1 &771156464 stripped
@@ -7764,6 +7822,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2259456847842930647, guid: fe54f65623116314896e7f7a5cceffc5,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe54f65623116314896e7f7a5cceffc5, type: 3}
 --- !u!1001 &785363494
@@ -7843,6 +7907,12 @@ PrefabInstance:
       propertyPath: m_MainShip
       value: 
       objectReference: {fileID: 8436499663290601533}
+    - target: {fileID: 1162854822500721296, guid: 62850d71a67011d40b0fafdf0eeabefc,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62850d71a67011d40b0fafdf0eeabefc, type: 3}
 --- !u!1 &785363495 stripped
@@ -7947,76 +8017,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!1 &819730703
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 819730704}
-  - component: {fileID: 819730706}
-  - component: {fileID: 819730705}
-  m_Layer: 5
-  m_Name: Invulnerability
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &819730704
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 819730703}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.4915849, y: 0.42163873, z: 0.42163873}
-  m_Children: []
-  m_Father: {fileID: 1543617300}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 689.6, y: -364.00003}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &819730705
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 819730703}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 3bbed9ffbbd5adb4396204d70b17e7f5, type: 3}
-  m_UVRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
---- !u!222 &819730706
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 819730703}
-  m_CullTransparentMesh: 0
 --- !u!1001 &819793982
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8094,6 +8094,12 @@ PrefabInstance:
       propertyPath: m_Health
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 3278016447370799456, guid: eac9e90869d04a14eb7f2598f0b07a21,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     - target: {fileID: 3278016447370799487, guid: eac9e90869d04a14eb7f2598f0b07a21,
         type: 3}
       propertyPath: m_InvertHalf
@@ -8199,6 +8205,12 @@ PrefabInstance:
       propertyPath: m_MainShip
       value: 
       objectReference: {fileID: 8436499663290601533}
+    - target: {fileID: 1162854822500721296, guid: 62850d71a67011d40b0fafdf0eeabefc,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62850d71a67011d40b0fafdf0eeabefc, type: 3}
 --- !u!1 &855082392 stripped
@@ -8385,6 +8397,12 @@ PrefabInstance:
       propertyPath: m_Speed
       value: 2.5
       objectReference: {fileID: 0}
+    - target: {fileID: 5029467008885329730, guid: 3f9260943c0bf634a8f16d69c76f333b,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f9260943c0bf634a8f16d69c76f333b, type: 3}
 --- !u!1 &880181528 stripped
@@ -8566,6 +8584,12 @@ PrefabInstance:
       propertyPath: m_MainShip
       value: 
       objectReference: {fileID: 8436499663290601533}
+    - target: {fileID: 1162854822500721296, guid: 62850d71a67011d40b0fafdf0eeabefc,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62850d71a67011d40b0fafdf0eeabefc, type: 3}
 --- !u!1 &901058827 stripped
@@ -8747,6 +8771,12 @@ PrefabInstance:
       propertyPath: m_MainShip
       value: 
       objectReference: {fileID: 8436499663290601533}
+    - target: {fileID: 1162854822500721296, guid: 62850d71a67011d40b0fafdf0eeabefc,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62850d71a67011d40b0fafdf0eeabefc, type: 3}
 --- !u!1 &950177646 stripped
@@ -8933,6 +8963,12 @@ PrefabInstance:
       propertyPath: m_Speed
       value: 2.5
       objectReference: {fileID: 0}
+    - target: {fileID: 5029467008885329730, guid: 3f9260943c0bf634a8f16d69c76f333b,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f9260943c0bf634a8f16d69c76f333b, type: 3}
 --- !u!1 &967016142 stripped
@@ -9114,6 +9150,12 @@ PrefabInstance:
       propertyPath: m_MainShip
       value: 
       objectReference: {fileID: 8436499663290601533}
+    - target: {fileID: 5029467008885329730, guid: 3f9260943c0bf634a8f16d69c76f333b,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f9260943c0bf634a8f16d69c76f333b, type: 3}
 --- !u!1 &990450555 stripped
@@ -9476,6 +9518,12 @@ PrefabInstance:
       propertyPath: m_Speed
       value: 2.5
       objectReference: {fileID: 0}
+    - target: {fileID: 5029467008885329730, guid: 3f9260943c0bf634a8f16d69c76f333b,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f9260943c0bf634a8f16d69c76f333b, type: 3}
 --- !u!1 &1000111215 stripped
@@ -9662,6 +9710,12 @@ PrefabInstance:
       propertyPath: m_Speed
       value: 2.5
       objectReference: {fileID: 0}
+    - target: {fileID: 5029467008885329730, guid: 3f9260943c0bf634a8f16d69c76f333b,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f9260943c0bf634a8f16d69c76f333b, type: 3}
 --- !u!1 &1015031653 stripped
@@ -9843,6 +9897,12 @@ PrefabInstance:
       propertyPath: m_MainShip
       value: 
       objectReference: {fileID: 8436499663290601533}
+    - target: {fileID: 1162854822500721296, guid: 62850d71a67011d40b0fafdf0eeabefc,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62850d71a67011d40b0fafdf0eeabefc, type: 3}
 --- !u!1 &1016338990 stripped
@@ -10024,6 +10084,12 @@ PrefabInstance:
       propertyPath: m_MainShip
       value: 
       objectReference: {fileID: 8436499663290601533}
+    - target: {fileID: 1162854822500721296, guid: 62850d71a67011d40b0fafdf0eeabefc,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62850d71a67011d40b0fafdf0eeabefc, type: 3}
 --- !u!1 &1024234594 stripped
@@ -10205,6 +10271,12 @@ PrefabInstance:
       propertyPath: m_Health
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 3278016447370799456, guid: eac9e90869d04a14eb7f2598f0b07a21,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     - target: {fileID: 3278016447370799487, guid: eac9e90869d04a14eb7f2598f0b07a21,
         type: 3}
       propertyPath: m_InvertHalf
@@ -10310,6 +10382,12 @@ PrefabInstance:
       propertyPath: m_MainShip
       value: 
       objectReference: {fileID: 8436499663290601533}
+    - target: {fileID: 1162854822500721296, guid: 62850d71a67011d40b0fafdf0eeabefc,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62850d71a67011d40b0fafdf0eeabefc, type: 3}
 --- !u!1 &1034686195 stripped
@@ -10491,6 +10569,12 @@ PrefabInstance:
       propertyPath: m_MainShip
       value: 
       objectReference: {fileID: 8436499663290601533}
+    - target: {fileID: 1162854822500721296, guid: 62850d71a67011d40b0fafdf0eeabefc,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62850d71a67011d40b0fafdf0eeabefc, type: 3}
 --- !u!1 &1043225839 stripped
@@ -10672,6 +10756,12 @@ PrefabInstance:
       propertyPath: m_Health
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 2259456847842930647, guid: fe54f65623116314896e7f7a5cceffc5,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     - target: {fileID: 781621030, guid: fe54f65623116314896e7f7a5cceffc5, type: 3}
       propertyPath: m_audioClip
       value: 
@@ -10961,6 +11051,12 @@ PrefabInstance:
       propertyPath: m_Health
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 3278016447370799456, guid: eac9e90869d04a14eb7f2598f0b07a21,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     - target: {fileID: 3278016447370799487, guid: eac9e90869d04a14eb7f2598f0b07a21,
         type: 3}
       propertyPath: m_IsStatic
@@ -11061,6 +11157,12 @@ PrefabInstance:
       propertyPath: m_MainShip
       value: 
       objectReference: {fileID: 8436499663290601533}
+    - target: {fileID: 1162854822500721296, guid: 62850d71a67011d40b0fafdf0eeabefc,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62850d71a67011d40b0fafdf0eeabefc, type: 3}
 --- !u!1 &1079469557 stripped
@@ -11247,6 +11349,12 @@ PrefabInstance:
       propertyPath: m_Health
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 7511154984700856829, guid: 1a1678aa36af7314a9bd6ea36b50fc27,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a1678aa36af7314a9bd6ea36b50fc27, type: 3}
 --- !u!1 &1082482128 stripped
@@ -11428,6 +11536,12 @@ PrefabInstance:
       propertyPath: m_MainShip
       value: 
       objectReference: {fileID: 8436499663290601533}
+    - target: {fileID: 1162854822500721296, guid: 62850d71a67011d40b0fafdf0eeabefc,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62850d71a67011d40b0fafdf0eeabefc, type: 3}
 --- !u!1 &1130195151 stripped
@@ -11854,6 +11968,12 @@ PrefabInstance:
       propertyPath: m_MainShip
       value: 
       objectReference: {fileID: 8436499663290601533}
+    - target: {fileID: 1162854822500721296, guid: 62850d71a67011d40b0fafdf0eeabefc,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62850d71a67011d40b0fafdf0eeabefc, type: 3}
 --- !u!1 &1150131157 stripped
@@ -12035,6 +12155,12 @@ PrefabInstance:
       propertyPath: m_MainShip
       value: 
       objectReference: {fileID: 8436499663290601533}
+    - target: {fileID: 1162854822500721296, guid: 62850d71a67011d40b0fafdf0eeabefc,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62850d71a67011d40b0fafdf0eeabefc, type: 3}
 --- !u!1 &1161636832 stripped
@@ -12221,6 +12347,12 @@ PrefabInstance:
       propertyPath: m_Speed
       value: 2.5
       objectReference: {fileID: 0}
+    - target: {fileID: 5029467008885329730, guid: 3f9260943c0bf634a8f16d69c76f333b,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f9260943c0bf634a8f16d69c76f333b, type: 3}
 --- !u!1 &1163129412 stripped
@@ -12766,6 +12898,12 @@ PrefabInstance:
       propertyPath: m_MainShip
       value: 
       objectReference: {fileID: 8436499663290601533}
+    - target: {fileID: 1162854822500721296, guid: 62850d71a67011d40b0fafdf0eeabefc,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62850d71a67011d40b0fafdf0eeabefc, type: 3}
 --- !u!1 &1240397404 stripped
@@ -12947,6 +13085,12 @@ PrefabInstance:
       propertyPath: m_MainShip
       value: 
       objectReference: {fileID: 8436499663290601533}
+    - target: {fileID: 1162854822500721296, guid: 62850d71a67011d40b0fafdf0eeabefc,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62850d71a67011d40b0fafdf0eeabefc, type: 3}
 --- !u!1 &1260603581 stripped
@@ -13051,76 +13195,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!1 &1262368352
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1262368353}
-  - component: {fileID: 1262368355}
-  - component: {fileID: 1262368354}
-  m_Layer: 5
-  m_Name: Missile
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1262368353
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1262368352}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.78651786, y: 0.18782964, z: 0.18782964}
-  m_Children: []
-  m_Father: {fileID: 1543617300}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 595.4, y: -364.00003}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1262368354
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1262368352}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 932200373378c1f4098dae4fc12cde2d, type: 3}
-  m_UVRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
---- !u!222 &1262368355
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1262368352}
-  m_CullTransparentMesh: 0
 --- !u!1001 &1282799002
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13203,6 +13277,12 @@ PrefabInstance:
       propertyPath: m_Speed
       value: 2.5
       objectReference: {fileID: 0}
+    - target: {fileID: 5029467008885329730, guid: 3f9260943c0bf634a8f16d69c76f333b,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f9260943c0bf634a8f16d69c76f333b, type: 3}
 --- !u!1 &1282799003 stripped
@@ -13384,6 +13464,12 @@ PrefabInstance:
       propertyPath: m_MainShip
       value: 
       objectReference: {fileID: 8436499663290601533}
+    - target: {fileID: 5029467008885329730, guid: 3f9260943c0bf634a8f16d69c76f333b,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f9260943c0bf634a8f16d69c76f333b, type: 3}
 --- !u!1 &1299326964 stripped
@@ -13570,6 +13656,12 @@ PrefabInstance:
       propertyPath: m_Speed
       value: 2.5
       objectReference: {fileID: 0}
+    - target: {fileID: 5029467008885329730, guid: 3f9260943c0bf634a8f16d69c76f333b,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f9260943c0bf634a8f16d69c76f333b, type: 3}
 --- !u!1 &1322988426 stripped
@@ -13756,6 +13848,12 @@ PrefabInstance:
       propertyPath: m_Speed
       value: 2.5
       objectReference: {fileID: 0}
+    - target: {fileID: 5029467008885329730, guid: 3f9260943c0bf634a8f16d69c76f333b,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f9260943c0bf634a8f16d69c76f333b, type: 3}
 --- !u!1 &1334092975 stripped
@@ -14125,6 +14223,12 @@ PrefabInstance:
       propertyPath: m_Health
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 3278016447370799456, guid: eac9e90869d04a14eb7f2598f0b07a21,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     - target: {fileID: 3278016447370799487, guid: eac9e90869d04a14eb7f2598f0b07a21,
         type: 3}
       propertyPath: m_IsStatic
@@ -14225,6 +14329,12 @@ PrefabInstance:
       propertyPath: m_MainShip
       value: 
       objectReference: {fileID: 8436499663290601533}
+    - target: {fileID: 1162854822500721296, guid: 62850d71a67011d40b0fafdf0eeabefc,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62850d71a67011d40b0fafdf0eeabefc, type: 3}
 --- !u!1 &1412722475 stripped
@@ -14411,6 +14521,12 @@ PrefabInstance:
       propertyPath: m_Speed
       value: 2.5
       objectReference: {fileID: 0}
+    - target: {fileID: 5029467008885329730, guid: 3f9260943c0bf634a8f16d69c76f333b,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f9260943c0bf634a8f16d69c76f333b, type: 3}
 --- !u!1 &1451968523 stripped
@@ -15158,29 +15274,8 @@ PrefabInstance:
       propertyPath: m_MainPlayer
       value: 
       objectReference: {fileID: 8436499663290601533}
-    - target: {fileID: 659147652083100762, guid: 4a283813c22c67e438aaddbf9da7b35d,
-        type: 3}
-      propertyPath: m_HidedObjectColor.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 659147652083100762, guid: 4a283813c22c67e438aaddbf9da7b35d,
-        type: 3}
-      propertyPath: m_HidedObjectColor.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 659147652083100762, guid: 4a283813c22c67e438aaddbf9da7b35d,
-        type: 3}
-      propertyPath: m_HidedObjectColor.b
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4a283813c22c67e438aaddbf9da7b35d, type: 3}
---- !u!224 &1543617300 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 659147652083100767, guid: 4a283813c22c67e438aaddbf9da7b35d,
-    type: 3}
-  m_PrefabInstance: {fileID: 1543617299}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1567206408
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15263,6 +15358,12 @@ PrefabInstance:
       propertyPath: m_Speed
       value: 2.5
       objectReference: {fileID: 0}
+    - target: {fileID: 5029467008885329730, guid: 3f9260943c0bf634a8f16d69c76f333b,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f9260943c0bf634a8f16d69c76f333b, type: 3}
 --- !u!1 &1567206409 stripped
@@ -15444,6 +15545,12 @@ PrefabInstance:
       propertyPath: m_MainShip
       value: 
       objectReference: {fileID: 8436499663290601533}
+    - target: {fileID: 1162854822500721296, guid: 62850d71a67011d40b0fafdf0eeabefc,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62850d71a67011d40b0fafdf0eeabefc, type: 3}
 --- !u!1 &1580730002 stripped
@@ -15625,6 +15732,12 @@ PrefabInstance:
       propertyPath: m_MainShip
       value: 
       objectReference: {fileID: 8436499663290601533}
+    - target: {fileID: 1162854822500721296, guid: 62850d71a67011d40b0fafdf0eeabefc,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62850d71a67011d40b0fafdf0eeabefc, type: 3}
 --- !u!1 &1581810694 stripped
@@ -15806,6 +15919,12 @@ PrefabInstance:
       propertyPath: m_MainShip
       value: 
       objectReference: {fileID: 8436499663290601533}
+    - target: {fileID: 1162854822500721296, guid: 62850d71a67011d40b0fafdf0eeabefc,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62850d71a67011d40b0fafdf0eeabefc, type: 3}
 --- !u!1 &1593561423 stripped
@@ -15987,6 +16106,12 @@ PrefabInstance:
       propertyPath: m_MainShip
       value: 
       objectReference: {fileID: 8436499663290601533}
+    - target: {fileID: 1162854822500721296, guid: 62850d71a67011d40b0fafdf0eeabefc,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62850d71a67011d40b0fafdf0eeabefc, type: 3}
 --- !u!1 &1593622156 stripped
@@ -16173,6 +16298,12 @@ PrefabInstance:
       propertyPath: m_Speed
       value: 2.5
       objectReference: {fileID: 0}
+    - target: {fileID: 5029467008885329730, guid: 3f9260943c0bf634a8f16d69c76f333b,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f9260943c0bf634a8f16d69c76f333b, type: 3}
 --- !u!1 &1620487918 stripped
@@ -16547,6 +16678,12 @@ PrefabInstance:
       propertyPath: m_Speed
       value: 2.5
       objectReference: {fileID: 0}
+    - target: {fileID: 5029467008885329730, guid: 3f9260943c0bf634a8f16d69c76f333b,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f9260943c0bf634a8f16d69c76f333b, type: 3}
 --- !u!1 &1642681979 stripped
@@ -16728,6 +16865,12 @@ PrefabInstance:
       propertyPath: m_MainShip
       value: 
       objectReference: {fileID: 8436499663290601533}
+    - target: {fileID: 1162854822500721296, guid: 62850d71a67011d40b0fafdf0eeabefc,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62850d71a67011d40b0fafdf0eeabefc, type: 3}
 --- !u!1 &1673482209 stripped
@@ -16914,6 +17057,12 @@ PrefabInstance:
       propertyPath: m_Speed
       value: 2.5
       objectReference: {fileID: 0}
+    - target: {fileID: 5029467008885329730, guid: 3f9260943c0bf634a8f16d69c76f333b,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f9260943c0bf634a8f16d69c76f333b, type: 3}
 --- !u!1 &1761621707 stripped
@@ -17095,6 +17244,12 @@ PrefabInstance:
       propertyPath: m_Health
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 2259456847842930647, guid: fe54f65623116314896e7f7a5cceffc5,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     - target: {fileID: 781621030, guid: fe54f65623116314896e7f7a5cceffc5, type: 3}
       propertyPath: m_audioClip
       value: 
@@ -17384,6 +17539,12 @@ PrefabInstance:
       propertyPath: m_MainShip
       value: 
       objectReference: {fileID: 8436499663290601533}
+    - target: {fileID: 1162854822500721296, guid: 62850d71a67011d40b0fafdf0eeabefc,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62850d71a67011d40b0fafdf0eeabefc, type: 3}
 --- !u!1 &1766099843 stripped
@@ -17565,6 +17726,12 @@ PrefabInstance:
       propertyPath: m_Health
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 3278016447370799456, guid: eac9e90869d04a14eb7f2598f0b07a21,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     - target: {fileID: 3278016447370799487, guid: eac9e90869d04a14eb7f2598f0b07a21,
         type: 3}
       propertyPath: m_IsStatic
@@ -17744,6 +17911,12 @@ PrefabInstance:
       propertyPath: m_Health
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 2259456847842930647, guid: fe54f65623116314896e7f7a5cceffc5,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     - target: {fileID: 781621030, guid: fe54f65623116314896e7f7a5cceffc5, type: 3}
       propertyPath: m_audioClip
       value: 
@@ -18033,6 +18206,12 @@ PrefabInstance:
       propertyPath: m_Health
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 2259456847842930647, guid: fe54f65623116314896e7f7a5cceffc5,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     - target: {fileID: 781621030, guid: fe54f65623116314896e7f7a5cceffc5, type: 3}
       propertyPath: m_audioClip
       value: 
@@ -18322,6 +18501,12 @@ PrefabInstance:
       propertyPath: m_Health
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 2259456847842930647, guid: fe54f65623116314896e7f7a5cceffc5,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     - target: {fileID: 781621030, guid: fe54f65623116314896e7f7a5cceffc5, type: 3}
       propertyPath: m_audioClip
       value: 
@@ -18787,6 +18972,12 @@ PrefabInstance:
       propertyPath: m_Health
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 3278016447370799456, guid: eac9e90869d04a14eb7f2598f0b07a21,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     - target: {fileID: 3278016447370799487, guid: eac9e90869d04a14eb7f2598f0b07a21,
         type: 3}
       propertyPath: m_IsStatic
@@ -18887,6 +19078,12 @@ PrefabInstance:
       propertyPath: m_MainShip
       value: 
       objectReference: {fileID: 8436499663290601533}
+    - target: {fileID: 5029467008885329730, guid: 3f9260943c0bf634a8f16d69c76f333b,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f9260943c0bf634a8f16d69c76f333b, type: 3}
 --- !u!1 &2043635020 stripped
@@ -19068,6 +19265,12 @@ PrefabInstance:
       propertyPath: m_MainShip
       value: 
       objectReference: {fileID: 8436499663290601533}
+    - target: {fileID: 1162854822500721296, guid: 62850d71a67011d40b0fafdf0eeabefc,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62850d71a67011d40b0fafdf0eeabefc, type: 3}
 --- !u!1 &2063810303 stripped
@@ -19430,6 +19633,12 @@ PrefabInstance:
       propertyPath: m_Speed
       value: 2.5
       objectReference: {fileID: 0}
+    - target: {fileID: 5029467008885329730, guid: 3f9260943c0bf634a8f16d69c76f333b,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f9260943c0bf634a8f16d69c76f333b, type: 3}
 --- !u!1 &2081836056 stripped
@@ -19611,6 +19820,12 @@ PrefabInstance:
       propertyPath: m_MainShip
       value: 
       objectReference: {fileID: 8436499663290601533}
+    - target: {fileID: 1162854822500721296, guid: 62850d71a67011d40b0fafdf0eeabefc,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62850d71a67011d40b0fafdf0eeabefc, type: 3}
 --- !u!1 &2087296582 stripped
@@ -19792,6 +20007,12 @@ PrefabInstance:
       propertyPath: m_Health
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 2259456847842930647, guid: fe54f65623116314896e7f7a5cceffc5,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     - target: {fileID: 781621030, guid: fe54f65623116314896e7f7a5cceffc5, type: 3}
       propertyPath: m_audioClip
       value: 
@@ -20150,6 +20371,12 @@ PrefabInstance:
       propertyPath: m_Health
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 3278016447370799456, guid: eac9e90869d04a14eb7f2598f0b07a21,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     - target: {fileID: 3278016447370799487, guid: eac9e90869d04a14eb7f2598f0b07a21,
         type: 3}
       propertyPath: m_InvertHalf
@@ -20260,6 +20487,12 @@ PrefabInstance:
       propertyPath: m_Speed
       value: 2.5
       objectReference: {fileID: 0}
+    - target: {fileID: 5029467008885329730, guid: 3f9260943c0bf634a8f16d69c76f333b,
+        type: 3}
+      propertyPath: m_DieExplosion
+      value: 
+      objectReference: {fileID: 7850453479950304888, guid: 116801bac3d14294e88ff14035748847,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f9260943c0bf634a8f16d69c76f333b, type: 3}
 --- !u!1 &2130603460 stripped
