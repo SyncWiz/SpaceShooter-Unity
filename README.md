@@ -68,10 +68,10 @@ Static. Shoots in a circle pattern. High health.
 ![Image](https://i.imgur.com/adTJiN7.png)
 
 Highest health of the game. Moves up-down with horizontal speed. 4 different attacks:
--Invulnerability: Gets invincible during a low time frame.
--Missile: Launch a missile that explodes after a time frame, this explosion spawn bullets in a circle pattern. These bullets can travel in straight lines or sinusoidal.
--Basic Shooting: Shoots a bullet that follows a sinusoidal movement.
--Circle shooting: Shoots in a circle pattern.
+* Invulnerability: Gets invincible during a low time frame.
+* Missile: Launch a missile that explodes after a time frame, this explosion spawn bullets in a circle pattern. These bullets can travel in straight lines or sinusoidal.
+* Basic Shooting: Shoots a bullet that follows a sinusoidal movement.
+* Circle shooting: Shoots in a circle pattern.
 
 These attacks are executed randomly within a constant time frame, when the boss health is below 1/3 it starts a rage mode reducing the time between these random attacks.
 
